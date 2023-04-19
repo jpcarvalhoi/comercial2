@@ -1,0 +1,264 @@
+inherited FormFiltroContas: TFormFiltroContas
+  BorderStyle = bsDialog
+  Caption = 'Localizar contas'
+  ClientHeight = 467
+  ClientWidth = 418
+  OnShow = FormShow
+  ExplicitWidth = 424
+  ExplicitHeight = 496
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel [0]
+    Left = 8
+    Top = 10
+    Width = 45
+    Height = 13
+    Caption = 'ID Venda'
+  end
+  object Label2: TLabel [1]
+    Left = 8
+    Top = 54
+    Width = 86
+    Height = 13
+    Caption = 'Descri'#231#227'o cont'#233'm'
+  end
+  object Label3: TLabel [2]
+    Left = 8
+    Top = 300
+    Width = 59
+    Height = 13
+    Caption = 'Grupo conta'
+  end
+  object Label4: TLabel [3]
+    Left = 8
+    Top = 356
+    Width = 101
+    Height = 13
+    Caption = 'Forma de Pagamento'
+  end
+  object edVenda: TEdit [4]
+    Left = 8
+    Top = 25
+    Width = 105
+    Height = 21
+    CharCase = ecUpperCase
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object edDescricao: TEdit [5]
+    Left = 8
+    Top = 69
+    Width = 361
+    Height = 21
+    CharCase = ecUpperCase
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox [6]
+    Left = 8
+    Top = 104
+    Width = 281
+    Height = 85
+    Caption = 'Valor'
+    TabOrder = 2
+    object cbValor: TComboBox
+      Left = 3
+      Top = 20
+      Width = 105
+      Height = 21
+      Style = csDropDownList
+      ItemIndex = 0
+      TabOrder = 0
+      Text = '<Selecione>'
+      Items.Strings = (
+        '<Selecione>'
+        'IGUAL'
+        'MAIOR QUE'
+        'MENOR QUE'
+        'ENTRE')
+    end
+    object CurrencyEditIni: TCurrencyEdit
+      Left = 125
+      Top = 19
+      Width = 121
+      Height = 21
+      Margins.Left = 1
+      Margins.Top = 1
+      TabOrder = 1
+    end
+    object CurrencyEditFim: TCurrencyEdit
+      Left = 125
+      Top = 50
+      Width = 121
+      Height = 21
+      Margins.Left = 1
+      Margins.Top = 1
+      TabOrder = 2
+    end
+  end
+  object Panel1: TPanel [7]
+    Left = 0
+    Top = 424
+    Width = 418
+    Height = 43
+    Align = alBottom
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    TabOrder = 3
+    object BitBtn1: TBitBtn
+      Left = 303
+      Top = 6
+      Width = 100
+      Height = 30
+      Caption = 'Cancelar'
+      DoubleBuffered = True
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86464B8FB00FFFB
+        00FFFB00FFFB00FF6464B86464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B89898EE9898EE6464B8FB00FFFB00FF6464B89898EE9898EE6464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86060E36060E39C9CF164
+        64B86464B89C9CF16060E36060E36464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF6464B86666E86666E8A1A1F3A1A1F36666E86666E86464B8FB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86D6DED6D
+        6DED6D6DED6D6DED6464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FF6464B87373F37373F37373F37373F36464B8FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B8B0B0FB7979F879
+        79F87979F87979F8B0B0FB6464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B8B3B3FD7E7EFC7E7EFC6464B86464B87E7EFC7E7EFCB3B3FD6464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B88181FF8181FF6464B8FB
+        00FFFB00FF6464B88181FF8181FF6464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF6464B86464B8FB00FFFB00FFFB00FFFB00FF6464B86464B8FB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      ParentDoubleBuffered = False
+      TabOrder = 1
+      TabStop = False
+      OnClick = actFecharExecute
+    end
+    object btnConfirmar: TBitBtn
+      Left = 197
+      Top = 6
+      Width = 100
+      Height = 30
+      Caption = 'Confirmar'
+      DoubleBuffered = True
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89CFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF64B89C98EECA98EECA64B89CFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C9CF1CD60E3A560E3A59C
+        F1CD64B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        64B89CA1F3D166E8AB66E8AB66E8AB66E8ABA1F3D164B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C6DEDB26DEDB264B89C64B89C6D
+        EDB26DEDB2A7F6D564B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF64B89C64B89CFB00FFFB00FF64B89C73F3B973F3B9ABF9D964B89CFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FF64B89C79F8BF79F8BFB0FBDD64B89CFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C7EFCC47EFCC4B3FD
+        E064B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FF64B89C81FFC881FFC864B89CFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B8
+        9CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      ParentDoubleBuffered = False
+      TabOrder = 0
+      OnClick = btnConfirmarClick
+    end
+  end
+  object GroupBox2: TGroupBox [8]
+    Left = 8
+    Top = 200
+    Width = 361
+    Height = 86
+    Caption = 'Usu'#225'rio'
+    TabOrder = 4
+    object cbUsuario: TComboBox
+      Left = 8
+      Top = 20
+      Width = 169
+      Height = 21
+      Style = csDropDownList
+      ItemIndex = 0
+      TabOrder = 0
+      Text = 'USU'#193'RIO PAGAMENTO'
+      Items.Strings = (
+        'USU'#193'RIO PAGAMENTO'
+        'USU'#193'RIO LAN'#199'AMENTO')
+    end
+    object DBLookupComboBoxUser: TDBLookupComboBox
+      Left = 8
+      Top = 52
+      Width = 337
+      Height = 21
+      KeyField = 'idtbusuario'
+      ListField = 'nome'
+      ListSource = dsUsuario
+      TabOrder = 1
+      OnKeyDown = DBLookupComboBoxUserKeyDown
+    end
+  end
+  object DBLookupComboBoxGrupo: TDBLookupComboBox [9]
+    Left = 8
+    Top = 315
+    Width = 337
+    Height = 21
+    KeyField = 'idgrupoconta'
+    ListField = 'descricao'
+    ListSource = dsGrupo
+    TabOrder = 5
+    OnKeyDown = DBLookupComboBoxUserKeyDown
+  end
+  object BitBtn2: TBitBtn [10]
+    Left = 328
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
+    TabOrder = 6
+    OnClick = BitBtn2Click
+  end
+  object cbPagamento: TComboBox [11]
+    Left = 8
+    Top = 375
+    Width = 169
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 7
+    Items.Strings = (
+      '<Selecione>'
+      'Dinheiro'
+      'Cart'#227'o Cr'#233'dito'
+      'Cart'#227'o D'#233'bito'
+      'Prazo'
+      'Cheque')
+  end
+  object dsUsuario: TDataSource
+    DataSet = DM.cdsUsuario
+    Left = 240
+    Top = 216
+  end
+  object dsGrupo: TDataSource
+    DataSet = DM.cdsGrupoConta
+    Left = 256
+    Top = 304
+  end
+end

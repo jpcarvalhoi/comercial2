@@ -1,0 +1,9 @@
+dcus/
+Distribuição/
+*.zip
+*.rar
+*.exe
+*.dll
+__history/
+*.dcu
+

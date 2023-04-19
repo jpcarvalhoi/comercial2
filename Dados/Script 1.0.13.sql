@@ -1,0 +1,2 @@
+ALTER TABLE `tbnota`
+	ADD COLUMN `operacao` VARCHAR(1) NULL DEFAULT NULL AFTER `lote`;
