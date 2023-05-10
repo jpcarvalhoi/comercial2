@@ -5,8 +5,8 @@ interface
 uses
   SysUtils, Classes, DB, StdCtrls, SqlExpr, Windows, ShellAPI,
   ExtCtrls, Graphics, Forms, Controls, Messages,
-  DBCtrls, DBCtrlsEh, Tlhelp32, Menus, ComObj, uPrincipal,
-  ActiveX, MMSystem, Variants, Mask, ComCtrls, RxLookup, RXDBCtrl,
+  DBCtrls, DBCtrlsEh, Tlhelp32, Menus, ComObj,
+    ActiveX, MMSystem, Variants, Mask, ComCtrls, RxLookup, RXDBCtrl,
   IniFiles, ZDataset, rxToolEdit, DBGridEh, Buttons, RxDBComb, rxPlacemnt;
 
 type

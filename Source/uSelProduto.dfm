@@ -1,24 +1,25 @@
 inherited FormSelPoduto: TFormSelPoduto
   Caption = 'Localizar Produtos'
-  ClientHeight = 428
-  ClientWidth = 964
+  ClientHeight = 461
+  ClientWidth = 1038
   OnClose = FormClose
-  ExplicitWidth = 980
-  ExplicitHeight = 467
+  ExplicitWidth = 1054
+  ExplicitHeight = 500
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 14
   inherited pnFiltros: TPanel
-    Width = 964
-    Height = 60
-    ExplicitWidth = 964
-    ExplicitHeight = 60
+    Width = 1038
+    Height = 65
+    ExplicitTop = 65
+    ExplicitWidth = 1038
+    ExplicitHeight = 65
     object edPesquisa: TLabeledEdit
-      Left = 11
-      Top = 24
-      Width = 377
-      Height = 21
-      EditLabel.Width = 147
-      EditLabel.Height = 13
+      Left = 12
+      Top = 26
+      Width = 406
+      Height = 22
+      EditLabel.Width = 154
+      EditLabel.Height = 14
       EditLabel.Caption = 'Localizar produtos cadastrados'
       TabOrder = 0
       OnChange = edPesquisaChange
@@ -28,10 +29,10 @@ inherited FormSelPoduto: TFormSelPoduto
       OnKeyPress = edPesquisaKeyPress
     end
     object rgbusca: TRadioGroup
-      Left = 520
+      Left = 560
       Top = 6
-      Width = 430
-      Height = 42
+      Width = 463
+      Height = 46
       Anchors = [akTop, akRight]
       Caption = 'Busca por '
       Columns = 4
@@ -45,12 +46,11 @@ inherited FormSelPoduto: TFormSelPoduto
       OnClick = rgbuscaClick
     end
     object btnBuscar: TBitBtn
-      Left = 394
-      Top = 22
-      Width = 75
-      Height = 25
+      Left = 424
+      Top = 24
+      Width = 81
+      Height = 27
       Caption = 'Buscar'
-      DoubleBuffered = True
       Glyph.Data = {
         E6040000424DE604000000000000360000002800000014000000140000000100
         180000000000B0040000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -92,15 +92,14 @@ inherited FormSelPoduto: TFormSelPoduto
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFCACACABABABAFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFF}
-      ParentDoubleBuffered = False
       TabOrder = 2
       OnClick = btnBuscarClick
     end
   end
   inherited DBGridPesquisa: TDBGrid
-    Top = 121
-    Width = 964
-    Height = 247
+    Top = 130
+    Width = 1038
+    Height = 268
     OnDblClick = DBGridPesquisaDblClick
     OnKeyPress = DBGridPesquisaKeyPress
     Columns = <
@@ -148,28 +147,27 @@ inherited FormSelPoduto: TFormSelPoduto
         Expanded = False
         FieldName = 'edital'
         Title.Caption = 'Edital'
-        Width = -1
         Visible = False
       end>
   end
   inherited pnlPrincipal: TPanel
-    Width = 964
-    ExplicitWidth = 964
+    Width = 1038
+    ExplicitWidth = 1038
     inherited btnPrimeiro: TBitBtn
-      Left = 589
-      ExplicitLeft = 589
+      Left = 634
+      ExplicitLeft = 634
     end
     inherited btnAnterior: TBitBtn
-      Left = 663
-      ExplicitLeft = 663
+      Left = 714
+      ExplicitLeft = 714
     end
     inherited btnProximo: TBitBtn
-      Left = 737
-      ExplicitLeft = 737
+      Left = 794
+      ExplicitLeft = 794
     end
     inherited btnUltimo: TBitBtn
-      Left = 811
-      ExplicitLeft = 811
+      Left = 873
+      ExplicitLeft = 873
     end
     inherited btnNovo: TBitBtn
       Action = actIncluir
@@ -178,28 +176,28 @@ inherited FormSelPoduto: TFormSelPoduto
       Visible = False
     end
     inherited btnFechar: TBitBtn
-      Left = 885
-      ExplicitLeft = 885
+      Left = 953
+      ExplicitLeft = 953
     end
   end
   inherited StatusBar1: TStatusBar
-    Top = 409
-    Width = 964
-    ExplicitTop = 409
-    ExplicitWidth = 964
+    Top = 442
+    Width = 1038
+    ExplicitTop = 442
+    ExplicitWidth = 1038
   end
   inherited pnSelecionar: TPanel
-    Top = 368
-    Width = 964
-    ExplicitTop = 368
-    ExplicitWidth = 964
+    Top = 398
+    Width = 1038
+    ExplicitTop = 398
+    ExplicitWidth = 1038
     inherited BitBtn2: TBitBtn
-      Left = 815
-      ExplicitLeft = 815
+      Left = 878
+      ExplicitLeft = 878
     end
     inherited BitBtn3: TBitBtn
-      Left = 702
-      ExplicitLeft = 702
+      Left = 756
+      ExplicitLeft = 756
     end
   end
   inherited ActionList: TActionList

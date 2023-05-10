@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, uCloneSel, StdCtrls, ExtCtrls, DB, DBClient, Provider,
   ZAbstractRODataset, ZAbstractDataset, ZDataset, ActnList, ComCtrls, Buttons,
-  Grids, DBGrids;
+  Grids, DBGrids, System.Actions;
 
 type
   TFormSelPoduto = class(TFormCloneSelecao)

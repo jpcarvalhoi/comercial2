@@ -6,7 +6,8 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UClone, DBActns, ActnList, DB, ComCtrls, StdCtrls, Buttons, ExtCtrls,
   Mask, DBCtrls, ExtDlgs, DBGridEhGrouping, GridsEh, DBGridEh, rxToolEdit,
-  rxCurrEdit;
+  rxCurrEdit, ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL,
+  DBAxisGridsEh, System.Actions;
 
 type
   TFormCadProduto = class(TfrmClone)

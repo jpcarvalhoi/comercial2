@@ -20,7 +20,7 @@ object FormLocalizar: TFormLocalizar
   OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 14
   object Panel2: TPanel
     Left = 0
     Top = 72
@@ -31,8 +31,6 @@ object FormLocalizar: TFormLocalizar
     BevelOuter = bvLowered
     Color = 15263976
     TabOrder = 1
-    ExplicitTop = 86
-    ExplicitHeight = 166
     object DBGridEhLocalizar: TDBGridEh
       Left = 2
       Top = 2
@@ -40,24 +38,13 @@ object FormLocalizar: TFormLocalizar
       Height = 176
       Align = alClient
       BorderStyle = bsNone
-      DataGrouping.GroupLevels = <>
       DataSource = dsLocalizar
-      Flat = False
-      FooterColor = clWindow
-      FooterFont.Charset = DEFAULT_CHARSET
-      FooterFont.Color = clWindowText
-      FooterFont.Height = -11
-      FooterFont.Name = 'MS Sans Serif'
-      FooterFont.Style = []
+      DynProps = <>
+      FooterParams.Color = clWindow
+      IndicatorOptions = [gioShowRowIndicatorEh]
       Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
       ReadOnly = True
-      RowDetailPanel.Color = clBtnFace
       TabOrder = 0
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -11
-      TitleFont.Name = 'MS Sans Serif'
-      TitleFont.Style = []
       OnDblClick = DBGridEhLocalizarDblClick
       OnKeyPress = edLocalizarKeyPress
       object RowDetailData: TRowDetailPanelControlEh
@@ -79,7 +66,7 @@ object FormLocalizar: TFormLocalizar
       Left = 0
       Top = 2
       Width = 644
-      Height = 21
+      Height = 22
       TabOrder = 0
       OnChange = edLocalizarChange
       OnKeyDown = edLocalizarKeyDown

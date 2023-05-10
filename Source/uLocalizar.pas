@@ -6,7 +6,8 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, DBGridEh, StdCtrls, ExtCtrls, FMTBcd, DB, Provider,
   DBClient, SqlExpr, DBGrids, DBGridEhGrouping, GridsEh,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, ToolCtrlsEh,
+  DBGridEhToolCtrls, DynVarsEh, EhLibVCL, DBAxisGridsEh;
 
 type
   TFormLocalizar = class(TForm)
@@ -170,6 +171,43 @@ begin
       cdsLocalizar.FieldByName('tipo').DisplayLabel := 'Tipo';
     end;
 
+    17 : begin
+      self.Caption := 'Localizar Cliente';
+      cdsLocalizar.Close;
+      cdsLocalizar.CommandText := 'select codcliente as codigo, nome as descricao from tbcliente';
+      cdsLocalizar.Open;
+      cdsLocalizar.FieldByName('codigo').DisplayLabel := 'Código';
+      cdsLocalizar.FieldByName('DESCRICAO').DisplayLabel := 'Nome';
+    end;
+
+    18 : begin
+      self.Caption := 'Localizar Produto';
+      cdsLocalizar.Close;
+      cdsLocalizar.CommandText := 'select idproduto, descricao, codbarras from tbproduto';
+      cdsLocalizar.Open;
+      cdsLocalizar.FieldByName('idproduto').DisplayLabel := 'Código';
+      cdsLocalizar.FieldByName('DESCRICAO').DisplayLabel := 'Nome';
+      cdsLocalizar.FieldByName('codbarras').DisplayLabel := 'Cód. Barras';
+    end;
+
+    22 : begin
+      self.Caption := 'Localizar Setores';
+      cdsLocalizar.Close;
+      cdsLocalizar.CommandText := 'select idsetor as codigo, descricao from tbsetor';
+      cdsLocalizar.Open;
+      cdsLocalizar.FieldByName('codigo').DisplayLabel := 'Código';
+      cdsLocalizar.FieldByName('DESCRICAO').DisplayLabel := 'Descrição';
+    end;
+
+    23 : begin
+      self.Caption := 'Localizar Status';
+      cdsLocalizar.Close;
+      cdsLocalizar.CommandText := 'select idstatus as codigo, descricao from tbstatus';
+      cdsLocalizar.Open;
+      cdsLocalizar.FieldByName('codigo').DisplayLabel := 'Código';
+      cdsLocalizar.FieldByName('DESCRICAO').DisplayLabel := 'Descrição';
+    end;
+
   end;
 
   edLocalizar.Clear;
@@ -242,7 +280,7 @@ procedure TFormLocalizar.FormClose(Sender: TObject;
 begin
   try
     case self.Tag of
-      1, 2, 3, 4, 6, 10, 11, 15, 16:begin
+      1, 2, 3, 4, 6, 10, 11, 15, 16, 22,23, 17:begin
         CodigoLocalizado := cdsLocalizar.FieldByName('CODIGO').AsInteger;
         Descricao := cdsLocalizar.FieldByName('DESCRICAO').AsString;
       end;
@@ -262,6 +300,13 @@ begin
         CodigoLocalizado := cdsLocalizar.FieldByName('idveiculo').AsInteger;
         Descricao := cdsLocalizar.FieldByName('codigo').AsString;
       end;
+      18 : begin
+
+        CodigoLocalizado := cdsLocalizar.FieldByName('idproduto').AsInteger;
+        Descricao := cdsLocalizar.FieldByName('descricao').AsString;
+
+      end;
+
     end;
   except
     on E:Exception do Begin

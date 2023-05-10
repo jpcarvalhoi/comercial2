@@ -9,6 +9,7 @@ object DM: TDM
     Properties.Strings = (
       'compress=yes')
     TransactIsolationLevel = tiReadCommitted
+    Connected = True
     BeforeConnect = ZConnectionBeforeConnect
     AfterConnect = ZConnectionAfterConnect
     HostName = '127.0.0.1'
@@ -4413,5 +4414,112 @@ object DM: TDM
         Name = 'pidcliente'
         ParamType = ptInput
       end>
+  end
+  object cdsStatus: TZQuery
+    Connection = ZConnection
+    SQL.Strings = (
+      'select * from tbstatus')
+    Params = <>
+    Left = 374
+    Top = 492
+    object cdsStatusidstatus: TIntegerField
+      FieldName = 'idstatus'
+      Required = True
+    end
+    object cdsStatusdescricao: TWideStringField
+      FieldName = 'descricao'
+      Required = True
+      Size = 45
+    end
+  end
+  object cdsControle: TZQuery
+    Connection = ZConnection
+    AfterPost = cdsControleAfterPost
+    SQL.Strings = (
+      'select * from tbsistema where id = :id')
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    Left = 440
+    Top = 496
+    ParamData = <
+      item
+        DataType = ftInteger
+        Name = 'id'
+        ParamType = ptInput
+      end>
+    object cdsControleid: TIntegerField
+      FieldName = 'id'
+      Required = True
+    end
+    object cdsControledata: TDateField
+      FieldName = 'data'
+    end
+    object cdsControleidcliente: TIntegerField
+      FieldName = 'idcliente'
+    end
+    object cdsControleidfornecedor: TIntegerField
+      FieldName = 'idfornecedor'
+    end
+    object cdsControlenpedido: TWideStringField
+      FieldName = 'npedido'
+      Size = 45
+    end
+    object cdsControleqtde_enviada: TIntegerField
+      FieldName = 'qtde_enviada'
+    end
+    object cdsControleidproduto: TIntegerField
+      FieldName = 'idproduto'
+    end
+    object cdsControlepreco_unit: TFloatField
+      FieldName = 'preco_unit'
+    end
+    object cdsControleprev_entrega: TDateField
+      FieldName = 'prev_entrega'
+    end
+    object cdsControledata_entrega: TDateField
+      FieldName = 'data_entrega'
+    end
+    object cdsControleiddestino: TIntegerField
+      FieldName = 'iddestino'
+    end
+    object cdsControleidstatus: TIntegerField
+      FieldName = 'idstatus'
+    end
+    object cdsControleProduto: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Produto'
+      LookupDataSet = cdsLKProduto
+      LookupKeyFields = 'idproduto'
+      LookupResultField = 'descricao'
+      KeyFields = 'idproduto'
+      Size = 80
+      Lookup = True
+    end
+  end
+  object cdsLKProduto: TZQuery
+    Connection = ZConnection
+    SQL.Strings = (
+      'select idproduto, descricao from tbproduto order by descricao')
+    Params = <>
+    Left = 528
+    Top = 496
+    object cdsLKProdutoidproduto: TIntegerField
+      FieldName = 'idproduto'
+      Required = True
+    end
+    object cdsLKProdutodescricao: TWideStringField
+      FieldName = 'descricao'
+      Required = True
+      Size = 80
+    end
+  end
+  object dsLKStatus: TDataSource
+    DataSet = cdsStatus
+    Left = 336
+    Top = 496
   end
 end

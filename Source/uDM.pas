@@ -719,6 +719,27 @@ type
     cdsNotatotal_par4: TCurrencyField;
     cdsNotatotal_par5: TCurrencyField;
     cdsNotatotal_par6: TCurrencyField;
+    cdsStatus: TZQuery;
+    cdsStatusidstatus: TIntegerField;
+    cdsStatusdescricao: TWideStringField;
+    cdsControle: TZQuery;
+    cdsControleid: TIntegerField;
+    cdsControledata: TDateField;
+    cdsControleidcliente: TIntegerField;
+    cdsControleidfornecedor: TIntegerField;
+    cdsControlenpedido: TWideStringField;
+    cdsControleqtde_enviada: TIntegerField;
+    cdsControleidproduto: TIntegerField;
+    cdsControlepreco_unit: TFloatField;
+    cdsControleprev_entrega: TDateField;
+    cdsControledata_entrega: TDateField;
+    cdsControleiddestino: TIntegerField;
+    cdsControleidstatus: TIntegerField;
+    cdsLKProduto: TZQuery;
+    cdsLKProdutoidproduto: TIntegerField;
+    cdsLKProdutodescricao: TWideStringField;
+    cdsControleProduto: TStringField;
+    dsLKStatus: TDataSource;
     procedure cdsUsuarioAfterInsert(DataSet: TDataSet);
     procedure cdsConfigsBeforeInsert(DataSet: TDataSet);
     procedure cdsClienteAfterInsert(DataSet: TDataSet);
@@ -774,6 +795,7 @@ type
     procedure SetTextTelefone(Sender: TField; const Text: string);
     procedure SetHora(Sender: TField; const Text: string);
     procedure EfetuaRestauracao;
+    procedure cdsControleAfterPost(DataSet: TDataSet);
 
   private
 
@@ -1011,6 +1033,11 @@ procedure TDM.cdsConfigsBeforeInsert(DataSet: TDataSet);
 begin
   //não é permitida a inserssção
   Abort;
+end;
+
+procedure TDM.cdsControleAfterPost(DataSet: TDataSet);
+begin
+  cdsControle.Params.ParamByName('id').AsInteger := cdsControleid.AsInteger;
 end;
 
 procedure TDM.cdsFornecedorAfterPost(DataSet: TDataSet);

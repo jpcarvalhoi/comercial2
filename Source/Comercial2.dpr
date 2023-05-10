@@ -71,7 +71,11 @@ uses
   uSelOrdemCompra in 'uSelOrdemCompra.pas' {FormSelOrdemCompra},
   uSelVenda in 'uSelVenda.pas' {FormSelVenda},
   uCadOrdem in 'uCadOrdem.pas' {FormCadOrdem},
-  uRelCliente in 'uRelCliente.pas' {FormRelCliente};
+  uRelCliente in 'uRelCliente.pas' {FormRelCliente},
+  uCadSetor in 'uCadSetor.pas' {FormCadSetor},
+  uCadStatus in 'uCadStatus.pas' {FormCadStatus},
+  uControle in 'uControle.pas' {frmControle},
+  uCadControle in 'uCadControle.pas' {frmCadControle};
 
 {$R *.res}
 
@@ -81,6 +85,7 @@ begin
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.CreateForm(TFormRelatorios, FormRelatorios);
+  Application.CreateForm(TfrmCadControle, frmCadControle);
   if frmSplash <> nil then
   begin
     frmSplash.Close;

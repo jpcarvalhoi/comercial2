@@ -245,8 +245,15 @@ object FormPrincipal: TFormPrincipal
       ImageIndex = 2
       Style = tbsSeparator
     end
-    object toolBtnSair: TToolButton
+    object ToolButton21: TToolButton
       Left = 528
+      Top = 60
+      Caption = 'Produ'#231#227'o'
+      ImageIndex = 11
+      OnClick = ToolButton21Click
+    end
+    object toolBtnSair: TToolButton
+      Left = 608
       Top = 60
       Caption = 'Sa&ir'
       ImageIndex = 1
@@ -325,7 +332,7 @@ object FormPrincipal: TFormPrincipal
     Left = 472
     Top = 128
     Bitmap = {
-      494C01011E004401740220002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01011E004401880220002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000000001000001002000000000000000
       0200000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -4681,6 +4688,14 @@ object FormPrincipal: TFormPrincipal
         Visible = False
         OnClick = mmOrcamentoClick
       end
+      object Setor1: TMenuItem
+        Caption = 'Setor'
+        OnClick = Setor1Click
+      end
+      object Status1: TMenuItem
+        Caption = 'Status'
+        OnClick = Status1Click
+      end
     end
     object Combustvel1: TMenuItem
       Caption = 'Combust'#237'vel'
@@ -4781,7 +4796,7 @@ object FormPrincipal: TFormPrincipal
     Left = 544
     Top = 128
     Bitmap = {
-      494C010101000001100220002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000001240220002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

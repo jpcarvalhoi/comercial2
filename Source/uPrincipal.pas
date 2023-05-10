@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, ImgList, Menus, ExtCtrls, ToolWin, sSkinManager,
   StdCtrls, Buttons, AppEvnts, jpeg, ShellApi, sSkinProvider,
-  DBGridEhGrouping, GridsEh, DBGridEh, Grids, DBGrids, RXDBCtrl, ExtDlgs;
+  DBGridEhGrouping, GridsEh, DBGridEh, Grids, DBGrids, RXDBCtrl, ExtDlgs, uCadStatus;
 
 
 type
@@ -103,6 +103,9 @@ type
     BitBtn2: TBitBtn;
     mmClienteVenda: TMenuItem;
     ClientesporClientesCompra1: TMenuItem;
+    Setor1: TMenuItem;
+    Status1: TMenuItem;
+    ToolButton21: TToolButton;
     procedure toolBtnSairClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -155,6 +158,9 @@ type
     procedure mmOrcamentoClick(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
     procedure ClientesporClientesCompra1Click(Sender: TObject);
+    procedure Setor1Click(Sender: TObject);
+    procedure Status1Click(Sender: TObject);
+    procedure ToolButton21Click(Sender: TObject);
   private
 
     procedure ValidaAcesso(Sender: TObject);
@@ -181,7 +187,7 @@ uses uSplash, uDM, uCadUsuario, uLogin, UClone, FuncoesGlobais, uSobre,
   uRelLucratividade, uCadFuncionario, uCadVeiculo, uCadProducao, uSelProducao,
   uCadCota, uCadPagFunc, uCompraCombustivel, uImportaProducao, uListaProducao,
   uSeguranca, uRelProduto, uCadTransportadora, uSelOrdemCompra, uCadEntSai,
-  uSelOrcamento, uCadOrdem, uSelVenda, uRelCliente;
+  uSelOrcamento, uCadOrdem, uSelVenda, uRelCliente, uCadSetor, uControle;
 
 {$R *.dfm}
 
@@ -236,6 +242,14 @@ end;
 procedure TFormPrincipal.ToolButton1Click(Sender: TObject);
 begin
   ShellExecute(handle,'open','https://nfse.pjf.mg.gov.br/cas/login?service=https%3A%2F%2Fnfse.pjf.mg.gov.br%2Fnfse%2Fj_acegi_cas_security_check',nil,nil,SW_SHOWMAXIMIZED);
+end;
+
+procedure TFormPrincipal.ToolButton21Click(Sender: TObject);
+begin
+    Application.CreateForm(TfrmControle, frmControle);
+    frmControle.ShowModal;
+    FreeAndNil(frmControle);
+
 end;
 
 procedure TFormPrincipal.tbtnKitClick(Sender: TObject);
@@ -1048,6 +1062,14 @@ begin
   Close;
 end;
 
+procedure TFormPrincipal.Setor1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFormCadSetor, FormCadSetor);
+  FormCadSetor.Permissao := RetornaPermissao(22);
+  FormCadSetor.ShowModal;
+  FreeAndNil(FormCadSetor);
+end;
+
 procedure TFormPrincipal.Sobre1Click(Sender: TObject);
 begin
   try
@@ -1066,6 +1088,14 @@ begin
 end;
 
 
+
+procedure TFormPrincipal.Status1Click(Sender: TObject);
+begin
+    Application.CreateForm(TFormCadStatus, FormCadStatus);
+  FormCadStatus.Permissao := RetornaPermissao(23);
+  FormCadStatus.ShowModal;
+  FreeAndNil(FormCadStatus);
+end;
 
 end.
 
