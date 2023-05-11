@@ -32,8 +32,6 @@ type
     actAlterar: TAction;
     Panel1: TPanel;
     DBGridEh1: TDBGridEh;
-    DataSetProvider1: TDataSetProvider;
-    ClientDataSet1: TClientDataSet;
     ZQuery1: TZQuery;
     Label1: TLabel;
     qrAux: TZQuery;
@@ -42,27 +40,9 @@ type
     SpeedButton1: TSpeedButton;
     SpeedButton2: TSpeedButton;
     FormStorage1: TFormStorage;
-    ClientDataSet1id: TIntegerField;
-    ClientDataSet1data: TDateField;
-    ClientDataSet1idcliente: TIntegerField;
-    ClientDataSet1idfornecedor: TIntegerField;
-    ClientDataSet1npedido: TWideStringField;
-    ClientDataSet1qtde_enviada: TIntegerField;
-    ClientDataSet1idproduto: TIntegerField;
-    ClientDataSet1preco_unit: TFloatField;
-    ClientDataSet1prev_entrega: TDateField;
-    ClientDataSet1data_entrega: TDateField;
-    ClientDataSet1iddestino: TIntegerField;
-    ClientDataSet1idstatus: TIntegerField;
-    ClientDataSet1empresa: TWideStringField;
-    ClientDataSet1destino: TWideStringField;
-    ClientDataSet1status: TWideStringField;
-    ClientDataSet1fornecedor: TWideStringField;
-    ClientDataSet1produto: TWideStringField;
     DataSource1: TDataSource;
     btnBuscar: TBitBtn;
     SpeedButton3: TSpeedButton;
-    ClientDataSet1ValorPagar: TCurrencyField;
     procedure FormShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
@@ -71,8 +51,8 @@ type
     procedure actIncluirExecute(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure btnBuscarClick(Sender: TObject);
-    procedure ClientDataSet1CalcFields(DataSet: TDataSet);
     procedure FormCreate(Sender: TObject);
+    procedure DBGridEh1SortMarkingChanged(Sender: TObject);
   private
     FSql : string;
     procedure setList(o : TCheckListBox; campo : string);
@@ -137,8 +117,8 @@ begin
   frmCadControle.Permissao :=  RetornaPermissao(24);
   frmCadControle.ShowModal;
   FreeAndNil(frmCadControle);
-  if ClientDataSet1.Active then
-    ClientDataSet1.Refresh;
+  if ZQuery1.Active then
+    ZQuery1.Refresh;
 end;
 
 procedure TfrmControle.btnBuscarClick(Sender: TObject);
@@ -156,10 +136,36 @@ begin
   SpeedButton3.Enabled := not ckTodosClientes.Checked;
 end;
 
-procedure TfrmControle.ClientDataSet1CalcFields(DataSet: TDataSet);
+procedure TfrmControle.DBGridEh1SortMarkingChanged(Sender: TObject);
+var
+  s: String;
+  i: Integer;
+  SortType: TSortType;
 begin
   inherited;
-  ClientDataSet1ValorPagar.Value := ClientDataSet1qtde_enviada.AsInteger * ClientDataSet1preco_unit.AsCurrency;
+  s := '';
+  for i := 0 to DBGridEh1.SortMarkedColumns.Count - 1 do
+  begin
+    if DBGridEh1.SortMarkedColumns[i].Title.SortMarker = TSortMarkerEh.smUpEh then
+    begin
+      s := DBGridEh1.SortMarkedColumns[i].FieldName;
+      SortType := stDescending;
+    end
+    else
+    begin
+      s := DBGridEh1.SortMarkedColumns[i].FieldName;
+      SortType := stAscending;
+    end;
+
+    Break;
+  end;
+
+  if s <> '' then
+  begin
+    ZQuery1.SortedFields := s;
+    ZQuery1.SortType := SortType;
+  end;
+
 end;
 
 procedure TfrmControle.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -192,7 +198,7 @@ var
   i : Integer;
 begin
 
-  ClientDataSet1.Close;
+
   ZQuery1.Close;
   filtro := '';
   if not ckTodosClientes.Checked then
@@ -211,7 +217,7 @@ begin
 
   ZQuery1.SQL.Clear;
   ZQuery1.SQL.Text := FSql + filtro;
-  ClientDataSet1.Open;
+  ZQuery1.Open;
 
 end;
 

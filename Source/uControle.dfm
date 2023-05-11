@@ -2,31 +2,31 @@ inherited frmControle: TfrmControle
   ActiveControl = DBGridEh1
   Caption = 'Controle de Produ'#231#227'o'
   ClientHeight = 554
-  ClientWidth = 1077
+  ClientWidth = 1049
   WindowState = wsMaximized
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  ExplicitWidth = 1093
+  ExplicitWidth = 1065
   ExplicitHeight = 593
   PixelsPerInch = 96
   TextHeight = 14
   object pnlPrincipal: TPanel [0]
     Left = 0
     Top = 0
-    Width = 1077
+    Width = 1049
     Height = 65
     Align = alTop
     AutoSize = True
     BorderWidth = 2
     ParentColor = True
     TabOrder = 0
-    ExplicitWidth = 948
+    ExplicitWidth = 1077
     DesignSize = (
-      1077
+      1049
       65)
     object btnPrimeiro: TBitBtn
-      Left = 671
+      Left = 643
       Top = 3
       Width = 81
       Height = 59
@@ -137,9 +137,10 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 2
       Visible = False
+      ExplicitLeft = 671
     end
     object btnAnterior: TBitBtn
-      Left = 751
+      Left = 723
       Top = 3
       Width = 81
       Height = 59
@@ -250,9 +251,10 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 3
       Visible = False
+      ExplicitLeft = 751
     end
     object btnProximo: TBitBtn
-      Left = 831
+      Left = 803
       Top = 3
       Width = 80
       Height = 59
@@ -363,9 +365,10 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 4
       Visible = False
+      ExplicitLeft = 831
     end
     object btnUltimo: TBitBtn
-      Left = 910
+      Left = 882
       Top = 3
       Width = 81
       Height = 59
@@ -476,6 +479,7 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 5
       Visible = False
+      ExplicitLeft = 910
     end
     object btnNovo: TBitBtn
       Left = 3
@@ -701,7 +705,7 @@ inherited frmControle: TfrmControle
       TabOrder = 1
     end
     object btnFechar: TBitBtn
-      Left = 991
+      Left = 963
       Top = 3
       Width = 81
       Height = 59
@@ -811,6 +815,7 @@ inherited frmControle: TfrmControle
       ParentShowHint = False
       ShowHint = True
       TabOrder = 6
+      ExplicitLeft = 991
     end
     object BitBtn1: TBitBtn
       Left = 86
@@ -927,11 +932,12 @@ inherited frmControle: TfrmControle
   object Panel1: TPanel [1]
     Left = 0
     Top = 65
-    Width = 1077
+    Width = 1049
     Height = 168
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitWidth = 1077
     object Label1: TLabel
       Left = 9
       Top = 8
@@ -1117,25 +1123,22 @@ inherited frmControle: TfrmControle
   object DBGridEh1: TDBGridEh [2]
     Left = 0
     Top = 233
-    Width = 1077
+    Width = 1049
     Height = 321
     Align = alClient
-    AutoFitColWidths = True
     DataSource = DataSource1
     DynProps = <>
     FooterRowCount = 1
-    FooterParams.Color = clYellow
+    FooterParams.Color = clSilver
     FooterParams.Font.Charset = DEFAULT_CHARSET
     FooterParams.Font.Color = clWindowText
     FooterParams.Font.Height = -13
     FooterParams.Font.Name = 'MS Sans Serif'
     FooterParams.Font.Style = [fsBold]
     FooterParams.ParentFont = False
-    FooterParams.HorzLineColor = clTeal
-    FooterParams.VertLineColor = clTeal
     IndicatorOptions = [gioShowRowIndicatorEh]
     OddRowColor = 15790320
-    OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
+    OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghAutoSortMarking, dghMultiSortMarking, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
     ReadOnly = True
     SortLocal = True
     SumList.Active = True
@@ -1147,6 +1150,7 @@ inherited frmControle: TfrmControle
     TitleParams.Font.Style = [fsBold]
     TitleParams.ParentFont = False
     TitleParams.SortMarkerStyle = smstDefaultEh
+    OnSortMarkingChanged = DBGridEh1SortMarkingChanged
     Columns = <
       item
         DynProps = <>
@@ -1154,6 +1158,7 @@ inherited frmControle: TfrmControle
         FieldName = 'data'
         Footers = <>
         Title.Caption = 'Data'
+        Title.TitleButton = True
       end
       item
         DynProps = <>
@@ -1161,6 +1166,7 @@ inherited frmControle: TfrmControle
         FieldName = 'empresa'
         Footers = <>
         Title.Caption = 'Empresa'
+        Title.TitleButton = True
         Width = 225
       end
       item
@@ -1169,6 +1175,7 @@ inherited frmControle: TfrmControle
         FieldName = 'fornecedor'
         Footers = <>
         Title.Caption = 'Fornecedor'
+        Title.TitleButton = True
         Width = 217
       end
       item
@@ -1177,6 +1184,7 @@ inherited frmControle: TfrmControle
         FieldName = 'npedido'
         Footers = <>
         Title.Caption = 'N'#186' Pedido'
+        Title.TitleButton = True
         Width = 74
       end
       item
@@ -1185,6 +1193,7 @@ inherited frmControle: TfrmControle
         FieldName = 'destino'
         Footers = <>
         Title.Caption = 'Destino'
+        Title.TitleButton = True
         Width = 179
       end
       item
@@ -1193,6 +1202,8 @@ inherited frmControle: TfrmControle
         FieldName = 'qtde_enviada'
         Footers = <>
         Title.Caption = 'Qtd. Enviada'
+        Title.TitleButton = True
+        Width = 77
       end
       item
         DynProps = <>
@@ -1200,6 +1211,7 @@ inherited frmControle: TfrmControle
         FieldName = 'idproduto'
         Footers = <>
         Title.Caption = 'ID Produto'
+        Title.TitleButton = True
       end
       item
         DynProps = <>
@@ -1207,6 +1219,7 @@ inherited frmControle: TfrmControle
         FieldName = 'produto'
         Footers = <>
         Title.Caption = 'Produto'
+        Title.TitleButton = True
         Width = 219
       end
       item
@@ -1215,6 +1228,7 @@ inherited frmControle: TfrmControle
         FieldName = 'status'
         Footers = <>
         Title.Caption = 'Status'
+        Title.TitleButton = True
         Width = 96
       end
       item
@@ -1223,6 +1237,7 @@ inherited frmControle: TfrmControle
         FieldName = 'preco_unit'
         Footers = <>
         Title.Caption = 'Pre'#231'o Unit.'
+        Title.TitleButton = True
       end
       item
         DynProps = <>
@@ -1230,6 +1245,7 @@ inherited frmControle: TfrmControle
         FieldName = 'prev_entrega'
         Footers = <>
         Title.Caption = 'Prev. Entrega'
+        Title.TitleButton = True
       end
       item
         DynProps = <>
@@ -1237,25 +1253,104 @@ inherited frmControle: TfrmControle
         FieldName = 'data_entrega'
         Footers = <>
         Title.Caption = 'Data Entrega'
+        Title.TitleButton = True
+        Width = 81
       end
       item
         DynProps = <>
         EditButtons = <>
-        FieldName = 'ValorPagar'
-        Footer.FieldName = 'ValorPagar'
-        Footer.ValueType = fvtSum
+        FieldName = 'qtde_entregue'
         Footers = <>
+        Title.Caption = 'Qtde Entregue'
+        Title.TitleButton = True
+        Width = 86
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'falta'
+        Footers = <>
+        Title.Caption = 'Falta'
+        Title.TitleButton = True
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'acompanhamento'
+        Footers = <>
+        Title.Caption = 'Acompanhamento'
+        Title.TitleButton = True
+        Width = 202
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'valor_total'
+        Footers = <>
+        Title.Caption = 'Valor Pagar'
+        Title.TitleButton = True
+        Width = 81
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'valor_pago'
+        Footers = <>
+        Title.Caption = 'Pago'
+        Title.TitleButton = True
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'falta_pagar'
+        Footers = <>
+        Title.Caption = 'Falta Pagar'
+        Title.TitleButton = True
+        Width = 72
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'dia_pagamento'
+        Footers = <>
+        Title.Caption = 'Dia do Pagamento'
+        Title.TitleButton = True
+        Width = 112
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'vale'
+        Footers = <>
+        Title.Caption = 'Vale'
+        Title.TitleButton = True
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'data_vale'
+        Footers = <>
+        Title.Caption = 'Data Vale'
+        Title.TitleButton = True
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'obs'
+        Footers = <>
+        Title.Caption = 'Obs'
+        Width = 200
       end>
     object RowDetailData: TRowDetailPanelControlEh
     end
   end
   inherited ActionList: TActionList
-    Left = 216
-    Top = 208
+    Left = 200
+    Top = 272
   end
   object ActionList2: TActionList
-    Left = 160
-    Top = 240
+    Left = 136
+    Top = 256
     object Action1: TAction
       Caption = 'Fechar (Esc)'
       ShortCut = 27
@@ -1291,93 +1386,19 @@ inherited frmControle: TfrmControle
       ShortCut = 113
     end
   end
-  object DataSetProvider1: TDataSetProvider
-    DataSet = ZQuery1
-    Left = 168
-    Top = 360
-  end
-  object ClientDataSet1: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    ProviderName = 'DataSetProvider1'
-    OnCalcFields = ClientDataSet1CalcFields
-    Left = 240
-    Top = 416
-    object ClientDataSet1id: TIntegerField
-      FieldName = 'id'
-      Required = True
-    end
-    object ClientDataSet1data: TDateField
-      FieldName = 'data'
-    end
-    object ClientDataSet1idcliente: TIntegerField
-      FieldName = 'idcliente'
-    end
-    object ClientDataSet1idfornecedor: TIntegerField
-      FieldName = 'idfornecedor'
-    end
-    object ClientDataSet1npedido: TWideStringField
-      FieldName = 'npedido'
-      Size = 45
-    end
-    object ClientDataSet1qtde_enviada: TIntegerField
-      FieldName = 'qtde_enviada'
-    end
-    object ClientDataSet1idproduto: TIntegerField
-      FieldName = 'idproduto'
-    end
-    object ClientDataSet1preco_unit: TFloatField
-      FieldName = 'preco_unit'
-    end
-    object ClientDataSet1prev_entrega: TDateField
-      FieldName = 'prev_entrega'
-    end
-    object ClientDataSet1data_entrega: TDateField
-      FieldName = 'data_entrega'
-    end
-    object ClientDataSet1iddestino: TIntegerField
-      FieldName = 'iddestino'
-    end
-    object ClientDataSet1idstatus: TIntegerField
-      FieldName = 'idstatus'
-    end
-    object ClientDataSet1empresa: TWideStringField
-      FieldName = 'empresa'
-      Required = True
-      Size = 60
-    end
-    object ClientDataSet1destino: TWideStringField
-      FieldName = 'destino'
-      Required = True
-      Size = 60
-    end
-    object ClientDataSet1status: TWideStringField
-      FieldName = 'status'
-      Required = True
-      Size = 45
-    end
-    object ClientDataSet1fornecedor: TWideStringField
-      FieldName = 'fornecedor'
-      Size = 60
-    end
-    object ClientDataSet1produto: TWideStringField
-      FieldName = 'produto'
-      Required = True
-      Size = 80
-    end
-    object ClientDataSet1ValorPagar: TCurrencyField
-      FieldKind = fkCalculated
-      FieldName = 'ValorPagar'
-      Calculated = True
-    end
-  end
   object ZQuery1: TZQuery
     Connection = DM.ZConnection
     SQL.Strings = (
       
         'SELECT s.*, c1.nome as empresa, c2.nome as destino, st.descricao' +
-        ' as status, f.razao as fornecedor, p.descricao as produto FROM t' +
-        'bsistema s'
+        ' as status, f.razao as fornecedor, p.descricao as produto,'
+      's.valor_total - s.valor_pago as falta_pagar,'
+      's.qtde_enviada - s.qtde_entregue as falta,'
+      
+        'if (qtde_enviada = qtde_entregue, '#39'Entrega completa'#39', if (curdat' +
+        'e() > prev_entrega, '#39'Pedido atrasado'#39', '#39'Em produ'#231#227'o'#39') ) as acomp' +
+        'anhamento'
+      'FROM tbsistema s'
       'left join tbcliente c1 on s.idcliente = c1.codcliente'
       'left join tbcliente c2 on s.iddestino = c2.codcliente'
       'left join tbstatus st on s.idstatus = st.idstatus'
@@ -1404,8 +1425,8 @@ inherited frmControle: TfrmControle
     Top = 160
   end
   object DataSource1: TDataSource
-    DataSet = ClientDataSet1
-    Left = 320
-    Top = 408
+    DataSet = ZQuery1
+    Left = 168
+    Top = 352
   end
 end

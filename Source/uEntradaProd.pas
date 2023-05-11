@@ -6,7 +6,9 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, uClone_TelaPadrao, DBGridEhGrouping, Buttons, StdCtrls, Mask,
   rxToolEdit, ExtCtrls, GridsEh, DBGridEh, FMTBcd, DB, DBClient, Provider,
-  SqlExpr, ActnList, ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  SqlExpr, ActnList, ZAbstractRODataset, ZAbstractDataset, ZDataset,
+  ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL, DBAxisGridsEh,
+  System.Actions;
 
 type
   TFormEntrada = class(TFormClone_TelaPadrao)

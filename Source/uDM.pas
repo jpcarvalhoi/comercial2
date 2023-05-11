@@ -740,6 +740,14 @@ type
     cdsLKProdutodescricao: TWideStringField;
     cdsControleProduto: TStringField;
     dsLKStatus: TDataSource;
+    cdsControleqtde_entregue: TIntegerField;
+    cdsControlevalor_total: TFloatField;
+    cdsControlevalor_pago: TFloatField;
+    cdsControledia_pagamento: TDateField;
+    cdsControleobs: TWideStringField;
+    cdsControlevale: TFloatField;
+    cdsControledata_vale: TDateField;
+    cdsControleFaltaPagar: TCurrencyField;
     procedure cdsUsuarioAfterInsert(DataSet: TDataSet);
     procedure cdsConfigsBeforeInsert(DataSet: TDataSet);
     procedure cdsClienteAfterInsert(DataSet: TDataSet);
@@ -796,6 +804,7 @@ type
     procedure SetHora(Sender: TField; const Text: string);
     procedure EfetuaRestauracao;
     procedure cdsControleAfterPost(DataSet: TDataSet);
+    procedure cdsControleCalcFields(DataSet: TDataSet);
 
   private
 
@@ -1038,6 +1047,11 @@ end;
 procedure TDM.cdsControleAfterPost(DataSet: TDataSet);
 begin
   cdsControle.Params.ParamByName('id').AsInteger := cdsControleid.AsInteger;
+end;
+
+procedure TDM.cdsControleCalcFields(DataSet: TDataSet);
+begin
+  cdsControleFaltaPagar.AsCurrency := cdsControlevalor_total.AsCurrency - cdsControlevalor_pago.AsCurrency;
 end;
 
 procedure TDM.cdsFornecedorAfterPost(DataSet: TDataSet);

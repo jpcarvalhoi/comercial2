@@ -1,34 +1,33 @@
 inherited FormEntrada: TFormEntrada
   Caption = 'Movimenta'#231#227'o de Estoque'
-  ClientHeight = 508
-  ClientWidth = 984
+  ClientHeight = 547
+  ClientWidth = 1060
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  ExplicitWidth = 1000
-  ExplicitHeight = 547
+  ExplicitWidth = 1076
+  ExplicitHeight = 586
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 14
   object pnlPrincipal: TPanel [0]
     Left = 0
     Top = 0
-    Width = 984
-    Height = 61
+    Width = 1060
+    Height = 65
     Align = alTop
     AutoSize = True
     BorderWidth = 2
     ParentColor = True
     TabOrder = 0
     DesignSize = (
-      984
-      61)
+      1060
+      65)
     object btnNovo: TBitBtn
       Left = 2
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 65
+      Height = 59
       Caption = 'Incluir'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -129,19 +128,17 @@ inherited FormEntrada: TFormEntrada
         BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBEBEBEBEBEBEBFBFBFBE
         BEBEBEBEBEBEBEBEBEBEBEBDBDBDDADADAFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
       OnClick = btnNovoClick
     end
     object btnSalvar: TBitBtn
-      Left = 62
+      Left = 67
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 64
+      Height = 59
       Caption = 'Detalhar'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -242,20 +239,18 @@ inherited FormEntrada: TFormEntrada
         B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B8B8B8B8B8B8CBCBCBFEFEFEFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 1
       OnClick = btnNovoClick
     end
     object btnLocalizar: TBitBtn
-      Left = 861
+      Left = 927
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 65
+      Height = 59
       Anchors = [akTop, akRight]
       Caption = 'Localizar'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -356,21 +351,19 @@ inherited FormEntrada: TFormEntrada
         C6C6C6C6C5C5C5C5C5C5C5C5C5C4C4C4C4C4C4C3C3C3C2C2C2C3C3C3C0C0C0E1
         E1E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 2
       OnClick = btnLocalizarClick
     end
     object btnFechar: TBitBtn
-      Left = 920
+      Left = 991
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 64
+      Height = 59
       Hint = 'Fechar a janela '
       Anchors = [akTop, akRight]
       Caption = 'Fechar'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000DDDDDDDDDDDD
@@ -471,20 +464,18 @@ inherited FormEntrada: TFormEntrada
         DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
         DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 3
       OnClick = btnFecharClick
     end
     object BitBtn1: TBitBtn
-      Left = 802
+      Left = 864
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 64
+      Height = 59
       Anchors = [akTop, akRight]
       Caption = 'Limpar'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -585,19 +576,17 @@ inherited FormEntrada: TFormEntrada
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 4
       OnClick = BitBtn1Click
     end
     object BitBtn2: TBitBtn
-      Left = 121
+      Left = 130
       Top = 3
-      Width = 60
-      Height = 55
+      Width = 65
+      Height = 59
       Caption = 'Produtos'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000F0F0F0F0F0F0
@@ -698,38 +687,37 @@ inherited FormEntrada: TFormEntrada
         F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0
         F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       TabOrder = 5
       OnClick = BitBtn2Click
     end
   end
   object Panel1: TPanel [1]
     Left = 0
-    Top = 61
-    Width = 984
-    Height = 100
+    Top = 65
+    Width = 1060
+    Height = 107
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
     object Label1: TLabel
-      Left = 112
-      Top = 9
-      Width = 64
-      Height = 13
+      Left = 121
+      Top = 10
+      Width = 62
+      Height = 14
       Caption = 'Data da Nota'
     end
     object Label2: TLabel
-      Left = 239
-      Top = 9
-      Width = 100
-      Height = 13
+      Left = 257
+      Top = 10
+      Width = 99
+      Height = 14
       Caption = 'Data do Lan'#231'amento'
     end
     object sbtnLocalizar: TSpeedButton
-      Left = 690
-      Top = 24
-      Width = 23
-      Height = 22
+      Left = 743
+      Top = 26
+      Width = 25
+      Height = 24
       Hint = 'Localizar'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -763,10 +751,10 @@ inherited FormEntrada: TFormEntrada
       OnClick = sbtnLocalizarClick
     end
     object SpeedButton1: TSpeedButton
-      Left = 692
-      Top = 64
-      Width = 23
-      Height = 22
+      Left = 745
+      Top = 69
+      Width = 25
+      Height = 24
       Hint = 'Localizar'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -800,10 +788,10 @@ inherited FormEntrada: TFormEntrada
       OnClick = SpeedButton1Click
     end
     object SpeedButton2: TSpeedButton
-      Left = 480
-      Top = 64
-      Width = 23
-      Height = 22
+      Left = 517
+      Top = 69
+      Width = 25
+      Height = 24
       Hint = 'Localizar'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -837,12 +825,12 @@ inherited FormEntrada: TFormEntrada
       OnClick = SpeedButton2Click
     end
     object edNota: TLabeledEdit
-      Left = 9
-      Top = 24
-      Width = 97
-      Height = 21
-      EditLabel.Width = 53
-      EditLabel.Height = 13
+      Left = 10
+      Top = 26
+      Width = 104
+      Height = 22
+      EditLabel.Width = 52
+      EditLabel.Height = 14
       EditLabel.Caption = 'N'#186' da Nota'
       TabOrder = 0
       OnEnter = EditEnter
@@ -850,10 +838,11 @@ inherited FormEntrada: TFormEntrada
       OnKeyPress = edNotaKeyPress
     end
     object edDtNota: TDateEdit
-      Left = 112
-      Top = 24
-      Width = 121
-      Height = 21
+      Left = 121
+      Top = 26
+      Width = 130
+      Height = 22
+      ButtonWidth = 23
       NumGlyphs = 2
       TabOrder = 1
       OnEnter = EditEnter
@@ -861,10 +850,11 @@ inherited FormEntrada: TFormEntrada
       OnKeyPress = edNotaKeyPress
     end
     object edDtLancamento: TDateEdit
-      Left = 239
-      Top = 24
-      Width = 121
-      Height = 21
+      Left = 257
+      Top = 26
+      Width = 131
+      Height = 22
+      ButtonWidth = 23
       NumGlyphs = 2
       TabOrder = 2
       OnEnter = EditEnter
@@ -872,12 +862,12 @@ inherited FormEntrada: TFormEntrada
       OnKeyPress = edNotaKeyPress
     end
     object edFornecedor: TLabeledEdit
-      Left = 366
-      Top = 24
-      Width = 321
-      Height = 21
-      EditLabel.Width = 54
-      EditLabel.Height = 13
+      Left = 394
+      Top = 26
+      Width = 346
+      Height = 22
+      EditLabel.Width = 56
+      EditLabel.Height = 14
       EditLabel.Caption = 'Fornecedor'
       ReadOnly = True
       TabOrder = 3
@@ -887,12 +877,12 @@ inherited FormEntrada: TFormEntrada
       OnKeyPress = edNotaKeyPress
     end
     object edProduto: TLabeledEdit
-      Left = 9
-      Top = 64
-      Width = 468
-      Height = 21
+      Left = 10
+      Top = 69
+      Width = 504
+      Height = 22
       EditLabel.Width = 37
-      EditLabel.Height = 13
+      EditLabel.Height = 14
       EditLabel.Caption = 'Produto'
       ReadOnly = True
       TabOrder = 4
@@ -902,12 +892,12 @@ inherited FormEntrada: TFormEntrada
       OnKeyPress = edNotaKeyPress
     end
     object edUsuario: TLabeledEdit
-      Left = 513
-      Top = 64
-      Width = 174
-      Height = 21
-      EditLabel.Width = 36
-      EditLabel.Height = 13
+      Left = 552
+      Top = 69
+      Width = 188
+      Height = 22
+      EditLabel.Width = 37
+      EditLabel.Height = 14
       EditLabel.Caption = 'Usu'#225'rio'
       ReadOnly = True
       TabOrder = 5
@@ -919,83 +909,89 @@ inherited FormEntrada: TFormEntrada
   end
   object DBGridEhEntProd: TDBGridEh [2]
     Left = 0
-    Top = 161
-    Width = 984
-    Height = 347
+    Top = 172
+    Width = 1060
+    Height = 375
     Align = alClient
-    DataGrouping.GroupLevels = <>
     DataSource = dsEnt
-    Flat = False
-    FooterColor = clWindow
-    FooterFont.Charset = DEFAULT_CHARSET
-    FooterFont.Color = clWindowText
-    FooterFont.Height = -11
-    FooterFont.Name = 'MS Sans Serif'
-    FooterFont.Style = []
+    DynProps = <>
+    FooterParams.Color = clWindow
+    IndicatorOptions = [gioShowRowIndicatorEh]
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
     ReadOnly = True
-    RowDetailPanel.Color = clBtnFace
     TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'MS Sans Serif'
-    TitleFont.Style = []
     OnDblClick = DBGridEhEntProdDblClick
     OnGetCellParams = DBGridEhEntProdGetCellParams
     Columns = <
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'codbarras'
         Footers = <>
-        Width = 159
+        Width = 171
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'produto'
         Footers = <>
+        Width = 521
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'qtde'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'valor_unit'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'ValorTotal'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'qtde_atual'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'numnota'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'datanota'
         Footers = <>
+        Width = 69
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'datalancamento'
         Footers = <>
-        Width = 114
+        Width = 123
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'razao'
         Footers = <>
-        Width = 280
+        Width = 301
       end>
     object RowDetailData: TRowDetailPanelControlEh
     end

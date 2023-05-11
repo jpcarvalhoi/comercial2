@@ -4434,6 +4434,7 @@ object DM: TDM
   end
   object cdsControle: TZQuery
     Connection = ZConnection
+    OnCalcFields = cdsControleCalcFields
     AfterPost = cdsControleAfterPost
     SQL.Strings = (
       'select * from tbsistema where id = :id')
@@ -4476,6 +4477,7 @@ object DM: TDM
     end
     object cdsControlepreco_unit: TFloatField
       FieldName = 'preco_unit'
+      currency = True
     end
     object cdsControleprev_entrega: TDateField
       FieldName = 'prev_entrega'
@@ -4498,6 +4500,36 @@ object DM: TDM
       KeyFields = 'idproduto'
       Size = 80
       Lookup = True
+    end
+    object cdsControleqtde_entregue: TIntegerField
+      FieldName = 'qtde_entregue'
+    end
+    object cdsControlevalor_total: TFloatField
+      FieldName = 'valor_total'
+      currency = True
+    end
+    object cdsControlevalor_pago: TFloatField
+      FieldName = 'valor_pago'
+      currency = True
+    end
+    object cdsControledia_pagamento: TDateField
+      FieldName = 'dia_pagamento'
+    end
+    object cdsControleobs: TWideStringField
+      FieldName = 'obs'
+      Size = 300
+    end
+    object cdsControlevale: TFloatField
+      FieldName = 'vale'
+      currency = True
+    end
+    object cdsControledata_vale: TDateField
+      FieldName = 'data_vale'
+    end
+    object cdsControleFaltaPagar: TCurrencyField
+      FieldKind = fkCalculated
+      FieldName = 'FaltaPagar'
+      Calculated = True
     end
   end
   object cdsLKProduto: TZQuery
