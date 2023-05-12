@@ -51,7 +51,6 @@ inherited FormConfigDB: TFormConfigDB
       Width = 75
       Height = 25
       Caption = 'Cancelar'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -79,7 +78,6 @@ inherited FormConfigDB: TFormConfigDB
         FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
         FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
         00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-      ParentDoubleBuffered = False
       TabOrder = 0
       OnClick = BitBtn1Click
     end
@@ -89,7 +87,6 @@ inherited FormConfigDB: TFormConfigDB
       Width = 75
       Height = 25
       Caption = 'Confirmar'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -117,7 +114,6 @@ inherited FormConfigDB: TFormConfigDB
         FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
         FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
         00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-      ParentDoubleBuffered = False
       TabOrder = 1
       OnClick = BitBtn2Click
     end
@@ -127,7 +123,6 @@ inherited FormConfigDB: TFormConfigDB
       Width = 75
       Height = 25
       Caption = 'Testar'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -155,7 +150,6 @@ inherited FormConfigDB: TFormConfigDB
         FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
         FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
         00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-      ParentDoubleBuffered = False
       TabOrder = 2
       OnClick = BitBtn3Click
     end
@@ -195,8 +189,14 @@ inherited FormConfigDB: TFormConfigDB
     Top = 216
   end
   object ZConnectionTest: TZConnection
-    Protocol = 'mysql'
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    HostName = ''
     Port = 3306
+    Database = ''
+    User = ''
+    Password = ''
+    Protocol = 'mysql'
     Left = 272
     Top = 56
   end

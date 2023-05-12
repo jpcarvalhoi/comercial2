@@ -808,6 +808,7 @@ type
 
   private
 
+
     { Private declarations }
 
 
@@ -822,6 +823,7 @@ type
     procedure EfetuaBackup;
     procedure TotalPagar(DataSet: TDataSet);
     function GravaCheques(myForm: TFormFinalizaVenda; IDConta, IDCliente : Integer): boolean;
+    procedure setControle(id: integer);
   end;
 
 const
@@ -1766,6 +1768,14 @@ begin
     end;
   end;
 
+
+end;
+
+procedure TDM.setControle(id : integer);
+begin
+  cdsControle.Close;
+  cdsControle.Params.ParamByName('id').AsInteger := id;
+  cdsControle.Open;
 
 end;
 

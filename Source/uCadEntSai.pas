@@ -7,7 +7,8 @@ uses
   Dialogs, UClone, DBActns, ActnList, DB, ComCtrls, StdCtrls, Buttons, ExtCtrls,
   DBGridEhGrouping, GridsEh, DBGridEh, DBCtrls, Mask, rxToolEdit, rxCurrEdit,
   ImgList, RxDBComb, Menus, ZAbstractRODataset, ZAbstractDataset, ZDataset,
-  FuncoesGlobais, RXDBCtrl, Grids, DBGrids;
+  FuncoesGlobais, RXDBCtrl, Grids, DBGrids, ToolCtrlsEh, DBGridEhToolCtrls,
+  DBAxisGridsEh, System.Actions;
 
 type
   TFormCadEntSai = class(TfrmClone)

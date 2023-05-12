@@ -2,173 +2,174 @@ inherited frmCadControle: TfrmCadControle
   Caption = 'frmCadControle'
   ClientHeight = 491
   ClientWidth = 786
+  OnCreate = FormCreate
   OnShow = FormShow
   ExplicitWidth = 792
   ExplicitHeight = 520
   PixelsPerInch = 96
-  TextHeight = 14
+  TextHeight = 13
   object Label1: TLabel [0]
     Left = 8
     Top = 72
-    Width = 9
-    Height = 14
+    Width = 11
+    Height = 13
     Caption = 'ID'
   end
   object Label2: TLabel [1]
     Left = 84
     Top = 71
-    Width = 22
-    Height = 14
+    Width = 23
+    Height = 13
     Caption = 'Data'
   end
   object Label3: TLabel [2]
     Left = 211
     Top = 72
-    Width = 42
-    Height = 14
+    Width = 41
+    Height = 13
     Caption = 'Empresa'
   end
   object Label4: TLabel [3]
     Left = 500
     Top = 72
-    Width = 56
-    Height = 14
+    Width = 54
+    Height = 13
     Caption = 'Fornecedor'
   end
   object Label5: TLabel [4]
     Left = 8
     Top = 116
-    Width = 47
-    Height = 14
+    Width = 48
+    Height = 13
     Caption = 'N'#186' Pedido'
   end
   object Label6: TLabel [5]
     Left = 405
     Top = 116
-    Width = 64
-    Height = 14
+    Width = 65
+    Height = 13
     Caption = 'Qtde Enviada'
   end
   object Label7: TLabel [6]
     Left = 505
     Top = 116
     Width = 37
-    Height = 14
+    Height = 13
     Caption = 'Produto'
   end
   object Label8: TLabel [7]
     Left = 188
     Top = 161
-    Width = 52
-    Height = 14
+    Width = 53
+    Height = 13
     Caption = 'Pre'#231'o Unit.'
   end
   object Label9: TLabel [8]
     Left = 304
     Top = 163
-    Width = 64
-    Height = 14
+    Width = 65
+    Height = 13
     Caption = 'Prev. Entrega'
   end
   object Label10: TLabel [9]
     Left = 435
     Top = 163
-    Width = 62
-    Height = 14
+    Width = 63
+    Height = 13
     Caption = 'Data Entrega'
   end
   object Label11: TLabel [10]
     Left = 8
     Top = 163
-    Width = 80
-    Height = 14
+    Width = 79
+    Height = 13
     Caption = 'Status Produ'#231#227'o'
   end
   object Label12: TLabel [11]
     Left = 125
     Top = 116
     Width = 36
-    Height = 14
+    Height = 13
     Caption = 'Destino'
   end
   object Label13: TLabel [12]
     Left = 565
     Top = 163
     Width = 69
-    Height = 14
+    Height = 13
     Caption = 'Qtde Entregue'
   end
   object Label14: TLabel [13]
     Left = 11
     Top = 211
-    Width = 56
-    Height = 14
+    Width = 55
+    Height = 13
     Caption = 'Valor Pagar'
   end
   object Label15: TLabel [14]
     Left = 114
     Top = 211
-    Width = 24
-    Height = 14
+    Width = 25
+    Height = 13
     Caption = 'Pago'
   end
   object Label16: TLabel [15]
     Left = 319
     Top = 211
-    Width = 71
-    Height = 14
+    Width = 72
+    Height = 13
     Caption = 'Dia pagamento'
   end
   object Label17: TLabel [16]
     Left = 11
     Top = 267
-    Width = 20
-    Height = 14
+    Width = 19
+    Height = 13
     Caption = 'Obs'
   end
   object Label18: TLabel [17]
     Left = 449
     Top = 211
     Width = 21
-    Height = 14
+    Height = 13
     Caption = 'Vale'
   end
   object Label19: TLabel [18]
     Left = 554
     Top = 211
-    Width = 46
-    Height = 14
+    Width = 47
+    Height = 13
     Caption = 'Data Vale'
   end
   object Label20: TLabel [19]
     Left = 218
     Top = 211
     Width = 54
-    Height = 14
+    Height = 13
     Caption = 'Falta Pagar'
   end
   inherited pnlPrincipal: TPanel
     Width = 786
-    ExplicitWidth = 877
+    ExplicitWidth = 786
     inherited btnPrimeiro: TBitBtn
       Left = 318
       Visible = False
-      ExplicitLeft = 409
+      ExplicitLeft = 318
     end
     inherited btnAnterior: TBitBtn
       Left = 395
       Visible = False
-      ExplicitLeft = 486
+      ExplicitLeft = 395
     end
     inherited btnProximo: TBitBtn
       Left = 472
       Visible = False
-      ExplicitLeft = 563
+      ExplicitLeft = 472
     end
     inherited btnUltimo: TBitBtn
       Left = 549
       Visible = False
-      ExplicitLeft = 640
+      ExplicitLeft = 549
     end
     inherited btnSalvar: TBitBtn
       Left = 80
@@ -181,7 +182,7 @@ inherited frmCadControle: TfrmCadControle
     inherited btnLocalizar: TBitBtn
       Left = 626
       Visible = False
-      ExplicitLeft = 717
+      ExplicitLeft = 626
     end
     inherited btnExcluir: TBitBtn
       Left = 234
@@ -189,20 +190,20 @@ inherited frmCadControle: TfrmCadControle
     end
     inherited btnFechar: TBitBtn
       Left = 703
-      ExplicitLeft = 794
+      ExplicitLeft = 703
     end
   end
   inherited stbFormulario: TStatusBar
     Top = 472
     Width = 786
-    ExplicitTop = 262
-    ExplicitWidth = 877
+    ExplicitTop = 472
+    ExplicitWidth = 786
   end
   object DBEdit2: TDBEdit [22]
     Left = 8
     Top = 88
     Width = 70
-    Height = 22
+    Height = 21
     DataField = 'id'
     DataSource = dsNavegacao
     Enabled = False
@@ -212,7 +213,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 84
     Top = 87
     Width = 121
-    Height = 22
+    Height = 21
     DataField = 'data'
     DataSource = dsNavegacao
     NumGlyphs = 2
@@ -222,7 +223,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 211
     Top = 88
     Width = 240
-    Height = 22
+    Height = 21
     DataField = 'idcliente'
     DataSource = dsNavegacao
     KeyField = 'codcliente'
@@ -235,7 +236,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 500
     Top = 88
     Width = 240
-    Height = 22
+    Height = 21
     DataField = 'idfornecedor'
     DataSource = dsNavegacao
     KeyField = 'idfornecedor'
@@ -248,7 +249,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 8
     Top = 132
     Width = 108
-    Height = 22
+    Height = 21
     DataField = 'npedido'
     DataSource = dsNavegacao
     TabOrder = 2
@@ -257,7 +258,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 402
     Top = 132
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'qtde_enviada'
     DataSource = dsNavegacao
     TabOrder = 8
@@ -266,7 +267,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 505
     Top = 132
     Width = 240
-    Height = 22
+    Height = 21
     DataField = 'Produto'
     DataSource = dsNavegacao
     TabOrder = 7
@@ -275,7 +276,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 185
     Top = 179
     Width = 104
-    Height = 22
+    Height = 21
     DataField = 'preco_unit'
     DataSource = dsNavegacao
     TabOrder = 9
@@ -284,7 +285,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 304
     Top = 179
     Width = 121
-    Height = 22
+    Height = 21
     DataField = 'prev_entrega'
     DataSource = dsNavegacao
     NumGlyphs = 2
@@ -294,7 +295,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 435
     Top = 179
     Width = 121
-    Height = 22
+    Height = 21
     DataField = 'data_entrega'
     DataSource = dsNavegacao
     NumGlyphs = 2
@@ -304,7 +305,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 8
     Top = 179
     Width = 166
-    Height = 22
+    Height = 21
     DataField = 'idstatus'
     DataSource = dsNavegacao
     KeyField = 'idstatus'
@@ -476,7 +477,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 125
     Top = 132
     Width = 240
-    Height = 22
+    Height = 21
     DataField = 'iddestino'
     DataSource = dsNavegacao
     KeyField = 'codcliente'
@@ -542,7 +543,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 562
     Top = 179
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'qtde_entregue'
     DataSource = dsNavegacao
     TabOrder = 18
@@ -551,7 +552,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 8
     Top = 227
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'valor_total'
     DataSource = dsNavegacao
     Enabled = False
@@ -561,7 +562,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 111
     Top = 227
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'valor_pago'
     DataSource = dsNavegacao
     TabOrder = 20
@@ -570,7 +571,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 319
     Top = 227
     Width = 121
-    Height = 22
+    Height = 21
     DataField = 'dia_pagamento'
     DataSource = dsNavegacao
     NumGlyphs = 2
@@ -580,7 +581,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 8
     Top = 283
     Width = 767
-    Height = 22
+    Height = 21
     DataField = 'obs'
     DataSource = dsNavegacao
     TabOrder = 22
@@ -589,7 +590,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 446
     Top = 227
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'vale'
     DataSource = dsNavegacao
     TabOrder = 23
@@ -598,7 +599,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 554
     Top = 227
     Width = 121
-    Height = 22
+    Height = 21
     DataField = 'data_vale'
     DataSource = dsNavegacao
     NumGlyphs = 2
@@ -608,7 +609,7 @@ inherited frmCadControle: TfrmCadControle
     Left = 215
     Top = 227
     Width = 94
-    Height = 22
+    Height = 21
     DataField = 'FaltaPagar'
     DataSource = dsNavegacao
     Enabled = False

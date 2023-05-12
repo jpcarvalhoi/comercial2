@@ -58,6 +58,10 @@ inherited FormCadFornecedor: TFormCadFornecedor
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Informa'#231#245'es Gerais'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label1: TLabel
         Left = 3
         Top = 1
@@ -409,7 +413,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
           Width = 26
           Height = 25
           Hint = 'Enviar mensagem ao cliente'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -437,7 +440,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
             FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
             FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
             00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-          ParentDoubleBuffered = False
           TabOrder = 0
           TabStop = False
           OnClick = BitBtn3Click
@@ -540,7 +542,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
           Width = 26
           Height = 25
           Hint = 'Enviar mensagem ao cliente'
-          DoubleBuffered = True
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -568,7 +569,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
             FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
             FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
             00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-          ParentDoubleBuffered = False
           TabOrder = 0
           TabStop = False
           OnClick = BitBtn4Click
@@ -713,8 +713,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
           Width = 149
           Height = 20
           Caption = 'Utilizar endere'#231'o de Entrega'
-          DoubleBuffered = True
-          ParentDoubleBuffered = False
           TabOrder = 0
           OnClick = BitBtn6Click
         end
@@ -937,7 +935,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
         Width = 26
         Height = 25
         Hint = 'Enviar mensagem ao cliente'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -965,7 +962,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
           FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 20
         TabStop = False
         OnClick = BitBtn1Click
@@ -974,6 +970,10 @@ inherited FormCadFornecedor: TFormCadFornecedor
     object TabSheet2: TTabSheet
       Caption = 'Padr'#245'es'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label39: TLabel
         Left = 5
         Top = 8

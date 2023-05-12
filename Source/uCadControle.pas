@@ -62,10 +62,13 @@ type
       Shift: TShiftState);
     procedure actGravarExecute(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+
   private
     { Private declarations }
   public
     { Public declarations }
+    CodLocalizar : Integer;
   end;
 
 var
@@ -190,15 +193,31 @@ begin
   LookupKeyDown(Sender, Key, Shift);
 end;
 
+procedure TfrmCadControle.FormCreate(Sender: TObject);
+begin
+  inherited;
+  CodLocalizar := 0;
+end;
+
 procedure TfrmCadControle.FormShow(Sender: TObject);
 begin
   inherited;
-  DM.cdsControle.Open;
   OpenOrRefresh(DM.dslkcliente.DataSet);
   OpenOrRefresh(dm.cdsLKProduto);
   OpenOrRefresh(dm.dslkfornecedor.DataSet);
   OpenOrRefresh(dm.cdsStatus);
 
+  if CodLocalizar > 0 then
+  begin
+    DM.setControle(CodLocalizar);
+  end;
+  if not DM.cdsControle.Active then
+    DM.cdsControle.Open;
+
+
 end;
+
+
+
 
 end.

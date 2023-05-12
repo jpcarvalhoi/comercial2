@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UClone, DBActns, ActnList, DB, ComCtrls, StdCtrls, Buttons,
-  ExtCtrls, Mask, DBCtrls;
+  ExtCtrls, Mask, DBCtrls, System.Actions;
 
 type
   TFormCadFornecedor = class(TfrmClone)

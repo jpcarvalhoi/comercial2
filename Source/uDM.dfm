@@ -16,7 +16,7 @@ object DM: TDM
     Port = 3306
     Database = 'comercial2'
     User = 'root'
-    Password = '123456'
+    Password = 'inspellzx45'
     Protocol = 'mysql'
     Left = 28
     Top = 29

@@ -8,7 +8,7 @@ uses
   ZAbstractDataset, ZDataset, ActnList, StdCtrls, Buttons, Grids, DBGrids,
   ExtCtrls, ComCtrls, ppProd, ppClass, ppReport, ppComm, ppRelatv, ppDB,
   ppDBPipe, ppCtrls, ppBands, ppPrnabl, ppCache, ppParameter, ppVar, ppStrtch,
-  ppRegion, ppMemo, ppPageBreak;
+  ppRegion, ppMemo, ppPageBreak, ppDesignLayer, System.Actions;
 
 type
   TFormSelCliente = class(TFormCloneSelecao)

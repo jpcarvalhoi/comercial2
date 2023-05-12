@@ -211,8 +211,6 @@ inherited FormLancaParcela: TFormLancaParcela
       Width = 75
       Height = 25
       Caption = 'Cancelar'
-      DoubleBuffered = True
-      ParentDoubleBuffered = False
       TabOrder = 0
       OnClick = BitBtn1Click
     end
@@ -222,8 +220,6 @@ inherited FormLancaParcela: TFormLancaParcela
       Width = 75
       Height = 25
       Caption = 'Confirmar'
-      DoubleBuffered = True
-      ParentDoubleBuffered = False
       TabOrder = 1
       OnClick = BitBtn2Click
     end

@@ -6,7 +6,8 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UClone, rxToolEdit, RXDBCtrl, RxLookup, StdCtrls, Mask, DBCtrls,
   DBActns, ActnList, DB, ComCtrls, Buttons, ExtCtrls, DBGridEhGrouping,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset, GridsEh, DBGridEh;
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, GridsEh, DBGridEh,
+  ToolCtrlsEh, DBGridEhToolCtrls, DBAxisGridsEh, System.Actions;
 
 type
   TFormCadCota = class(TfrmClone)

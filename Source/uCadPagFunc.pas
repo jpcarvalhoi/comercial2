@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UClone, DBActns, ActnList, DB, ComCtrls, StdCtrls, Buttons, ExtCtrls,
-  rxToolEdit, RXDBCtrl, Mask, DBCtrls;
+  rxToolEdit, RXDBCtrl, Mask, DBCtrls, System.Actions;
 
 type
   TFormCadPagFunc = class(TfrmClone)

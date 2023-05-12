@@ -279,34 +279,37 @@ procedure TFormLocalizar.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
   try
-    case self.Tag of
-      1, 2, 3, 4, 6, 10, 11, 15, 16, 22,23, 17:begin
-        CodigoLocalizado := cdsLocalizar.FieldByName('CODIGO').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('DESCRICAO').AsString;
-      end;
-      5 : begin
-        CodigoLocalizado := cdsLocalizar.FieldByName('idkit').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('DESCRICAO').AsString;
-      end;
-      12 : begin
-        CodigoLocalizado := cdsLocalizar.FieldByName('idveiculo').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('descricao').AsString;
-      end;
-      13 : begin
-        CodigoLocalizado := cdsLocalizar.FieldByName('codigo').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('descricao').AsString;
-      end;
-      14 : begin
-        CodigoLocalizado := cdsLocalizar.FieldByName('idveiculo').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('codigo').AsString;
-      end;
-      18 : begin
+    if ModalResult = mROK then
+    begin
+      case self.Tag of
+        1, 2, 3, 4, 6, 10, 11, 15, 16, 22,23, 17:begin
+          CodigoLocalizado := cdsLocalizar.FieldByName('CODIGO').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('DESCRICAO').AsString;
+        end;
+        5 : begin
+          CodigoLocalizado := cdsLocalizar.FieldByName('idkit').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('DESCRICAO').AsString;
+        end;
+        12 : begin
+          CodigoLocalizado := cdsLocalizar.FieldByName('idveiculo').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('descricao').AsString;
+        end;
+        13 : begin
+          CodigoLocalizado := cdsLocalizar.FieldByName('codigo').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('descricao').AsString;
+        end;
+        14 : begin
+          CodigoLocalizado := cdsLocalizar.FieldByName('idveiculo').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('codigo').AsString;
+        end;
+        18 : begin
 
-        CodigoLocalizado := cdsLocalizar.FieldByName('idproduto').AsInteger;
-        Descricao := cdsLocalizar.FieldByName('descricao').AsString;
+          CodigoLocalizado := cdsLocalizar.FieldByName('idproduto').AsInteger;
+          Descricao := cdsLocalizar.FieldByName('descricao').AsString;
+
+        end;
 
       end;
-
     end;
   except
     on E:Exception do Begin
@@ -335,7 +338,7 @@ procedure TFormLocalizar.edLocalizarKeyPress(Sender: TObject; var Key: Char);
 begin
  if key = #13 then
  begin
-  close;
+  ModalResult := mrOk;
   key := #0;
  end;
 end;
@@ -377,7 +380,7 @@ end;
 
 procedure TFormLocalizar.DBGridEhLocalizarDblClick(Sender: TObject);
 begin
-  Close;
+  ModalResult := mrOk;
 end;
 
 end.

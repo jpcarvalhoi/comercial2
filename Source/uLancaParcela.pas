@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, uClone_TelaPadrao, Spin, rxToolEdit, StdCtrls, Mask, rxCurrEdit,
-  ActnList, Buttons, ExtCtrls;
+  ActnList, Buttons, ExtCtrls, System.Actions;
 
 type
   TFormLancaParcela = class(TFormClone_TelaPadrao)

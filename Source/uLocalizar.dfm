@@ -20,7 +20,7 @@ object FormLocalizar: TFormLocalizar
   OnKeyPress = FormKeyPress
   OnShow = FormShow
   PixelsPerInch = 96
-  TextHeight = 14
+  TextHeight = 13
   object Panel2: TPanel
     Left = 0
     Top = 72
@@ -66,7 +66,7 @@ object FormLocalizar: TFormLocalizar
       Left = 0
       Top = 2
       Width = 644
-      Height = 22
+      Height = 21
       TabOrder = 0
       OnChange = edLocalizarChange
       OnKeyDown = edLocalizarKeyDown

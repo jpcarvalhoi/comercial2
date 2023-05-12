@@ -1,35 +1,34 @@
 inherited frmControle: TfrmControle
   ActiveControl = DBGridEh1
   Caption = 'Controle de Produ'#231#227'o'
-  ClientHeight = 554
-  ClientWidth = 1049
+  ClientHeight = 514
+  ClientWidth = 974
   WindowState = wsMaximized
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  ExplicitWidth = 1065
-  ExplicitHeight = 593
+  ExplicitWidth = 990
+  ExplicitHeight = 553
   PixelsPerInch = 96
-  TextHeight = 14
+  TextHeight = 13
   object pnlPrincipal: TPanel [0]
     Left = 0
     Top = 0
-    Width = 1049
-    Height = 65
+    Width = 974
+    Height = 61
     Align = alTop
     AutoSize = True
     BorderWidth = 2
     ParentColor = True
     TabOrder = 0
-    ExplicitWidth = 1077
     DesignSize = (
-      1049
-      65)
+      974
+      61)
     object btnPrimeiro: TBitBtn
-      Left = 643
+      Left = 597
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 75
+      Height = 55
       Hint = 'Move para o primeiro registro'
       Anchors = [akTop, akRight]
       Caption = 'Primeiro (F5)'
@@ -137,13 +136,12 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 2
       Visible = False
-      ExplicitLeft = 671
     end
     object btnAnterior: TBitBtn
-      Left = 723
+      Left = 671
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 76
+      Height = 55
       Hint = 'Move para o registro anterior'
       Anchors = [akTop, akRight]
       Caption = 'Anterior (F6)'
@@ -251,13 +249,12 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 3
       Visible = False
-      ExplicitLeft = 751
     end
     object btnProximo: TBitBtn
-      Left = 803
+      Left = 746
       Top = 3
-      Width = 80
-      Height = 59
+      Width = 74
+      Height = 55
       Hint = 'Move para o pr'#243'ximo registro'
       Anchors = [akTop, akRight]
       Caption = 'Pr'#243'ximo (F7)'
@@ -365,13 +362,12 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 4
       Visible = False
-      ExplicitLeft = 831
     end
     object btnUltimo: TBitBtn
-      Left = 882
+      Left = 819
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 75
+      Height = 55
       Hint = 'Move para o '#250'ltimo registro'
       Anchors = [akTop, akRight]
       Caption = #218'ltimo (F8)'
@@ -479,13 +475,12 @@ inherited frmControle: TfrmControle
       ShowHint = True
       TabOrder = 5
       Visible = False
-      ExplicitLeft = 910
     end
     object btnNovo: TBitBtn
       Left = 3
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 75
+      Height = 55
       Hint = 'Incluir novo registro'
       Action = actIncluir
       Caption = 'Incluir (F1)'
@@ -594,10 +589,10 @@ inherited frmControle: TfrmControle
       TabOrder = 0
     end
     object btnExcluir: TBitBtn
-      Left = 169
+      Left = 157
       Top = 3
-      Width = 80
-      Height = 59
+      Width = 74
+      Height = 55
       Hint = 'Excluir registro atual'
       Caption = 'Excluir (F4)'
       Glyph.Data = {
@@ -705,10 +700,10 @@ inherited frmControle: TfrmControle
       TabOrder = 1
     end
     object btnFechar: TBitBtn
-      Left = 963
+      Left = 894
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 75
+      Height = 55
       Action = Action1
       Anchors = [akTop, akRight]
       Caption = 'Fechar (Esc)'
@@ -815,13 +810,12 @@ inherited frmControle: TfrmControle
       ParentShowHint = False
       ShowHint = True
       TabOrder = 6
-      ExplicitLeft = 991
     end
     object BitBtn1: TBitBtn
-      Left = 86
+      Left = 80
       Top = 3
-      Width = 81
-      Height = 59
+      Width = 75
+      Height = 55
       Action = actAlterar
       Caption = 'Alterar (F2)'
       Glyph.Data = {
@@ -931,25 +925,24 @@ inherited frmControle: TfrmControle
   end
   object Panel1: TPanel [1]
     Left = 0
-    Top = 65
-    Width = 1049
-    Height = 168
+    Top = 61
+    Width = 974
+    Height = 156
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 1077
     object Label1: TLabel
-      Left = 9
-      Top = 8
-      Width = 42
-      Height = 14
+      Left = 8
+      Top = 7
+      Width = 41
+      Height = 13
       Caption = 'Empresa'
     end
     object SpeedButton1: TSpeedButton
-      Left = 268
-      Top = 31
-      Width = 23
-      Height = 22
+      Left = 210
+      Top = 29
+      Width = 21
+      Height = 20
       Hint = 'Adicionar ao filtro'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -981,10 +974,10 @@ inherited frmControle: TfrmControle
       OnClick = SpeedButton1Click
     end
     object SpeedButton2: TSpeedButton
-      Left = 268
-      Top = 52
-      Width = 23
-      Height = 22
+      Left = 210
+      Top = 48
+      Width = 21
+      Height = 21
       Hint = 'Remover do filtro'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -1016,10 +1009,10 @@ inherited frmControle: TfrmControle
       OnClick = SpeedButton2Click
     end
     object SpeedButton3: TSpeedButton
-      Left = 268
-      Top = 76
-      Width = 23
-      Height = 22
+      Left = 210
+      Top = 71
+      Width = 21
+      Height = 20
       Hint = 'Remover do filtro'
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -1050,11 +1043,123 @@ inherited frmControle: TfrmControle
         00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
       OnClick = SpeedButton3Click
     end
+    object Label2: TLabel
+      Left = 237
+      Top = 7
+      Width = 37
+      Height = 13
+      Caption = 'Produto'
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 440
+      Top = 29
+      Width = 21
+      Height = 20
+      Hint = 'Adicionar ao filtro'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89CFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C98
+        EEC998EEC964B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C5EE1A35EE1A364B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C63
+        E5A863E5A864B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF64B89C64B89C64B89C64B89C67E9AD67E9AD64B89C64B89C64B89C64B8
+        9CFB00FFFB00FFFB00FFFB00FFFB00FF64B89CA7F6D5A7F6D5A7F6D5A7F6D56D
+        EDB26DEDB2A7F6D5A7F6D5A7F6D5A7F6D564B89CFB00FFFB00FFFB00FFFB00FF
+        64B89C72F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2B872F2
+        B864B89CFB00FFFB00FFFB00FFFB00FFFB00FF64B89C64B89C64B89C64B89C76
+        F6BD76F6BD64B89C64B89C64B89C64B89CFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C7BFAC27BFAC264B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64B89C7E
+        FDC57EFDC564B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FF64B89C81FFC881FFC864B89CFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF64
+        B89C64B89CFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      OnClick = SpeedButton4Click
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 440
+      Top = 48
+      Width = 21
+      Height = 21
+      Hint = 'Remover do filtro'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B86464B86464B86464B86464B86464B86464B86464B86464B86464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FF6464B8A7A7F6A7A7F6A7A7F6A7A7F6A7
+        A7F6A7A7F6A7A7F6A7A7F6A7A7F6A7A7F66464B8FB00FFFB00FFFB00FFFB00FF
+        6464B88181FF8181FF8181FF8181FF8181FF8181FF8181FF8181FF8181FF8181
+        FF6464B8FB00FFFB00FFFB00FFFB00FFFB00FF6464B86464B86464B86464B864
+        64B86464B86464B86464B86464B86464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      OnClick = SpeedButton5Click
+    end
+    object SpeedButton6: TSpeedButton
+      Left = 440
+      Top = 71
+      Width = 21
+      Height = 20
+      Hint = 'Remover do filtro'
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86464B8FB00FFFB
+        00FFFB00FFFB00FF6464B86464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B89898EE9898EE6464B8FB00FFFB00FF6464B89898EE9898EE6464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86060E36060E39C9CF164
+        64B86464B89C9CF16060E36060E36464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF6464B86666E86666E8A1A1F3A1A1F36666E86666E86464B8FB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B86D6DED6D
+        6DED6D6DED6D6DED6464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FF6464B87373F37373F37373F37373F36464B8FB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B8B0B0FB7979F879
+        79F87979F87979F8B0B0FB6464B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FF6464B8B3B3FD7E7EFC7E7EFC6464B86464B87E7EFC7E7EFCB3B3FD6464
+        B8FB00FFFB00FFFB00FFFB00FFFB00FFFB00FF6464B88181FF8181FF6464B8FB
+        00FFFB00FF6464B88181FF8181FF6464B8FB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FF6464B86464B8FB00FFFB00FFFB00FFFB00FF6464B86464B8FB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF
+        FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
+        FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
+        00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
+      OnClick = SpeedButton6Click
+    end
     object ckTodosClientes: TCheckBox
-      Left = 60
-      Top = 8
-      Width = 70
-      Height = 17
+      Left = 56
+      Top = 7
+      Width = 65
+      Height = 16
       Caption = 'Todas'
       Checked = True
       State = cbChecked
@@ -1062,18 +1167,18 @@ inherited frmControle: TfrmControle
       OnClick = ckTodosClientesClick
     end
     object ListBoxClientes: TListBox
-      Left = 9
-      Top = 31
-      Width = 257
-      Height = 97
-      ItemHeight = 14
+      Left = 8
+      Top = 29
+      Width = 200
+      Height = 90
+      ItemHeight = 13
       TabOrder = 1
     end
     object btnBuscar: TBitBtn
-      Left = 9
-      Top = 134
-      Width = 81
-      Height = 27
+      Left = 8
+      Top = 124
+      Width = 76
+      Height = 26
       Caption = 'Filtrar'
       Glyph.Data = {
         E6040000424DE604000000000000360000002800000014000000140000000100
@@ -1119,12 +1224,31 @@ inherited frmControle: TfrmControle
       TabOrder = 2
       OnClick = btnBuscarClick
     end
+    object ckTodosProduto: TCheckBox
+      Left = 285
+      Top = 7
+      Width = 65
+      Height = 16
+      Caption = 'Todos'
+      Checked = True
+      State = cbChecked
+      TabOrder = 3
+      OnClick = ckTodosProdutoClick
+    end
+    object ListBoxprodutos: TListBox
+      Left = 237
+      Top = 29
+      Width = 200
+      Height = 90
+      ItemHeight = 13
+      TabOrder = 4
+    end
   end
   object DBGridEh1: TDBGridEh [2]
     Left = 0
-    Top = 233
-    Width = 1049
-    Height = 321
+    Top = 217
+    Width = 974
+    Height = 297
     Align = alClient
     DataSource = DataSource1
     DynProps = <>
@@ -1150,6 +1274,7 @@ inherited frmControle: TfrmControle
     TitleParams.Font.Style = [fsBold]
     TitleParams.ParentFont = False
     TitleParams.SortMarkerStyle = smstDefaultEh
+    OnDblClick = DBGridEh1DblClick
     OnSortMarkingChanged = DBGridEh1SortMarkingChanged
     Columns = <
       item
@@ -1159,6 +1284,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Data'
         Title.TitleButton = True
+        Width = 59
       end
       item
         DynProps = <>
@@ -1167,7 +1293,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Empresa'
         Title.TitleButton = True
-        Width = 225
+        Width = 209
       end
       item
         DynProps = <>
@@ -1176,7 +1302,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Fornecedor'
         Title.TitleButton = True
-        Width = 217
+        Width = 202
       end
       item
         DynProps = <>
@@ -1185,7 +1311,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'N'#186' Pedido'
         Title.TitleButton = True
-        Width = 74
+        Width = 69
       end
       item
         DynProps = <>
@@ -1194,7 +1320,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Destino'
         Title.TitleButton = True
-        Width = 179
+        Width = 166
       end
       item
         DynProps = <>
@@ -1203,7 +1329,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Qtd. Enviada'
         Title.TitleButton = True
-        Width = 77
+        Width = 87
       end
       item
         DynProps = <>
@@ -1212,6 +1338,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'ID Produto'
         Title.TitleButton = True
+        Width = 75
       end
       item
         DynProps = <>
@@ -1220,7 +1347,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Produto'
         Title.TitleButton = True
-        Width = 219
+        Width = 203
       end
       item
         DynProps = <>
@@ -1229,7 +1356,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Status'
         Title.TitleButton = True
-        Width = 96
+        Width = 89
       end
       item
         DynProps = <>
@@ -1238,6 +1365,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Pre'#231'o Unit.'
         Title.TitleButton = True
+        Width = 78
       end
       item
         DynProps = <>
@@ -1246,6 +1374,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Prev. Entrega'
         Title.TitleButton = True
+        Width = 93
       end
       item
         DynProps = <>
@@ -1254,7 +1383,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Data Entrega'
         Title.TitleButton = True
-        Width = 81
+        Width = 92
       end
       item
         DynProps = <>
@@ -1263,7 +1392,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Qtde Entregue'
         Title.TitleButton = True
-        Width = 86
+        Width = 94
       end
       item
         DynProps = <>
@@ -1272,6 +1401,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Falta'
         Title.TitleButton = True
+        Width = 60
       end
       item
         DynProps = <>
@@ -1280,7 +1410,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Acompanhamento'
         Title.TitleButton = True
-        Width = 202
+        Width = 187
       end
       item
         DynProps = <>
@@ -1289,7 +1419,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Valor Pagar'
         Title.TitleButton = True
-        Width = 81
+        Width = 82
       end
       item
         DynProps = <>
@@ -1298,6 +1428,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Pago'
         Title.TitleButton = True
+        Width = 67
       end
       item
         DynProps = <>
@@ -1306,7 +1437,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Falta Pagar'
         Title.TitleButton = True
-        Width = 72
+        Width = 83
       end
       item
         DynProps = <>
@@ -1315,7 +1446,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Dia do Pagamento'
         Title.TitleButton = True
-        Width = 112
+        Width = 119
       end
       item
         DynProps = <>
@@ -1324,6 +1455,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Vale'
         Title.TitleButton = True
+        Width = 59
       end
       item
         DynProps = <>
@@ -1332,6 +1464,7 @@ inherited frmControle: TfrmControle
         Footers = <>
         Title.Caption = 'Data Vale'
         Title.TitleButton = True
+        Width = 76
       end
       item
         DynProps = <>
@@ -1339,7 +1472,7 @@ inherited frmControle: TfrmControle
         FieldName = 'obs'
         Footers = <>
         Title.Caption = 'Obs'
-        Width = 200
+        Width = 185
       end>
     object RowDetailData: TRowDetailPanelControlEh
     end
@@ -1384,6 +1517,7 @@ inherited frmControle: TfrmControle
     object actAlterar: TAction
       Caption = 'Alterar (F2)'
       ShortCut = 113
+      OnExecute = actAlterarExecute
     end
   end
   object ZQuery1: TZQuery
@@ -1408,6 +1542,108 @@ inherited frmControle: TfrmControle
     Params = <>
     Left = 120
     Top = 320
+    object ZQuery1id: TIntegerField
+      FieldName = 'id'
+      Required = True
+    end
+    object ZQuery1data: TDateField
+      FieldName = 'data'
+    end
+    object ZQuery1idcliente: TIntegerField
+      FieldName = 'idcliente'
+    end
+    object ZQuery1idfornecedor: TIntegerField
+      FieldName = 'idfornecedor'
+    end
+    object ZQuery1npedido: TWideStringField
+      FieldName = 'npedido'
+      Size = 45
+    end
+    object ZQuery1qtde_enviada: TIntegerField
+      FieldName = 'qtde_enviada'
+    end
+    object ZQuery1idproduto: TIntegerField
+      FieldName = 'idproduto'
+    end
+    object ZQuery1preco_unit: TFloatField
+      FieldName = 'preco_unit'
+      currency = True
+    end
+    object ZQuery1prev_entrega: TDateField
+      FieldName = 'prev_entrega'
+    end
+    object ZQuery1data_entrega: TDateField
+      FieldName = 'data_entrega'
+    end
+    object ZQuery1iddestino: TIntegerField
+      FieldName = 'iddestino'
+    end
+    object ZQuery1idstatus: TIntegerField
+      FieldName = 'idstatus'
+    end
+    object ZQuery1qtde_entregue: TIntegerField
+      FieldName = 'qtde_entregue'
+    end
+    object ZQuery1valor_total: TFloatField
+      FieldName = 'valor_total'
+      currency = True
+    end
+    object ZQuery1valor_pago: TFloatField
+      FieldName = 'valor_pago'
+      currency = True
+    end
+    object ZQuery1dia_pagamento: TDateField
+      FieldName = 'dia_pagamento'
+    end
+    object ZQuery1obs: TWideStringField
+      FieldName = 'obs'
+      Size = 300
+    end
+    object ZQuery1vale: TFloatField
+      FieldName = 'vale'
+      currency = True
+    end
+    object ZQuery1data_vale: TDateField
+      FieldName = 'data_vale'
+    end
+    object ZQuery1empresa: TWideStringField
+      FieldName = 'empresa'
+      Required = True
+      Size = 60
+    end
+    object ZQuery1destino: TWideStringField
+      FieldName = 'destino'
+      Required = True
+      Size = 60
+    end
+    object ZQuery1status: TWideStringField
+      FieldName = 'status'
+      Required = True
+      Size = 45
+    end
+    object ZQuery1fornecedor: TWideStringField
+      FieldName = 'fornecedor'
+      Size = 60
+    end
+    object ZQuery1produto: TWideStringField
+      FieldName = 'produto'
+      Required = True
+      Size = 80
+    end
+    object ZQuery1falta_pagar: TFloatField
+      FieldName = 'falta_pagar'
+      ReadOnly = True
+      currency = True
+    end
+    object ZQuery1falta: TLargeintField
+      FieldName = 'falta'
+      ReadOnly = True
+    end
+    object ZQuery1acompanhamento: TWideStringField
+      FieldName = 'acompanhamento'
+      ReadOnly = True
+      Size = 16
+    end
   end
   object qrAux: TZQuery
     Connection = DM.ZConnection
@@ -1419,7 +1655,9 @@ inherited frmControle: TfrmControle
     Options = []
     StoredProps.Strings = (
       'ckTodosClientes.Checked'
-      'ListBoxClientes.Items')
+      'ListBoxClientes.Items'
+      'ckTodosProduto.Checked'
+      'ListBoxprodutos.Items')
     StoredValues = <>
     Left = 616
     Top = 160

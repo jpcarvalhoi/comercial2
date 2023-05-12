@@ -84,7 +84,6 @@ inherited FormCadEntSai: TFormCadEntSai
       Width = 75
       Height = 55
       Caption = 'Alterar'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -185,7 +184,6 @@ inherited FormCadEntSai: TFormCadEntSai
         B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B9B8B8B8B8B8B8CBCBCBFEFEFEFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       TabOrder = 2
       OnClick = btnAlterarClick
     end
@@ -195,7 +193,6 @@ inherited FormCadEntSai: TFormCadEntSai
       Width = 75
       Height = 55
       Caption = 'Imprimir'
-      DoubleBuffered = True
       Glyph.Data = {
         360C0000424D360C000000000000360000002800000020000000200000000100
         180000000000000C0000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -296,7 +293,6 @@ inherited FormCadEntSai: TFormCadEntSai
         D1D1D1D1D1D1D1D1D1D1D1D1D1CFCFCFCCCCCCC9C9C9C6C6C6CBCBCB969696FE
         FEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
-      ParentDoubleBuffered = False
       TabOrder = 11
       Visible = False
       OnClick = btnImprimirClick
@@ -492,7 +488,6 @@ inherited FormCadEntSai: TFormCadEntSai
       Width = 25
       Height = 25
       Hint = 'Novo fornecedor'
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -520,7 +515,6 @@ inherited FormCadEntSai: TFormCadEntSai
         FFFFFFFFFFFFFFFFFFAD5228F0BA8BF0BA8BF0BA8BF0BA8BB3582AFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBF7D5DAC5228AD
         5328AE5428AF5529C4805FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-      ParentDoubleBuffered = False
       ParentShowHint = False
       ShowHint = True
       TabOrder = 5
@@ -533,7 +527,6 @@ inherited FormCadEntSai: TFormCadEntSai
       Top = 64
       Width = 28
       Height = 25
-      DoubleBuffered = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
         18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -561,7 +554,6 @@ inherited FormCadEntSai: TFormCadEntSai
         FB00FFFB00FFBA945DBA945DBA945DBA945DFB00FFFB00FFFB00FFFB00FFFB00
         FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
         00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-      ParentDoubleBuffered = False
       TabOrder = 6
       TabStop = False
       OnClick = BitBtn4Click
@@ -645,7 +637,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 84
         Height = 25
         Caption = 'Excluir Item'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -673,7 +664,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 11
         TabStop = False
         OnClick = btnExcluirItemClick
@@ -696,7 +686,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 78
         Height = 25
         Caption = 'Adicionar'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -724,7 +713,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 4
         OnClick = btnAdicionarClick
       end
@@ -771,7 +759,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 60
         Height = 25
         Caption = 'Kit'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -799,7 +786,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FB00FFFB00FFBA945DBA945DBA945DBA945DFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 1
         TabStop = False
         OnClick = btnKitClick
@@ -810,7 +796,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 60
         Height = 25
         Caption = 'Prod'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -838,7 +823,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FB00FFFB00FFBA945DBA945DBA945DBA945DFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 0
         TabStop = False
         OnClick = btnLocProdClick
@@ -864,35 +848,26 @@ inherited FormCadEntSai: TFormCadEntSai
         TabStop = False
         Align = alBottom
         AllowedOperations = [alopUpdateEh]
-        DataGrouping.GroupLevels = <>
         DataSource = dsItemNota
-        Flat = False
-        FooterColor = clWindow
-        FooterFont.Charset = DEFAULT_CHARSET
-        FooterFont.Color = clWindowText
-        FooterFont.Height = -11
-        FooterFont.Name = 'MS Sans Serif'
-        FooterFont.Style = []
+        DynProps = <>
+        FooterParams.Color = clWindow
+        IndicatorOptions = [gioShowRowIndicatorEh]
         ReadOnly = True
-        RowDetailPanel.Color = clBtnFace
         TabOrder = 8
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'MS Sans Serif'
-        TitleFont.Style = []
         OnCellClick = DBGridEhItensCellClick
         OnDblClick = DBGridEhItensDblClick
         OnDrawColumnCell = DBGridEhItensDrawColumnCell
         OnGetCellParams = DBGridEhItensGetCellParams
         Columns = <
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'idproduto'
             Footers = <>
             Width = 69
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'descricao'
             Footers = <>
@@ -900,27 +875,32 @@ inherited FormCadEntSai: TFormCadEntSai
             Width = 297
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'qtde'
             Footers = <>
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'valor_unit'
             Footers = <>
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'Valor_Total'
             Footers = <>
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'estoque'
             Footers = <>
             Title.Caption = 'Est. Atual'
           end
           item
+            DynProps = <>
             EditButtons = <>
             Footers = <>
             Title.Caption = 'Excluir'
@@ -1043,45 +1023,38 @@ inherited FormCadEntSai: TFormCadEntSai
         Top = 120
         Width = 621
         Height = 137
-        DataGrouping.GroupLevels = <>
         DataSource = dsSel
-        Flat = False
-        FooterColor = clWindow
-        FooterFont.Charset = DEFAULT_CHARSET
-        FooterFont.Color = clWindowText
-        FooterFont.Height = -11
-        FooterFont.Name = 'MS Sans Serif'
-        FooterFont.Style = []
+        DynProps = <>
+        FooterParams.Color = clWindow
+        IndicatorOptions = [gioShowRowIndicatorEh]
         Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
         OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
         ReadOnly = True
-        RowDetailPanel.Color = clBtnFace
         TabOrder = 9
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'MS Sans Serif'
-        TitleFont.Style = []
         Visible = False
         Columns = <
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'codbarras'
             Footers = <>
             Width = 93
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'descricao'
             Footers = <>
             Width = 345
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'valor_varejo'
             Footers = <>
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'est_atual'
             Footers = <>
@@ -1092,44 +1065,37 @@ inherited FormCadEntSai: TFormCadEntSai
             Top = -183
             Width = 749
             Height = 183
-            DataGrouping.GroupLevels = <>
-            Flat = False
-            FooterColor = clWindow
-            FooterFont.Charset = DEFAULT_CHARSET
-            FooterFont.Color = clWindowText
-            FooterFont.Height = -11
-            FooterFont.Name = 'MS Sans Serif'
-            FooterFont.Style = []
+            DynProps = <>
+            FooterParams.Color = clWindow
+            IndicatorOptions = [gioShowRowIndicatorEh]
             Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
             OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
             ReadOnly = True
-            RowDetailPanel.Color = clBtnFace
             TabOrder = 0
-            TitleFont.Charset = DEFAULT_CHARSET
-            TitleFont.Color = clWindowText
-            TitleFont.Height = -11
-            TitleFont.Name = 'MS Sans Serif'
-            TitleFont.Style = []
             Visible = False
             Columns = <
               item
+                DynProps = <>
                 EditButtons = <>
                 FieldName = 'codbarras'
                 Footers = <>
                 Width = 133
               end
               item
+                DynProps = <>
                 EditButtons = <>
                 FieldName = 'descricao'
                 Footers = <>
                 Width = 373
               end
               item
+                DynProps = <>
                 EditButtons = <>
                 FieldName = 'valor_varejo'
                 Footers = <>
               end
               item
+                DynProps = <>
                 EditButtons = <>
                 FieldName = 'est_atual'
                 Footers = <>
@@ -1143,6 +1109,10 @@ inherited FormCadEntSai: TFormCadEntSai
     object tbsPagamento: TTabSheet
       Caption = 'Pagamento'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label17: TLabel
         Left = 5
         Top = 2
@@ -1376,7 +1346,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Top = 17
         Width = 28
         Height = 25
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FB00FFFB00FF
@@ -1404,7 +1373,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FB00FFFB00FFBA945DBA945DBA945DBA945DFB00FFFB00FFFB00FFFB00FFFB00
           FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB
           00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FFFB00FF}
-        ParentDoubleBuffered = False
         TabOrder = 0
         TabStop = False
         OnClick = BitBtn1Click
@@ -1415,7 +1383,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 25
         Height = 25
         Hint = 'Novo fornecedor'
-        DoubleBuffered = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
           18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -1443,7 +1410,6 @@ inherited FormCadEntSai: TFormCadEntSai
           FFFFFFFFFFFFFFFFFFAD5228F0BA8BF0BA8BF0BA8BF0BA8BB3582AFFFFFFFFFF
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBF7D5DAC5228AD
           5328AE5428AF5529C4805FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-        ParentDoubleBuffered = False
         ParentShowHint = False
         ShowHint = True
         TabOrder = 1
@@ -1471,24 +1437,14 @@ inherited FormCadEntSai: TFormCadEntSai
         Height = 116
         Align = alBottom
         AllowedOperations = [alopUpdateEh]
-        DataGrouping.GroupLevels = <>
         DataSource = dsPagamento
-        Flat = False
-        FooterColor = clWindow
-        FooterFont.Charset = DEFAULT_CHARSET
-        FooterFont.Color = clWindowText
-        FooterFont.Height = -11
-        FooterFont.Name = 'MS Sans Serif'
-        FooterFont.Style = []
-        RowDetailPanel.Color = clBtnFace
+        DynProps = <>
+        FooterParams.Color = clWindow
+        IndicatorOptions = [gioShowRowIndicatorEh]
         TabOrder = 14
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'MS Sans Serif'
-        TitleFont.Style = []
         Columns = <
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'data_vencimento'
             Footers = <>
@@ -1496,6 +1452,7 @@ inherited FormCadEntSai: TFormCadEntSai
             Width = 101
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'valor'
             Footers = <>
@@ -1503,6 +1460,7 @@ inherited FormCadEntSai: TFormCadEntSai
             Width = 93
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'forma_pagamento'
             Footers = <>
@@ -1510,6 +1468,7 @@ inherited FormCadEntSai: TFormCadEntSai
             Width = 133
           end
           item
+            DynProps = <>
             EditButtons = <>
             FieldName = 'obs'
             Footers = <>
@@ -1525,8 +1484,6 @@ inherited FormCadEntSai: TFormCadEntSai
         Width = 75
         Height = 23
         Caption = 'Detalhar...'
-        DoubleBuffered = True
-        ParentDoubleBuffered = False
         TabOrder = 13
         OnClick = btnDetalharClick
       end
@@ -1562,7 +1519,7 @@ inherited FormCadEntSai: TFormCadEntSai
     Left = 592
     Top = 208
     Bitmap = {
-      494C010101000800900010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000800940010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

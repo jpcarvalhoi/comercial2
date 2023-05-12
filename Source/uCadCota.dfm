@@ -265,7 +265,6 @@ inherited FormCadCota: TFormCadCota
         Width = 75
         Height = 25
         Caption = 'Localizar'
-        DoubleBuffered = True
         Glyph.Data = {
           E6040000424DE604000000000000360000002800000014000000140000000100
           180000000000B0040000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -307,7 +306,6 @@ inherited FormCadCota: TFormCadCota
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
           FFFFFFFFFFFFCACACABABABAFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
           FFFFFFFFFFFFFFFFFFFF}
-        ParentDoubleBuffered = False
         TabOrder = 0
         OnClick = btnBuscarClick
       end
@@ -331,7 +329,6 @@ inherited FormCadCota: TFormCadCota
       Top = 16
       Width = 30
       Height = 25
-      DoubleBuffered = True
       Glyph.Data = {
         E6040000424DE604000000000000360000002800000014000000140000000100
         180000000000B0040000120B0000120B00000000000000000000FFFFFFFFFFFF
@@ -373,7 +370,6 @@ inherited FormCadCota: TFormCadCota
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFCACACABABABAFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
         FFFFFFFFFFFFFFFFFFFF}
-      ParentDoubleBuffered = False
       TabOrder = 9
       OnClick = BitBtn4Click
     end
@@ -384,65 +380,62 @@ inherited FormCadCota: TFormCadCota
     Width = 686
     Height = 288
     Align = alClient
-    DataGrouping.GroupLevels = <>
     DataSource = dsPesMeta
-    Flat = False
-    FooterColor = clWindow
-    FooterFont.Charset = DEFAULT_CHARSET
-    FooterFont.Color = clWindowText
-    FooterFont.Height = -11
-    FooterFont.Name = 'MS Sans Serif'
-    FooterFont.Style = []
+    DynProps = <>
+    FooterParams.Color = clWindow
+    IndicatorOptions = [gioShowRowIndicatorEh]
     Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
     OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
     ReadOnly = True
-    RowDetailPanel.Color = clBtnFace
     TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'MS Sans Serif'
-    TitleFont.Style = []
     OnEnter = DBGridEh1Enter
     Columns = <
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'placa'
         Footers = <>
         Width = 62
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'nome'
         Footers = <>
         Width = 187
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'data_inicial'
         Footers = <>
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'data_final'
         Footers = <>
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'minimo'
         Footers = <>
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'cota'
         Footers = <>
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'super'
         Footers = <>
       end
       item
+        DynProps = <>
         EditButtons = <>
         FieldName = 'dias_uteis'
         Footers = <>

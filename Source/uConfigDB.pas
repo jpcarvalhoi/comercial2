@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, uClone_TelaPadrao, DB, ZAbstractRODataset, ZAbstractDataset,
   ZAbstractTable, ZDataset, ZConnection, StdCtrls, Buttons, ExtCtrls, Mask,
-  DBCtrls, ActnList, Registry;
+  DBCtrls, ActnList, Registry, ZAbstractConnection, System.Actions;
 
 type
   TConfig = record
