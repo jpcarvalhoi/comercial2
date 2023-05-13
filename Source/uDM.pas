@@ -748,6 +748,13 @@ type
     cdsControlevale: TFloatField;
     cdsControledata_vale: TDateField;
     cdsControleFaltaPagar: TCurrencyField;
+    cdsControlearquivado: TWideStringField;
+    cdsControlePg: TZQuery;
+    cdsControlePgid: TIntegerField;
+    cdsControlePgidtbsistema: TIntegerField;
+    cdsControlePgdata: TDateField;
+    cdsControlePgvalor: TFloatField;
+    cdsControlePgusuario: TWideStringField;
     procedure cdsUsuarioAfterInsert(DataSet: TDataSet);
     procedure cdsConfigsBeforeInsert(DataSet: TDataSet);
     procedure cdsClienteAfterInsert(DataSet: TDataSet);

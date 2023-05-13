@@ -258,7 +258,8 @@ end;
 procedure TFormLocalizar.edLocalizarChange(Sender: TObject);
 begin
   ValorFiltro := edLocalizar.Text;
-  if (Length(edLocalizar.Text) = 1) and (rgFiltro.ItemIndex < 0) then
+  if ((Length(edLocalizar.Text) = 1) and (rgFiltro.ItemIndex < 0)) or
+     ((edLocalizar.Text <> '') and (cdsLocalizar.IndexFieldNames = '')) then
   begin
     if edLocalizar.Text[1] in ['0' .. '9'] then
     begin

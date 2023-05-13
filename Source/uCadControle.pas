@@ -6,7 +6,9 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UClone, Vcl.DBActns, System.Actions,
   Vcl.ActnList, Data.DB, Vcl.ComCtrls, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls,
-  Vcl.Mask, Vcl.DBCtrls, RxToolEdit, RxDBCtrl;
+  Vcl.Mask, Vcl.DBCtrls, RxToolEdit, RxDBCtrl, DBGridEhGrouping, ToolCtrlsEh,
+  DBGridEhToolCtrls, DynVarsEh, EhLibVCL, GridsEh, DBAxisGridsEh, DBGridEh,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
 
 type
   TfrmCadControle = class(TfrmClone)
@@ -48,12 +50,16 @@ type
     DBDateEdit4: TDBDateEdit;
     Label17: TLabel;
     DBEdit9: TDBEdit;
-    Label18: TLabel;
-    DBEdit10: TDBEdit;
-    DBDateEdit5: TDBDateEdit;
-    Label19: TLabel;
     Label20: TLabel;
     DBEdit11: TDBEdit;
+    DBCheckBox1: TDBCheckBox;
+    Panel1: TPanel;
+    DBGridEh1: TDBGridEh;
+    btnNovo2: TBitBtn;
+    btnAlterar2: TBitBtn;
+    btnExcluir2: TBitBtn;
+    dsPagamento: TDataSource;
+    qrAux: TZQuery;
     procedure FormShow(Sender: TObject);
     procedure btnClienteClick(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
@@ -63,8 +69,13 @@ type
     procedure actGravarExecute(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnNovo2Click(Sender: TObject);
+    procedure actLocalizarExecute(Sender: TObject);
+    procedure actCancelarExecute(Sender: TObject);
+    procedure actExcluirExecute(Sender: TObject);
 
   private
+    procedure setPagamentos;
     { Private declarations }
   public
     { Public declarations }
@@ -77,9 +88,21 @@ var
 implementation
 
 uses
-  uDM, FuncoesGerais, FuncoesGlobais, uSelProduto;
+  uDM, FuncoesGerais, FuncoesGlobais, uSelProduto, uLancaPagamento;
 
 {$R *.dfm}
+
+procedure TfrmCadControle.actCancelarExecute(Sender: TObject);
+begin
+  inherited;
+  setPagamentos();
+end;
+
+procedure TfrmCadControle.actExcluirExecute(Sender: TObject);
+begin
+  inherited;
+  setPagamentos();
+end;
 
 procedure TfrmCadControle.actGravarExecute(Sender: TObject);
 begin
@@ -104,7 +127,13 @@ begin
    end;
   DM.cdsControlevalor_total.AsCurrency := DM.cdsControleqtde_enviada.Value * DM.cdsControlepreco_unit.AsCurrency;
   inherited;
+  setPagamentos();
+end;
 
+procedure TfrmCadControle.actLocalizarExecute(Sender: TObject);
+begin
+  inherited;
+  setPagamentos();
 end;
 
 procedure TfrmCadControle.BitBtn1Click(Sender: TObject);
@@ -152,6 +181,55 @@ begin
     end;
   end;
 
+end;
+
+procedure TfrmCadControle.setPagamentos();
+begin
+  DM.cdsControlePg.Close;
+  DM.cdsControlePg.Params.ParamByName('idtbsistema').Value := DM.cdsControleid.AsInteger;
+  DM.cdsControlePg.Open;
+end;
+
+procedure TfrmCadControle.btnNovo2Click(Sender: TObject);
+var
+  aux : Currency;
+begin
+  inherited;
+  if dm.cdsControleid.AsInteger <= 0 then
+  begin
+    Informa('Primeiro salve o registro.');
+    Exit;
+  end;
+
+  Application.CreateForm(TfrmLancaPagamento, frmLancaPagamento);
+  frmLancaPagamento.Permissao := RetornaPermissao(24);
+
+  frmLancaPagamento.idTbsistema := DM.cdsControleid.AsInteger;
+
+  if sender = btnNovo2 then
+  begin
+    DM.cdsControlepg.Insert;
+    DM.cdsControlePgidtbsistema.Value := DM.cdsControleid.AsInteger;
+  end;
+
+  frmLancaPagamento.ShowModal;
+
+  if frmLancaPagamento.AlterouValor then
+  begin
+    setQuery(qrAux, 'select sum(valor) from tbsistema_pagamento where idtbsistema = '+IntToStr(DM.cdsControleid.AsInteger));
+    aux := qrAux.Fields[0].AsCurrency;
+    if aux <> DM.cdsControlevalor_pago.AsCurrency then
+    begin
+      if Pergunta('Deseja atualizar o valor pago para '+FormataCurrency(aux)) = idyes then
+      begin
+        DM.cdsControle.Edit;
+        DM.cdsControlevalor_pago.Value := aux;
+        actGravarExecute(nil);
+      end;
+    end;
+  end;
+
+  FreeAndNil(frmLancaPagamento);
 end;
 
 procedure TfrmCadControle.btnClienteClick(Sender: TObject);
@@ -214,7 +292,7 @@ begin
   if not DM.cdsControle.Active then
     DM.cdsControle.Open;
 
-
+  setPagamentos();
 end;
 
 

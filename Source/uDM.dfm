@@ -16,7 +16,7 @@ object DM: TDM
     Port = 3306
     Database = 'comercial2'
     User = 'root'
-    Password = 'inspellzx45'
+    Password = '123456'
     Protocol = 'mysql'
     Left = 28
     Top = 29
@@ -4531,6 +4531,10 @@ object DM: TDM
       FieldName = 'FaltaPagar'
       Calculated = True
     end
+    object cdsControlearquivado: TWideStringField
+      FieldName = 'arquivado'
+      Size = 1
+    end
   end
   object cdsLKProduto: TZQuery
     Connection = ZConnection
@@ -4553,5 +4557,45 @@ object DM: TDM
     DataSet = cdsStatus
     Left = 336
     Top = 496
+  end
+  object cdsControlePg: TZQuery
+    Connection = ZConnection
+    SQL.Strings = (
+      
+        'select * from tbsistema_pagamento where idtbsistema = :idtbsiste' +
+        'ma')
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'idtbsistema'
+        ParamType = ptInput
+      end>
+    Left = 616
+    Top = 488
+    ParamData = <
+      item
+        DataType = ftInteger
+        Name = 'idtbsistema'
+        ParamType = ptInput
+      end>
+    object cdsControlePgid: TIntegerField
+      FieldName = 'id'
+      Required = True
+    end
+    object cdsControlePgidtbsistema: TIntegerField
+      FieldName = 'idtbsistema'
+      Required = True
+    end
+    object cdsControlePgdata: TDateField
+      FieldName = 'data'
+    end
+    object cdsControlePgvalor: TFloatField
+      FieldName = 'valor'
+      currency = True
+    end
+    object cdsControlePgusuario: TWideStringField
+      FieldName = 'usuario'
+      Size = 45
+    end
   end
 end

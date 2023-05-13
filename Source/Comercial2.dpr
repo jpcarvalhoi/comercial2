@@ -75,7 +75,8 @@ uses
   uCadSetor in 'uCadSetor.pas' {FormCadSetor},
   uCadStatus in 'uCadStatus.pas' {FormCadStatus},
   uControle in 'uControle.pas' {frmControle},
-  uCadControle in 'uCadControle.pas' {frmCadControle};
+  uCadControle in 'uCadControle.pas' {frmCadControle},
+  uLancaPagamento in 'uLancaPagamento.pas' {frmLancaPagamento};
 
 {$R *.res}
 
@@ -85,7 +86,6 @@ begin
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.CreateForm(TFormRelatorios, FormRelatorios);
-  Application.CreateForm(TfrmCadControle, frmCadControle);
   if frmSplash <> nil then
   begin
     frmSplash.Close;

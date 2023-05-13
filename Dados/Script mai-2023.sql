@@ -1,0 +1,1 @@
+INSERT INTO `comercial2`.`tbpermissao` (`idtbpermissao`, `descricao`) VALUES ('22', 'Cadastro de Setores');
