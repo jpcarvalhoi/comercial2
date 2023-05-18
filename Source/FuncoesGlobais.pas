@@ -152,7 +152,7 @@ const
   // ************ MUITO IMPORTANTE: Mude os 2 caso o banco foi modificado************
 
   VersaoBanco = 1;
-  VersaoSistema = '1.0.13';
+  VersaoSistema = '1.0.14';
   // ------------------------------------------------------------------------------------------
   Programa: String = 'Comércio';
   Produto: String = 'Comércio';

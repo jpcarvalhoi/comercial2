@@ -9,7 +9,6 @@ object DM: TDM
     Properties.Strings = (
       'compress=yes')
     TransactIsolationLevel = tiReadCommitted
-    Connected = True
     BeforeConnect = ZConnectionBeforeConnect
     AfterConnect = ZConnectionAfterConnect
     HostName = '127.0.0.1'
