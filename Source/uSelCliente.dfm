@@ -613,7 +613,6 @@ inherited FormSelCliente: TFormSelCliente
     DataPipeline = ppDBCliente
     PrinterSetup.BinName = 'Default'
     PrinterSetup.DocumentName = 'Report'
-    PrinterSetup.Duplex = dpNone
     PrinterSetup.PaperName = 'A4'
     PrinterSetup.PrinterName = 'Default'
     PrinterSetup.SaveDeviceSettings = False
@@ -638,22 +637,15 @@ inherited FormSelCliente: TFormSelCliente
     ThumbnailSettings.Enabled = True
     ThumbnailSettings.Visible = True
     ThumbnailSettings.DeadSpace = 30
-    ThumbnailSettings.PageHighlight.Width = 3
     PDFSettings.EmbedFontOptions = [efUseSubset]
     PDFSettings.EncryptSettings.AllowCopy = True
     PDFSettings.EncryptSettings.AllowInteract = True
     PDFSettings.EncryptSettings.AllowModify = True
     PDFSettings.EncryptSettings.AllowPrint = True
-    PDFSettings.EncryptSettings.AllowExtract = True
-    PDFSettings.EncryptSettings.AllowAssemble = True
-    PDFSettings.EncryptSettings.AllowQualityPrint = True
     PDFSettings.EncryptSettings.Enabled = False
     PDFSettings.EncryptSettings.KeyLength = kl40Bit
-    PDFSettings.EncryptSettings.EncryptionType = etRC4
     PDFSettings.FontEncoding = feAnsi
     PDFSettings.ImageCompressionLevel = 25
-    PDFSettings.PDFAFormat = pafNone
-    PreviewFormSettings.PageBorder.mmPadding = 0
     RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
     RTFSettings.DefaultFont.Color = clWindowText
     RTFSettings.DefaultFont.Height = -13
@@ -666,27 +658,23 @@ inherited FormSelCliente: TFormSelCliente
     XLSSettings.Author = 'ReportBuilder'
     XLSSettings.Subject = 'Report'
     XLSSettings.Title = 'Report'
-    XLSSettings.WorksheetName = 'Report'
     Left = 464
     Top = 248
-    Version = '19.04'
+    Version = '15.04'
     mmColumnWidth = 0
     DataPipelineName = 'ppDBCliente'
     object ppTitleBand1: TppTitleBand
       BeforePrint = ppTitleBand1BeforePrint
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 24077
       mmPrintPosition = 0
       object ppImage2: TppImage
-        DesignLayer = ppDesignLayer1
         UserName = 'Image2'
         AlignHorizontal = ahCenter
         AlignVertical = avTop
         MaintainAspectRatio = True
         Stretch = True
-        Border.mmPadding = 0
         mmHeight = 22490
         mmLeft = 1058
         mmTop = 0
@@ -695,9 +683,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText88: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText88'
-        Border.mmPadding = 0
         DataField = 'razaosocial'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -716,10 +702,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText89: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText89'
         OnGetText = ppDBText89GetText
-        Border.mmPadding = 0
         DataField = 'endereco'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -738,10 +722,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText90: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText90'
         OnGetText = ppDBText90GetText
-        Border.mmPadding = 0
         DataField = 'bairro'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -760,10 +742,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText91: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText91'
         OnGetText = ppDBText91GetText
-        Border.mmPadding = 0
         DataField = 'telefone'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -784,22 +764,17 @@ inherited FormSelCliente: TFormSelCliente
     end
     object ppHeaderBand1: TppHeaderBand
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 17198
       mmPrintPosition = 0
       object ppLabel2: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label2'
-        Border.mmPadding = 0
         Caption = 'C'#243'd.'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 1323
@@ -809,17 +784,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel3: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label3'
-        Border.mmPadding = 0
         Caption = 'Nome'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 15081
@@ -829,17 +800,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel4: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label4'
-        Border.mmPadding = 0
         Caption = 'Documento'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 78581
@@ -849,17 +816,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel7: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label7'
-        Border.mmPadding = 0
         Caption = 'Telefone'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 155046
@@ -869,17 +832,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel8: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label8'
-        Border.mmPadding = 0
         Caption = 'Celular'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 179652
@@ -889,17 +848,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel5: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label5'
-        Border.mmPadding = 0
         Caption = 'E-mail'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold, fsItalic]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3302
         mmLeft = 109538
@@ -909,9 +864,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLine2: TppLine
-        DesignLayer = ppDesignLayer1
         UserName = 'Line2'
-        Border.mmPadding = 0
         ParentWidth = True
         Weight = 0.750000000000000000
         mmHeight = 794
@@ -922,17 +875,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLabel1: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label1'
-        Border.mmPadding = 0
         Caption = 'Clientes'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 12
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 4995
         mmLeft = 90488
@@ -942,9 +891,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppSystemVariable2: TppSystemVariable
-        DesignLayer = ppDesignLayer1
         UserName = 'SystemVariable2'
-        Border.mmPadding = 0
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
@@ -960,9 +907,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppSystemVariable3: TppSystemVariable
-        DesignLayer = ppDesignLayer1
         UserName = 'SystemVariable3'
-        Border.mmPadding = 0
         VarType = vtPageSetDesc
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -979,9 +924,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLine1: TppLine
-        DesignLayer = ppDesignLayer1
         UserName = 'Line1'
-        Border.mmPadding = 0
         ParentWidth = True
         Weight = 0.750000000000000000
         mmHeight = 1323
@@ -995,15 +938,12 @@ inherited FormSelCliente: TFormSelCliente
     object ppDetailBand1: TppDetailBand
       Background1.Brush.Style = bsClear
       Background2.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 4498
       mmPrintPosition = 0
       object ppDBText1: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText1'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'codcliente'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1021,10 +961,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText2: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText2'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'nome'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1042,11 +980,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText3: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText3'
         OnGetText = ppDBText3GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'documento'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1064,11 +1000,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText6: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText6'
         OnGetText = ppDBText6GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'telefone'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1086,11 +1020,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText7: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText7'
         OnGetText = ppDBText6GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'celular'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1108,11 +1040,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppDBText4: TppDBText
-        DesignLayer = ppDesignLayer1
         UserName = 'DBText4'
         HyperlinkEnabled = False
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'email'
         DataPipeline = ppDBCliente
         Font.Charset = DEFAULT_CHARSET
@@ -1132,23 +1062,18 @@ inherited FormSelCliente: TFormSelCliente
     end
     object ppFooterBand1: TppFooterBand
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 7673
       mmPrintPosition = 0
       object ppLabel31: TppLabel
-        DesignLayer = ppDesignLayer1
         UserName = 'Label301'
         OnGetText = getRodapeText
-        Border.mmPadding = 0
         Caption = 'Label301'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = []
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3175
         mmLeft = 3704
@@ -1158,9 +1083,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground
       end
       object ppLine10: TppLine
-        DesignLayer = ppDesignLayer1
         UserName = 'Line10'
-        Border.mmPadding = 0
         ParentWidth = True
         Weight = 0.750000000000000000
         mmHeight = 1588
@@ -1806,7 +1729,6 @@ inherited FormSelCliente: TFormSelCliente
     DataPipeline = ppDBFicha
     PrinterSetup.BinName = 'Default'
     PrinterSetup.DocumentName = 'Report'
-    PrinterSetup.Duplex = dpNone
     PrinterSetup.PaperName = 'A4'
     PrinterSetup.PrinterName = 'Default'
     PrinterSetup.SaveDeviceSettings = False
@@ -1830,22 +1752,15 @@ inherited FormSelCliente: TFormSelCliente
     ThumbnailSettings.Enabled = True
     ThumbnailSettings.Visible = True
     ThumbnailSettings.DeadSpace = 30
-    ThumbnailSettings.PageHighlight.Width = 3
     PDFSettings.EmbedFontOptions = [efUseSubset]
     PDFSettings.EncryptSettings.AllowCopy = True
     PDFSettings.EncryptSettings.AllowInteract = True
     PDFSettings.EncryptSettings.AllowModify = True
     PDFSettings.EncryptSettings.AllowPrint = True
-    PDFSettings.EncryptSettings.AllowExtract = True
-    PDFSettings.EncryptSettings.AllowAssemble = True
-    PDFSettings.EncryptSettings.AllowQualityPrint = True
     PDFSettings.EncryptSettings.Enabled = False
     PDFSettings.EncryptSettings.KeyLength = kl40Bit
-    PDFSettings.EncryptSettings.EncryptionType = etRC4
     PDFSettings.FontEncoding = feAnsi
     PDFSettings.ImageCompressionLevel = 25
-    PDFSettings.PDFAFormat = pafNone
-    PreviewFormSettings.PageBorder.mmPadding = 0
     RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
     RTFSettings.DefaultFont.Color = clWindowText
     RTFSettings.DefaultFont.Height = -13
@@ -1858,27 +1773,23 @@ inherited FormSelCliente: TFormSelCliente
     XLSSettings.Author = 'ReportBuilder'
     XLSSettings.Subject = 'Report'
     XLSSettings.Title = 'Report'
-    XLSSettings.WorksheetName = 'Report'
     Left = 512
     Top = 312
-    Version = '19.04'
+    Version = '15.04'
     mmColumnWidth = 0
     DataPipelineName = 'ppDBFicha'
     object ppTitleBand2: TppTitleBand
       BeforePrint = ppTitleBand2BeforePrint
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 24342
       mmPrintPosition = 0
       object ppImage1: TppImage
-        DesignLayer = ppDesignLayer2
         UserName = 'Image1'
         AlignHorizontal = ahCenter
         AlignVertical = avTop
         MaintainAspectRatio = True
         Stretch = True
-        Border.mmPadding = 0
         mmHeight = 22490
         mmLeft = 1058
         mmTop = 0
@@ -1887,9 +1798,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText38: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText38'
-        Border.mmPadding = 0
         DataField = 'razaosocial'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -1908,10 +1817,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText39: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText39'
         OnGetText = ppDBText89GetText
-        Border.mmPadding = 0
         DataField = 'endereco'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -1930,10 +1837,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText40: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText901'
         OnGetText = ppDBText90GetText
-        Border.mmPadding = 0
         DataField = 'bairro'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -1952,10 +1857,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText41: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText41'
         OnGetText = ppDBText91GetText
-        Border.mmPadding = 0
         DataField = 'telefone'
         DataPipeline = ppDBConfigs
         Font.Charset = DEFAULT_CHARSET
@@ -1976,14 +1879,11 @@ inherited FormSelCliente: TFormSelCliente
     end
     object ppHeaderBand2: TppHeaderBand
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 9790
       mmPrintPosition = 0
       object ppSystemVariable1: TppSystemVariable
-        DesignLayer = ppDesignLayer2
         UserName = 'SystemVariable1'
-        Border.mmPadding = 0
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
@@ -1999,9 +1899,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppSystemVariable4: TppSystemVariable
-        DesignLayer = ppDesignLayer2
         UserName = 'SystemVariable4'
-        Border.mmPadding = 0
         VarType = vtPageSetDesc
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -2018,17 +1916,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel6: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label6'
-        Border.mmPadding = 0
         Caption = 'Ficha Cadastral do Cliente'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 12
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 4995
         mmLeft = 71967
@@ -2041,13 +1935,11 @@ inherited FormSelCliente: TFormSelCliente
     object ppDetailBand2: TppDetailBand
       Background1.Brush.Style = bsClear
       Background2.Brush.Style = bsClear
-      Border.mmPadding = 0
       PrintHeight = phDynamic
       mmBottomOffset = 0
       mmHeight = 123031
       mmPrintPosition = 0
       object ppShape1: TppShape
-        DesignLayer = ppDesignLayer2
         UserName = 'Shape1'
         Brush.Color = 15790320
         ParentWidth = True
@@ -2059,17 +1951,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel10: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label10'
-        Border.mmPadding = 0
         Caption = 'C'#243'd.'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 2646
@@ -2079,10 +1967,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText5: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText5'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'codcliente'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2100,17 +1986,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel11: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label101'
-        Border.mmPadding = 0
         Caption = 'Nome:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 27252
@@ -2120,10 +2002,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText8: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText8'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'nome'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2141,17 +2021,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel12: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label12'
-        Border.mmPadding = 0
         Caption = 'Sexo:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 175419
@@ -2161,10 +2037,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText9: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText9'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'sexo'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2182,17 +2056,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel13: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label13'
-        Border.mmPadding = 0
         Caption = 'Documento:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 130969
@@ -2202,11 +2072,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText10: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText10'
         OnGetText = ppDBText10GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'documento'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2224,17 +2092,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel14: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label14'
-        Border.mmPadding = 0
         Caption = 'Fantasia:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 2646
@@ -2244,10 +2108,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText11: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText11'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'fantasia'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2265,17 +2127,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel15: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label15'
-        Border.mmPadding = 0
         Caption = 'RG/IE:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 79904
@@ -2285,10 +2143,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText12: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText12'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'rg'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2306,17 +2162,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel16: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label16'
-        Border.mmPadding = 0
         Caption = 'IM:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 121444
@@ -2326,10 +2178,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText13: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText13'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'inscricao_municipal'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2347,17 +2197,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel17: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label17'
-        Border.mmPadding = 0
         Caption = 'Endere'#231'o:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 2646
@@ -2367,10 +2213,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText14: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText14'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'endereco'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2388,17 +2232,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel18: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label18'
-        Border.mmPadding = 0
         Caption = 'Bairro:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 7144
@@ -2408,10 +2248,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText15: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText15'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'bairro'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2429,17 +2267,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel19: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label19'
-        Border.mmPadding = 0
         Caption = 'Cidade:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 61119
@@ -2449,10 +2283,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText16: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText16'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'cidade'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2470,17 +2302,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel20: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label20'
-        Border.mmPadding = 0
         Caption = 'Cep:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 166159
@@ -2490,11 +2318,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText17: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText17'
         OnGetText = ppDBText17GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'cep'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2512,10 +2338,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText18: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText18'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'referencia'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2533,17 +2357,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel21: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label201'
-        Border.mmPadding = 0
         Caption = 'Refer'#234'ncia:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 130704
@@ -2553,17 +2373,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel22: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label22'
-        Border.mmPadding = 0
         Caption = 'Informa'#231#245'es gerais'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 4233
@@ -2573,7 +2389,6 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppShape2: TppShape
-        DesignLayer = ppDesignLayer2
         UserName = 'Shape2'
         Brush.Color = 15790320
         ParentWidth = True
@@ -2585,17 +2400,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel23: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label23'
-        Border.mmPadding = 0
         Caption = 'Endere'#231'o:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 4233
@@ -2605,17 +2416,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel24: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label24'
-        Border.mmPadding = 0
         Caption = 'Endere'#231'o:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 2646
@@ -2625,10 +2432,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText19: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText19'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'endereco_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2646,17 +2451,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel25: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label25'
-        Border.mmPadding = 0
         Caption = 'Bairro:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 7144
@@ -2666,10 +2467,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText20: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText20'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'bairro_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2687,17 +2486,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel26: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label26'
-        Border.mmPadding = 0
         Caption = 'Cidade:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 61119
@@ -2707,10 +2502,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText21: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText21'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'cidade_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2728,17 +2521,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel27: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label202'
-        Border.mmPadding = 0
         Caption = 'Cep:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 166159
@@ -2748,11 +2537,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText22: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText22'
         OnGetText = ppDBText17GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'cep_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2770,10 +2557,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText23: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText23'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'referencia_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2791,17 +2576,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel28: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label28'
-        Border.mmPadding = 0
         Caption = 'Refer'#234'ncia:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 129117
@@ -2811,7 +2592,6 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppShape3: TppShape
-        DesignLayer = ppDesignLayer2
         UserName = 'Shape3'
         Brush.Color = 15790320
         ParentWidth = True
@@ -2823,17 +2603,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel29: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label29'
-        Border.mmPadding = 0
         Caption = 'Endere'#231'o de Faturamento:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 4233
@@ -2843,7 +2619,6 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppShape4: TppShape
-        DesignLayer = ppDesignLayer2
         UserName = 'Shape4'
         Brush.Color = 15790320
         ParentWidth = True
@@ -2855,17 +2630,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel30: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label30'
-        Border.mmPadding = 0
         Caption = 'Contato:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 4233
@@ -2875,17 +2646,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel32: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label32'
-        Border.mmPadding = 0
         Caption = 'Telefone:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 2646
@@ -2895,11 +2662,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText24: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText24'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'telefone'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2917,17 +2682,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel33: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label33'
-        Border.mmPadding = 0
         Caption = 'Telefone 2:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 41275
@@ -2937,11 +2698,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText25: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText25'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'celular'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -2959,17 +2718,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel34: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label34'
-        Border.mmPadding = 0
         Caption = 'E-mail:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 86519
@@ -2979,11 +2734,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText26: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText26'
         HyperlinkEnabled = False
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'email'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3001,17 +2754,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel35: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label35'
-        Border.mmPadding = 0
         Caption = 'Telefone:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 78846
@@ -3021,11 +2770,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText27: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText27'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'tel1_contato'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3043,17 +2790,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel36: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label36'
-        Border.mmPadding = 0
         Caption = 'Celular:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 118004
@@ -3063,11 +2806,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText28: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText28'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'tel2_contato'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3085,17 +2826,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel37: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label37'
-        Border.mmPadding = 0
         Caption = 'E-mail:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 154782
@@ -3105,11 +2842,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText29: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText29'
         HyperlinkEnabled = False
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'email_contato'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3127,10 +2862,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText30: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText30'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'nome_contato'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3148,17 +2881,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel39: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label39'
-        Border.mmPadding = 0
         Caption = 'Conato Compras:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 2646
@@ -3168,17 +2897,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel38: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label38'
-        Border.mmPadding = 0
         Caption = 'Conato Financeiro:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 2646
@@ -3188,10 +2913,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText31: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText301'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'nome_contato2'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3209,17 +2932,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel40: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label40'
-        Border.mmPadding = 0
         Caption = 'Telefone:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 78846
@@ -3229,11 +2948,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText32: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText32'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'tel1_contato2'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3251,17 +2968,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel41: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label41'
-        Border.mmPadding = 0
         Caption = 'Celular:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 118004
@@ -3271,11 +2984,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText33: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText33'
         OnGetText = ppDBText27GetText
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'tel2_contato2'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3293,17 +3004,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel42: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label42'
-        Border.mmPadding = 0
         Caption = 'E-mail:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 154782
@@ -3313,11 +3020,9 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText34: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText34'
         HyperlinkEnabled = False
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'email_contato2'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3335,17 +3040,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel43: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label43'
-        Border.mmPadding = 0
         Caption = 'Dt. Cadastro:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 157163
@@ -3355,10 +3056,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText35: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText35'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'dtcadastro'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3376,17 +3075,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel44: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label44'
-        Border.mmPadding = 0
         Caption = 'Dt. Anivers'#225'rio:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 79904
@@ -3396,10 +3091,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText36: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText36'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'dtaniversario'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3417,17 +3110,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel45: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label45'
-        Border.mmPadding = 0
         Caption = 'Sal'#225'rio:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 121444
@@ -3437,10 +3126,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText37: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText37'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'salario'
         DataPipeline = ppDBFicha
         DisplayFormat = '#,##0.00'
@@ -3459,9 +3146,7 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBMemo1: TppDBMemo
-        DesignLayer = ppDesignLayer2
         UserName = 'DBMemo1'
-        Border.mmPadding = 0
         CharWrap = False
         DataField = 'obs'
         DataPipeline = ppDBFicha
@@ -3487,17 +3172,13 @@ inherited FormSelCliente: TFormSelCliente
         mmLeading = 0
       end
       object ppLabel46: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label46'
-        Border.mmPadding = 0
         Caption = 'Obs:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 2646
@@ -3507,17 +3188,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel47: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label203'
-        Border.mmPadding = 0
         Caption = 'N'#186':'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 93134
@@ -3527,10 +3204,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText42: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText42'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'numero'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3548,17 +3223,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel48: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label48'
-        Border.mmPadding = 0
         Caption = 'Complemento:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 115094
@@ -3568,10 +3239,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText43: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText43'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'complemento'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3589,17 +3258,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel49: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label49'
-        Border.mmPadding = 0
         Caption = 'N'#186':'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 93134
@@ -3609,10 +3274,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText44: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText44'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'numero_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3630,17 +3293,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel50: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label50'
-        Border.mmPadding = 0
         Caption = 'Complemento:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 115094
@@ -3650,10 +3309,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText45: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText45'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'complemento_fat'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3671,17 +3328,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel51: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label102'
-        Border.mmPadding = 0
         Caption = 'C'#243'd. Garra:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 2646
@@ -3691,10 +3344,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText46: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText46'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'codgarra'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3712,17 +3363,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel52: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label52'
-        Border.mmPadding = 0
         Caption = 'Matr'#237'cula:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3387
         mmLeft = 39688
@@ -3732,10 +3379,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText47: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText47'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'matricula'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3753,17 +3398,13 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel53: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label53'
-        Border.mmPadding = 0
         Caption = 'Tipo Sangu'#237'neo:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = [fsBold]
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3440
         mmLeft = 157163
@@ -3773,10 +3414,8 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppDBText48: TppDBText
-        DesignLayer = ppDesignLayer2
         UserName = 'DBText48'
         AutoSize = True
-        Border.mmPadding = 0
         DataField = 'status_abo'
         DataPipeline = ppDBFicha
         Font.Charset = DEFAULT_CHARSET
@@ -3796,14 +3435,11 @@ inherited FormSelCliente: TFormSelCliente
     end
     object ppFooterBand2: TppFooterBand
       Background.Brush.Style = bsClear
-      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 6879
       mmPrintPosition = 0
       object ppLine4: TppLine
-        DesignLayer = ppDesignLayer2
         UserName = 'Line101'
-        Border.mmPadding = 0
         ParentWidth = True
         Weight = 0.750000000000000000
         mmHeight = 1588
@@ -3814,18 +3450,14 @@ inherited FormSelCliente: TFormSelCliente
         LayerName = Foreground1
       end
       object ppLabel9: TppLabel
-        DesignLayer = ppDesignLayer2
         UserName = 'Label9'
         OnGetText = getRodapeText
-        Border.mmPadding = 0
         Caption = 'Label9'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Arial'
         Font.Size = 8
         Font.Style = []
-        FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-        FormFieldSettings.FormFieldType = fftNone
         Transparent = True
         mmHeight = 3260
         mmLeft = 3704
@@ -3851,14 +3483,12 @@ inherited FormSelCliente: TFormSelCliente
       NewFile = False
       object ppGroupHeaderBand1: TppGroupHeaderBand
         Background.Brush.Style = bsClear
-        Border.mmPadding = 0
         mmBottomOffset = 0
         mmHeight = 0
         mmPrintPosition = 0
       end
       object ppGroupFooterBand1: TppGroupFooterBand
         Background.Brush.Style = bsClear
-        Border.mmPadding = 0
         HideWhenOneDetail = False
         mmBottomOffset = 0
         mmHeight = 0
