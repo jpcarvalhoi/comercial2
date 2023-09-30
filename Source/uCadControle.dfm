@@ -1,10 +1,10 @@
 inherited frmCadControle: TfrmCadControle
   Caption = 'Controle de Pedidos'
   ClientHeight = 549
-  ClientWidth = 786
+  ClientWidth = 815
   OnCreate = FormCreate
   OnShow = FormShow
-  ExplicitWidth = 792
+  ExplicitWidth = 821
   ExplicitHeight = 578
   PixelsPerInch = 96
   TextHeight = 13
@@ -58,28 +58,28 @@ inherited frmCadControle: TfrmCadControle
     Caption = 'Produto'
   end
   object Label8: TLabel [7]
-    Left = 188
+    Left = 342
     Top = 158
     Width = 53
     Height = 13
     Caption = 'Pre'#231'o Unit.'
   end
   object Label9: TLabel [8]
-    Left = 304
+    Left = 452
     Top = 160
     Width = 65
     Height = 13
     Caption = 'Prev. Entrega'
   end
   object Label10: TLabel [9]
-    Left = 435
+    Left = 583
     Top = 160
     Width = 63
     Height = 13
     Caption = 'Data Entrega'
   end
   object Label11: TLabel [10]
-    Left = 8
+    Left = 176
     Top = 160
     Width = 79
     Height = 13
@@ -93,7 +93,7 @@ inherited frmCadControle: TfrmCadControle
     Caption = 'Destino'
   end
   object Label13: TLabel [12]
-    Left = 565
+    Left = 713
     Top = 160
     Width = 69
     Height = 13
@@ -122,7 +122,7 @@ inherited frmCadControle: TfrmCadControle
   end
   object Label17: TLabel [16]
     Left = 8
-    Top = 251
+    Top = 289
     Width = 19
     Height = 13
     Caption = 'Obs'
@@ -134,26 +134,68 @@ inherited frmCadControle: TfrmCadControle
     Height = 13
     Caption = 'Falta Pagar'
   end
+  object Label18: TLabel [18]
+    Left = 8
+    Top = 159
+    Width = 25
+    Height = 13
+    Caption = 'Setor'
+  end
+  object Label19: TLabel [19]
+    Left = 453
+    Top = 204
+    Width = 21
+    Height = 13
+    Caption = 'Lote'
+  end
+  object Label21: TLabel [20]
+    Left = 556
+    Top = 204
+    Width = 45
+    Height = 13
+    Caption = 'Empenho'
+  end
+  object Label22: TLabel [21]
+    Left = 656
+    Top = 204
+    Width = 49
+    Height = 13
+    Caption = 'Data limite'
+  end
+  object Label23: TLabel [22]
+    Left = 11
+    Top = 247
+    Width = 94
+    Height = 13
+    Caption = 'Ordem de produ'#231#227'o'
+  end
+  object Label24: TLabel [23]
+    Left = 136
+    Top = 245
+    Width = 96
+    Height = 13
+    Caption = 'Usu'#225'rio respons'#225'vel'
+  end
   inherited pnlPrincipal: TPanel
-    Width = 786
+    Width = 815
     ExplicitWidth = 786
     inherited btnPrimeiro: TBitBtn
-      Left = 318
+      Left = 347
       Visible = False
       ExplicitLeft = 318
     end
     inherited btnAnterior: TBitBtn
-      Left = 395
+      Left = 424
       Visible = False
       ExplicitLeft = 395
     end
     inherited btnProximo: TBitBtn
-      Left = 472
+      Left = 501
       Visible = False
       ExplicitLeft = 472
     end
     inherited btnUltimo: TBitBtn
-      Left = 549
+      Left = 578
       Visible = False
       ExplicitLeft = 549
     end
@@ -166,7 +208,7 @@ inherited frmCadControle: TfrmCadControle
       ExplicitLeft = 157
     end
     inherited btnLocalizar: TBitBtn
-      Left = 626
+      Left = 655
       Visible = False
       ExplicitLeft = 626
     end
@@ -175,17 +217,17 @@ inherited frmCadControle: TfrmCadControle
       ExplicitLeft = 234
     end
     inherited btnFechar: TBitBtn
-      Left = 703
+      Left = 732
       ExplicitLeft = 703
     end
   end
   inherited stbFormulario: TStatusBar
     Top = 530
-    Width = 786
-    ExplicitTop = 357
+    Width = 815
+    ExplicitTop = 530
     ExplicitWidth = 786
   end
-  object DBEdit2: TDBEdit [20]
+  object DBEdit2: TDBEdit [26]
     Left = 8
     Top = 88
     Width = 70
@@ -195,7 +237,7 @@ inherited frmCadControle: TfrmCadControle
     Enabled = False
     TabOrder = 1
   end
-  object DBDateEdit1: TDBDateEdit [21]
+  object DBDateEdit1: TDBDateEdit [27]
     Left = 84
     Top = 87
     Width = 121
@@ -205,7 +247,7 @@ inherited frmCadControle: TfrmCadControle
     NumGlyphs = 2
     TabOrder = 3
   end
-  object DBLookupComboBox1: TDBLookupComboBox [22]
+  object DBLookupComboBox1: TDBLookupComboBox [28]
     Left = 211
     Top = 88
     Width = 240
@@ -218,10 +260,10 @@ inherited frmCadControle: TfrmCadControle
     TabOrder = 4
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object DBLookupComboBox2: TDBLookupComboBox [23]
+  object DBLookupComboBox2: TDBLookupComboBox [29]
     Left = 500
     Top = 88
-    Width = 240
+    Width = 263
     Height = 21
     DataField = 'idfornecedor'
     DataSource = dsNavegacao
@@ -231,7 +273,7 @@ inherited frmCadControle: TfrmCadControle
     TabOrder = 5
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object DBEdit1: TDBEdit [24]
+  object DBEdit1: TDBEdit [30]
     Left = 8
     Top = 132
     Width = 108
@@ -240,7 +282,7 @@ inherited frmCadControle: TfrmCadControle
     DataSource = dsNavegacao
     TabOrder = 2
   end
-  object DBEdit3: TDBEdit [25]
+  object DBEdit3: TDBEdit [31]
     Left = 402
     Top = 132
     Width = 94
@@ -249,17 +291,17 @@ inherited frmCadControle: TfrmCadControle
     DataSource = dsNavegacao
     TabOrder = 8
   end
-  object DBEdit4: TDBEdit [26]
+  object DBEdit4: TDBEdit [32]
     Left = 505
     Top = 132
-    Width = 240
+    Width = 263
     Height = 21
     DataField = 'Produto'
     DataSource = dsNavegacao
     TabOrder = 7
   end
-  object DBEdit5: TDBEdit [27]
-    Left = 185
+  object DBEdit5: TDBEdit [33]
+    Left = 339
     Top = 176
     Width = 104
     Height = 21
@@ -267,8 +309,8 @@ inherited frmCadControle: TfrmCadControle
     DataSource = dsNavegacao
     TabOrder = 9
   end
-  object DBDateEdit2: TDBDateEdit [28]
-    Left = 304
+  object DBDateEdit2: TDBDateEdit [34]
+    Left = 452
     Top = 176
     Width = 121
     Height = 21
@@ -277,8 +319,8 @@ inherited frmCadControle: TfrmCadControle
     NumGlyphs = 2
     TabOrder = 10
   end
-  object DBDateEdit3: TDBDateEdit [29]
-    Left = 435
+  object DBDateEdit3: TDBDateEdit [35]
+    Left = 583
     Top = 176
     Width = 121
     Height = 21
@@ -287,10 +329,10 @@ inherited frmCadControle: TfrmCadControle
     NumGlyphs = 2
     TabOrder = 11
   end
-  object DBLookupComboBox3: TDBLookupComboBox [30]
-    Left = 8
+  object DBLookupComboBox3: TDBLookupComboBox [36]
+    Left = 176
     Top = 176
-    Width = 166
+    Width = 156
     Height = 21
     DataField = 'idstatus'
     DataSource = dsNavegacao
@@ -300,8 +342,8 @@ inherited frmCadControle: TfrmCadControle
     TabOrder = 12
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object btnCliente: TBitBtn [31]
-    Left = 745
+  object btnCliente: TBitBtn [37]
+    Left = 774
     Top = 131
     Width = 30
     Height = 25
@@ -353,7 +395,7 @@ inherited frmCadControle: TfrmCadControle
     TabStop = False
     OnClick = btnClienteClick
   end
-  object BitBtn1: TBitBtn [32]
+  object BitBtn1: TBitBtn [38]
     Left = 452
     Top = 86
     Width = 30
@@ -406,8 +448,8 @@ inherited frmCadControle: TfrmCadControle
     TabStop = False
     OnClick = BitBtn1Click
   end
-  object BitBtn2: TBitBtn [33]
-    Left = 746
+  object BitBtn2: TBitBtn [39]
+    Left = 775
     Top = 86
     Width = 30
     Height = 25
@@ -459,7 +501,7 @@ inherited frmCadControle: TfrmCadControle
     TabStop = False
     OnClick = BitBtn2Click
   end
-  object DBLookupComboBox4: TDBLookupComboBox [34]
+  object DBLookupComboBox4: TDBLookupComboBox [40]
     Left = 125
     Top = 132
     Width = 240
@@ -472,7 +514,7 @@ inherited frmCadControle: TfrmCadControle
     TabOrder = 16
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object BitBtn3: TBitBtn [35]
+  object BitBtn3: TBitBtn [41]
     Left = 366
     Top = 130
     Width = 30
@@ -525,8 +567,8 @@ inherited frmCadControle: TfrmCadControle
     TabStop = False
     OnClick = BitBtn3Click
   end
-  object DBEdit6: TDBEdit [36]
-    Left = 562
+  object DBEdit6: TDBEdit [42]
+    Left = 710
     Top = 176
     Width = 94
     Height = 21
@@ -534,7 +576,7 @@ inherited frmCadControle: TfrmCadControle
     DataSource = dsNavegacao
     TabOrder = 18
   end
-  object DBEdit7: TDBEdit [37]
+  object DBEdit7: TDBEdit [43]
     Left = 8
     Top = 220
     Width = 94
@@ -544,7 +586,7 @@ inherited frmCadControle: TfrmCadControle
     Enabled = False
     TabOrder = 19
   end
-  object DBEdit8: TDBEdit [38]
+  object DBEdit8: TDBEdit [44]
     Left = 111
     Top = 220
     Width = 94
@@ -553,7 +595,7 @@ inherited frmCadControle: TfrmCadControle
     DataSource = dsNavegacao
     TabOrder = 20
   end
-  object DBDateEdit4: TDBDateEdit [39]
+  object DBDateEdit4: TDBDateEdit [45]
     Left = 319
     Top = 220
     Width = 121
@@ -563,16 +605,16 @@ inherited frmCadControle: TfrmCadControle
     NumGlyphs = 2
     TabOrder = 21
   end
-  object DBEdit9: TDBEdit [40]
+  object DBEdit9: TDBEdit [46]
     Left = 8
-    Top = 267
+    Top = 305
     Width = 648
     Height = 21
     DataField = 'obs'
     DataSource = dsNavegacao
     TabOrder = 22
   end
-  object DBEdit11: TDBEdit [41]
+  object DBEdit11: TDBEdit [47]
     Left = 215
     Top = 220
     Width = 94
@@ -582,9 +624,9 @@ inherited frmCadControle: TfrmCadControle
     Enabled = False
     TabOrder = 23
   end
-  object DBCheckBox1: TDBCheckBox [42]
+  object DBCheckBox1: TDBCheckBox [48]
     Left = 664
-    Top = 269
+    Top = 307
     Width = 97
     Height = 17
     Caption = 'Arquivar'
@@ -594,21 +636,21 @@ inherited frmCadControle: TfrmCadControle
     ValueChecked = 'T'
     ValueUnchecked = 'F'
   end
-  object Panel1: TPanel [43]
+  object Panel1: TPanel [49]
     Left = 0
-    Top = 298
-    Width = 786
+    Top = 333
+    Width = 815
     Height = 17
     BevelKind = bkTile
     BevelOuter = bvNone
     Caption = 'Pagamentos / Vales'
     TabOrder = 25
   end
-  object DBGridEh1: TDBGridEh [44]
+  object DBGridEh1: TDBGridEh [50]
     Left = 0
-    Top = 360
-    Width = 786
-    Height = 170
+    Top = 392
+    Width = 815
+    Height = 138
     Align = alBottom
     DataSource = dsPagamento
     DynProps = <>
@@ -664,44 +706,107 @@ inherited frmCadControle: TfrmCadControle
     object RowDetailData: TRowDetailPanelControlEh
     end
   end
-  object btnNovo2: TBitBtn [45]
+  object btnNovo2: TBitBtn [51]
     Left = 8
-    Top = 321
+    Top = 356
     Width = 75
     Height = 25
     Caption = 'Novo'
     TabOrder = 27
     OnClick = btnNovo2Click
   end
-  object btnAlterar2: TBitBtn [46]
+  object btnAlterar2: TBitBtn [52]
     Left = 89
-    Top = 321
+    Top = 356
     Width = 75
     Height = 25
     Caption = 'Alterar'
     TabOrder = 28
     OnClick = btnNovo2Click
   end
-  object btnExcluir2: TBitBtn [47]
+  object btnExcluir2: TBitBtn [53]
     Left = 170
-    Top = 321
+    Top = 356
     Width = 75
     Height = 25
     Caption = 'Excluir'
     TabOrder = 29
   end
+  object DBLookupComboBox5: TDBLookupComboBox [54]
+    Left = 8
+    Top = 177
+    Width = 162
+    Height = 21
+    DataField = 'idsetor'
+    DataSource = dsNavegacao
+    KeyField = 'idsetor'
+    ListField = 'descricao'
+    ListSource = DM.dsSetor
+    TabOrder = 30
+    OnKeyDown = DBLookupComboBox1KeyDown
+  end
+  object DBEdit10: TDBEdit [55]
+    Left = 450
+    Top = 220
+    Width = 94
+    Height = 21
+    DataField = 'lote'
+    DataSource = dsNavegacao
+    TabOrder = 31
+  end
+  object DBEdit12: TDBEdit [56]
+    Left = 553
+    Top = 220
+    Width = 94
+    Height = 21
+    DataField = 'empenho'
+    DataSource = dsNavegacao
+    TabOrder = 32
+  end
+  object DBDateEdit5: TDBDateEdit [57]
+    Left = 656
+    Top = 220
+    Width = 121
+    Height = 21
+    DataField = 'data_limite'
+    DataSource = dsNavegacao
+    NumGlyphs = 2
+    TabOrder = 33
+  end
+  object DBEdit13: TDBEdit [58]
+    Left = 8
+    Top = 263
+    Width = 103
+    Height = 21
+    DataField = 'ordem_producao'
+    DataSource = dsNavegacao
+    TabOrder = 34
+  end
+  object DBLookupComboBox6: TDBLookupComboBox [59]
+    Left = 136
+    Top = 263
+    Width = 268
+    Height = 21
+    DataField = 'idresponsavel'
+    DataSource = dsNavegacao
+    KeyField = 'idtbusuario'
+    ListField = 'nome'
+    ListSource = DM.dsUsuario
+    TabOrder = 35
+    OnKeyDown = DBLookupComboBox1KeyDown
+  end
   inherited dsNavegacao: TDataSource
     DataSet = DM.cdsControle
-    Left = 428
-    Top = 146
+    Left = 588
+    Top = 410
   end
   inherited ActionList1: TActionList
     Left = 724
     Top = 185
   end
   inherited dsPesquisa: TDataSource
-    Left = 524
-    Top = 162
+    Left = 668
+    Top = 426
   end
   object dsPagamento: TDataSource
     DataSet = DM.cdsControlePg

@@ -5,7 +5,7 @@ object DM: TDM
   Width = 863
   object ZConnection: TZConnection
     ControlsCodePage = cCP_UTF16
-    Catalog = 'comercial2'
+    Catalog = ''
     Properties.Strings = (
       'compress=yes')
     TransactIsolationLevel = tiReadCommitted
@@ -13,7 +13,7 @@ object DM: TDM
     AfterConnect = ZConnectionAfterConnect
     HostName = '127.0.0.1'
     Port = 3306
-    Database = 'comercial2'
+    Database = 'comercial3'
     User = 'root'
     Password = '123456'
     Protocol = 'mysql'
@@ -1034,6 +1034,13 @@ object DM: TDM
     object cdsFornecedorobs: TWideMemoField
       FieldName = 'obs'
       BlobType = ftWideMemo
+    end
+    object cdsFornecedorvale_data: TDateField
+      FieldName = 'vale_data'
+    end
+    object cdsFornecedorvale_valor: TFloatField
+      FieldName = 'vale_valor'
+      currency = True
     end
   end
   object cdsCategoria: TZQuery
@@ -4533,6 +4540,24 @@ object DM: TDM
     object cdsControlearquivado: TWideStringField
       FieldName = 'arquivado'
       Size = 1
+    end
+    object cdsControleidsetor: TIntegerField
+      FieldName = 'idsetor'
+    end
+    object cdsControlelote: TWideStringField
+      FieldName = 'lote'
+    end
+    object cdsControleempenho: TWideStringField
+      FieldName = 'empenho'
+    end
+    object cdsControledata_limite: TDateField
+      FieldName = 'data_limite'
+    end
+    object cdsControleordem_producao: TWideStringField
+      FieldName = 'ordem_producao'
+    end
+    object cdsControleidresponsavel: TIntegerField
+      FieldName = 'idresponsavel'
     end
   end
   object cdsLKProduto: TZQuery

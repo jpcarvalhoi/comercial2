@@ -60,6 +60,18 @@ type
     btnExcluir2: TBitBtn;
     dsPagamento: TDataSource;
     qrAux: TZQuery;
+    Label18: TLabel;
+    DBLookupComboBox5: TDBLookupComboBox;
+    Label19: TLabel;
+    DBEdit10: TDBEdit;
+    DBEdit12: TDBEdit;
+    Label21: TLabel;
+    Label22: TLabel;
+    DBDateEdit5: TDBDateEdit;
+    Label23: TLabel;
+    DBEdit13: TDBEdit;
+    DBLookupComboBox6: TDBLookupComboBox;
+    Label24: TLabel;
     procedure FormShow(Sender: TObject);
     procedure btnClienteClick(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
@@ -284,6 +296,8 @@ begin
   OpenOrRefresh(dm.cdsLKProduto);
   OpenOrRefresh(dm.dslkfornecedor.DataSet);
   OpenOrRefresh(dm.cdsStatus);
+  OpenOrRefresh(dm.cdsSetor);
+  OpenOrRefresh(dm.cdsUsuario);
 
   if CodLocalizar > 0 then
   begin
@@ -293,6 +307,8 @@ begin
     DM.cdsControle.Open;
 
   setPagamentos();
+
+
 end;
 
 

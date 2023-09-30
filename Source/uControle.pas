@@ -104,6 +104,18 @@ type
     BitBtn3: TBitBtn;
     ckArquivados: TCheckBox;
     ZQuery1arquivado: TWideStringField;
+    ZQuery1idsetor: TIntegerField;
+    ZQuery1lote: TWideStringField;
+    ZQuery1empenho: TWideStringField;
+    ZQuery1data_limite: TDateField;
+    ZQuery1ordem_producao: TWideStringField;
+    ZQuery1idresponsavel: TIntegerField;
+    ZQuery1codbarras: TWideStringField;
+    ZQuery1nome: TWideStringField;
+    ZQuery1setor: TWideStringField;
+    CheckListBoxStatus: TCheckListBox;
+    Label10: TLabel;
+    ckTodosStatus: TCheckBox;
     procedure FormShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
@@ -137,6 +149,7 @@ type
     procedure DBGridEh1GetCellParams(Sender: TObject; Column: TColumnEh;
       AFont: TFont; var Background: TColor; State: TGridDrawState);
     procedure BitBtn3Click(Sender: TObject);
+    procedure ckTodosStatusClick(Sender: TObject);
   private
     FSql : string;
     procedure setList(o : TCheckListBox; campo : string);
@@ -397,6 +410,12 @@ begin
   SpeedButton6.Enabled := not ckTodosProduto.Checked;
 end;
 
+procedure TfrmControle.ckTodosStatusClick(Sender: TObject);
+begin
+  inherited;
+  CheckListBoxStatus.Enabled := not ckTodosStatus.Checked;
+end;
+
 procedure TfrmControle.ComboBox1Change(Sender: TObject);
 begin
   inherited;
@@ -491,6 +510,14 @@ begin
       aux := aux + IfThen(aux <> '', ',') + CheckListBoxAcompanhamento.Items.Strings[i];
   end;
   ini.WriteString('config', 'CheckListBoxAcompanhamento', aux);
+  aux := '';
+  for i := 0 to CheckListBoxStatus.Items.Count - 1   do
+  begin
+    if CheckListBoxStatus.Checked[i] then
+      aux := aux + IfThen(aux <> '', ',') + CheckListBoxStatus.Items.Strings[i];
+  end;
+  ini.WriteString('config', 'CheckListBoxStatus', aux);
+  ini.Free;
 end;
 
 procedure TfrmControle.FormCreate(Sender: TObject);
@@ -525,8 +552,30 @@ begin
         CheckListBoxAcompanhamento.Checked[j] := True;
     end;
   end;
+  aux := ini.ReadString('config', 'CheckListBoxStatus', '');
   ini.Free;
 
+  OpenOrRefresh(DM.cdsStatus);
+  dm.cdsStatus.First;
+  CheckListBoxStatus.Clear;
+  while not DM.cdsStatus.Eof do
+  begin
+     CheckListBoxStatus.Items.Add(DM.cdsStatusdescricao.AsString);
+    dm.cdsStatus.Next;
+  end;
+  if aux <> '' then
+  begin
+    SetLength(s, 0);
+    s := Split(',', aux);
+    for i := 0 to Length(s) - 1   do
+    begin
+      j := CheckListBoxStatus.Items.IndexOf(s[i]);
+      if j >= 0 then
+        CheckListBoxStatus.Checked[j] := True;
+    end;
+
+  end;
+  ckTodosStatusClick(nil);
 end;
 
 procedure TfrmControle.Filtrar();
@@ -626,6 +675,23 @@ begin
 
     if DateEdit2.Date > 0 then
       filtro := filtro + ' and '+campo + ' <= '+FormataDataSql(DateEdit2.Date);
+  end;
+
+  if not ckTodosStatus.Checked then
+  begin
+    if ListBoxDestino.Items.Count > 0 then
+    begin
+      f := '';
+      for i  := 0 to CheckListBoxStatus.Count - 1 do
+        begin
+          if CheckListBoxStatus.Checked[i] then
+
+          f :=  f + ifthen(f <> '', ' or ') + ' (st.descricao = '+QuotedStr(CheckListBoxStatus.Items.Strings[i])+') ';
+        end;
+      if f <> '' then
+        filtro := filtro + ' and ('+f+')';
+    end;
+
   end;
 
   if not ckArquivados.Checked then

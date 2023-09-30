@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UClone, DBActns, ActnList, DB, ComCtrls, StdCtrls, Buttons,
-  ExtCtrls, Mask, DBCtrls, System.Actions;
+  ExtCtrls, Mask, DBCtrls, System.Actions, RxToolEdit, RxDBCtrl;
 
 type
   TFormCadFornecedor = class(TfrmClone)
@@ -140,6 +140,11 @@ type
     Label59: TLabel;
     BitBtn1: TBitBtn;
     BitBtn6: TBitBtn;
+    GroupBox7: TGroupBox;
+    Label60: TLabel;
+    DBDateEdit3: TDBDateEdit;
+    DBEdit59: TDBEdit;
+    Label61: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure actIncluirExecute(Sender: TObject);

@@ -6,6 +6,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
   ClientWidth = 782
   OnCreate = FormCreate
   OnShow = FormShow
+  ExplicitTop = -62
   ExplicitWidth = 788
   ExplicitHeight = 614
   PixelsPerInch = 96
@@ -58,10 +59,6 @@ inherited FormCadFornecedor: TFormCadFornecedor
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Informa'#231#245'es Gerais'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label1: TLabel
         Left = 3
         Top = 1
@@ -832,6 +829,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'cep'
           DataSource = dsNavegacao
+          MaxLength = 9
           TabOrder = 1
           OnEnter = EditEnter
           OnExit = EditExit
@@ -966,14 +964,55 @@ inherited FormCadFornecedor: TFormCadFornecedor
         TabStop = False
         OnClick = BitBtn1Click
       end
+      object GroupBox7: TGroupBox
+        Left = 632
+        Top = 272
+        Width = 139
+        Height = 105
+        Caption = 'Vale'
+        TabOrder = 21
+        object Label60: TLabel
+          Left = 7
+          Top = 16
+          Width = 23
+          Height = 13
+          Caption = 'Data'
+        end
+        object Label61: TLabel
+          Left = 7
+          Top = 59
+          Width = 24
+          Height = 13
+          Caption = 'Valor'
+          FocusControl = DBEdit59
+        end
+        object DBDateEdit3: TDBDateEdit
+          Left = 7
+          Top = 32
+          Width = 120
+          Height = 21
+          DataField = 'vale_data'
+          DataSource = dsNavegacao
+          NumGlyphs = 2
+          TabOrder = 0
+        end
+        object DBEdit59: TDBEdit
+          Left = 7
+          Top = 75
+          Width = 121
+          Height = 21
+          DataField = 'vale_valor'
+          DataSource = dsNavegacao
+          TabOrder = 1
+          OnEnter = EditEnter
+          OnExit = EditExit
+          OnKeyPress = SelectProximo
+        end
+      end
     end
     object TabSheet2: TTabSheet
       Caption = 'Padr'#245'es'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label39: TLabel
         Left = 5
         Top = 8
@@ -1201,6 +1240,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtultima_visita'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 0
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1214,6 +1254,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtultima_campanha'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 3
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1227,6 +1268,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtultimo_contato'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 2
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1240,6 +1282,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtproxima_visita'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 1
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1253,6 +1296,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtultima_compra'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 4
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1266,6 +1310,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
           CharCase = ecUpperCase
           DataField = 'dtproximo_contato'
           DataSource = dsNavegacao
+          MaxLength = 10
           TabOrder = 5
           OnEnter = EditEnter
           OnExit = EditExit
@@ -1479,7 +1524,7 @@ inherited FormCadFornecedor: TFormCadFornecedor
     Top = 181
   end
   inherited dsPesquisa: TDataSource
-    Left = 664
-    Top = 392
+    Left = 720
+    Top = 304
   end
 end

@@ -1,15 +1,14 @@
 inherited frmControle: TfrmControle
   ActiveControl = DBGridEh1
   Caption = 'Controle de Produ'#231#227'o'
-  ClientHeight = 514
+  ClientHeight = 699
   ClientWidth = 1344
   WindowState = wsMaximized
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  ExplicitTop = 6
   ExplicitWidth = 1360
-  ExplicitHeight = 553
+  ExplicitHeight = 738
   PixelsPerInch = 96
   TextHeight = 13
   object pnlPrincipal: TPanel [0]
@@ -929,7 +928,7 @@ inherited frmControle: TfrmControle
     Left = 0
     Top = 61
     Width = 1344
-    Height = 156
+    Height = 212
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
@@ -1424,8 +1423,8 @@ inherited frmControle: TfrmControle
       Enabled = False
     end
     object Label9: TLabel
-      Left = 1104
-      Top = 52
+      Left = 223
+      Top = 128
       Width = 205
       Height = 48
       Caption = 
@@ -1438,6 +1437,13 @@ inherited frmControle: TfrmControle
       Font.Name = 'Arial'
       Font.Style = []
       ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 1088
+      Top = 12
+      Width = 30
+      Height = 13
+      Caption = 'Status'
     end
     object ckTodosClientes: TCheckBox
       Left = 56
@@ -1460,7 +1466,7 @@ inherited frmControle: TfrmControle
     end
     object btnBuscar: TBitBtn
       Left = 8
-      Top = 124
+      Top = 180
       Width = 76
       Height = 26
       Caption = 'Filtrar'
@@ -1624,8 +1630,8 @@ inherited frmControle: TfrmControle
       TabOrder = 13
     end
     object edPedido: TLabeledEdit
-      Left = 1104
-      Top = 29
+      Left = 8
+      Top = 141
       Width = 209
       Height = 21
       EditLabel.Width = 33
@@ -1635,8 +1641,8 @@ inherited frmControle: TfrmControle
       OnKeyPress = edPedidoKeyPress
     end
     object BitBtn2: TBitBtn
-      Left = 90
-      Top = 124
+      Left = 93
+      Top = 180
       Width = 76
       Height = 26
       Caption = 'Limpar Filtro'
@@ -1644,8 +1650,8 @@ inherited frmControle: TfrmControle
       OnClick = BitBtn2Click
     end
     object BitBtn3: TBitBtn
-      Left = 172
-      Top = 124
+      Left = 175
+      Top = 180
       Width = 76
       Height = 26
       Caption = 'Exportar'
@@ -1653,19 +1659,43 @@ inherited frmControle: TfrmControle
       OnClick = BitBtn3Click
     end
     object ckArquivados: TCheckBox
-      Left = 1104
-      Top = 106
+      Left = 452
+      Top = 141
       Width = 209
       Height = 17
       Caption = 'Mostrar pedidos arquivados.'
       TabOrder = 17
     end
+    object CheckListBoxStatus: TCheckListBox
+      Left = 1088
+      Top = 29
+      Width = 145
+      Height = 90
+      Enabled = False
+      ItemHeight = 13
+      Items.Strings = (
+        'Entrega completa'
+        'Pedido atrasado'
+        'Em produ'#231#227'o')
+      TabOrder = 18
+    end
+    object ckTodosStatus: TCheckBox
+      Left = 1180
+      Top = 12
+      Width = 65
+      Height = 16
+      Caption = 'Todos'
+      Checked = True
+      State = cbChecked
+      TabOrder = 19
+      OnClick = ckTodosStatusClick
+    end
   end
   object DBGridEh1: TDBGridEh [2]
     Left = 0
-    Top = 217
+    Top = 273
     Width = 1344
-    Height = 297
+    Height = 426
     Align = alClient
     DataSource = DataSource1
     DynProps = <>
@@ -1750,15 +1780,6 @@ inherited frmControle: TfrmControle
         Title.Caption = 'Qtd. Enviada'
         Title.TitleButton = True
         Width = 87
-      end
-      item
-        DynProps = <>
-        EditButtons = <>
-        FieldName = 'idproduto'
-        Footers = <>
-        Title.Caption = 'ID Produto'
-        Title.TitleButton = True
-        Width = 75
       end
       item
         DynProps = <>
@@ -1886,7 +1907,54 @@ inherited frmControle: TfrmControle
         FieldName = 'obs'
         Footers = <>
         Title.Caption = 'Obs'
-        Width = 185
+        Width = 155
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'lote'
+        Footers = <>
+        Width = 69
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'empenho'
+        Footers = <>
+        Width = 83
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'data_limite'
+        Footers = <>
+        Width = 89
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'ordem_producao'
+        Footers = <>
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'codbarras'
+        Footers = <>
+        Width = 77
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'nome'
+        Footers = <>
+        Width = 164
+      end
+      item
+        DynProps = <>
+        EditButtons = <>
+        FieldName = 'setor'
+        Footers = <>
       end>
     object RowDetailData: TRowDetailPanelControlEh
     end
@@ -1946,13 +2014,16 @@ inherited frmControle: TfrmControle
       
         'if (qtde_enviada = qtde_entregue, '#39'Entrega completa'#39', if (curdat' +
         'e() > prev_entrega, '#39'Pedido atrasado'#39', '#39'Em produ'#231#227'o'#39') ) as acomp' +
-        'anhamento'
+        'anhamento,'
+      'p.codbarras, u.nome, sr.descricao as setor'
       'FROM tbsistema s'
       'left join tbcliente c1 on s.idcliente = c1.codcliente'
       'left join tbcliente c2 on s.iddestino = c2.codcliente'
       'left join tbstatus st on s.idstatus = st.idstatus'
       'left join tbfornecedor f on s.idfornecedor = f.idfornecedor'
       'left join tbproduto p on s.idproduto = p.idproduto'
+      'left join tbusuario u on s.idresponsavel = u.idtbusuario'
+      'left join tbsetor sr on s.idsetor = sr.idsetor'
       'where s.id > 0')
     Params = <>
     Left = 120
@@ -2063,6 +2134,45 @@ inherited frmControle: TfrmControle
       FieldName = 'arquivado'
       Size = 1
     end
+    object ZQuery1idsetor: TIntegerField
+      FieldName = 'idsetor'
+    end
+    object ZQuery1idresponsavel: TIntegerField
+      FieldName = 'idresponsavel'
+    end
+    object ZQuery1lote: TWideStringField
+      DisplayLabel = 'Lote'
+      FieldName = 'lote'
+    end
+    object ZQuery1data_limite: TDateField
+      DisplayLabel = 'Data Limite'
+      FieldName = 'data_limite'
+    end
+    object ZQuery1empenho: TWideStringField
+      DisplayLabel = 'Empenho'
+      FieldName = 'empenho'
+    end
+    object ZQuery1ordem_producao: TWideStringField
+      DisplayLabel = 'Ordem Produ'#231#227'o'
+      FieldName = 'ordem_producao'
+    end
+    object ZQuery1codbarras: TWideStringField
+      DisplayLabel = 'C'#243'd. Garra'
+      FieldName = 'codbarras'
+      Size = 40
+    end
+    object ZQuery1nome: TWideStringField
+      DisplayLabel = 'Respons'#225'vel'
+      FieldName = 'nome'
+      Required = True
+      Size = 45
+    end
+    object ZQuery1setor: TWideStringField
+      DisplayLabel = 'Setor'
+      FieldName = 'setor'
+      Required = True
+      Size = 45
+    end
   end
   object qrAux: TZQuery
     Connection = DM.ZConnection
@@ -2086,7 +2196,8 @@ inherited frmControle: TfrmControle
       'ComboBox1.ItemIndex'
       'DateEdit1.Text'
       'DateEdit2.Text'
-      'edPedido.Text')
+      'edPedido.Text'
+      'ckTodosStatus.Checked')
     StoredValues = <>
     Left = 616
     Top = 160

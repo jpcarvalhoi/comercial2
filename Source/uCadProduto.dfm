@@ -10,12 +10,12 @@ inherited FormCadProduto: TFormCadProduto
   ExplicitWidth = 829
   ExplicitHeight = 522
   PixelsPerInch = 96
-  TextHeight = 14
+  TextHeight = 13
   object Label34: TLabel [0]
     Left = 187
     Top = 141
     Width = 93
-    Height = 14
+    Height = 13
     Caption = 'Estoque - Empenho'
   end
   inherited pnlPrincipal: TPanel
@@ -183,7 +183,7 @@ inherited FormCadProduto: TFormCadProduto
     Top = 67
     Width = 815
     Height = 401
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = 'Dados do Produto'
@@ -191,31 +191,31 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 5
         Width = 22
-        Height = 14
+        Height = 13
         Caption = 'C'#243'd.'
         FocusControl = DBEdit1
       end
       object Label2: TLabel
         Left = 84
         Top = 5
-        Width = 53
-        Height = 14
+        Width = 51
+        Height = 13
         Caption = 'C'#243'd. Garra'
         FocusControl = DBEdit2
       end
       object Label3: TLabel
         Left = 234
         Top = 5
-        Width = 49
-        Height = 14
+        Width = 48
+        Height = 13
         Caption = 'Descri'#231#227'o'
         FocusControl = DBEdit3
       end
       object Label4: TLabel
         Left = 725
         Top = 50
-        Width = 73
-        Height = 14
+        Width = 76
+        Height = 13
         Caption = 'Unidade/Venda'
         FocusControl = DBEdit4
       end
@@ -223,15 +223,15 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 51
         Width = 67
-        Height = 14
+        Height = 13
         Caption = 'Info. Adicional'
         FocusControl = DBEdit5
       end
       object Label6: TLabel
         Left = 5
         Top = 241
-        Width = 41
-        Height = 14
+        Width = 40
+        Height = 13
         Caption = 'V. Custo'
         FocusControl = DBEdit6
       end
@@ -239,46 +239,46 @@ inherited FormCadProduto: TFormCadProduto
         Left = 146
         Top = 241
         Width = 28
-        Height = 14
+        Height = 13
         Caption = 'Pre'#231'o'
         FocusControl = DBEdit7
       end
       object Label11: TLabel
         Left = 537
         Top = 192
-        Width = 60
-        Height = 14
+        Width = 59
+        Height = 13
         Caption = 'Dt. Cadastro'
         FocusControl = DBEdit11
       end
       object Label12: TLabel
         Left = 370
         Top = 51
-        Width = 46
-        Height = 14
+        Width = 45
+        Height = 13
         Caption = 'Categoria'
       end
       object Label8: TLabel
         Left = 725
         Top = 98
         Width = 79
-        Height = 14
+        Height = 13
         Caption = 'Unidade Compra'
         FocusControl = DBEdit8
       end
       object Label16: TLabel
         Left = 180
         Top = 98
-        Width = 53
-        Height = 14
+        Width = 52
+        Height = 13
         Caption = 'Refer'#234'ncia'
         FocusControl = DBEdit12
       end
       object Label17: TLabel
         Left = 358
         Top = 98
-        Width = 17
-        Height = 14
+        Width = 16
+        Height = 13
         Caption = 'Cor'
         FocusControl = DBEdit13
       end
@@ -286,39 +286,39 @@ inherited FormCadProduto: TFormCadProduto
         Left = 533
         Top = 98
         Width = 30
-        Height = 14
+        Height = 13
         Caption = 'Marca'
         FocusControl = DBEdit14
       end
       object Label19: TLabel
         Left = 537
         Top = 144
-        Width = 20
-        Height = 14
+        Width = 21
+        Height = 13
         Caption = 'Tipo'
         FocusControl = DBEdit15
       end
       object Label20: TLabel
         Left = 3
         Top = 144
-        Width = 61
-        Height = 14
+        Width = 60
+        Height = 13
         Caption = 'Acabamento'
         FocusControl = DBEdit16
       end
       object Label21: TLabel
         Left = 181
         Top = 144
-        Width = 76
-        Height = 14
+        Width = 74
+        Height = 13
         Caption = 'Grupo Materiais'
         FocusControl = DBEdit17
       end
       object Label22: TLabel
         Left = 359
         Top = 144
-        Width = 34
-        Height = 14
+        Width = 35
+        Height = 13
         Caption = 'Medida'
         FocusControl = DBEdit18
       end
@@ -326,23 +326,23 @@ inherited FormCadProduto: TFormCadProduto
         Left = 359
         Top = 192
         Width = 24
-        Height = 14
+        Height = 13
         Caption = 'Peso'
         FocusControl = DBEdit19
       end
       object Label24: TLabel
         Left = 3
         Top = 192
-        Width = 78
-        Height = 14
+        Width = 77
+        Height = 13
         Caption = 'Plano Despesas'
         FocusControl = DBEdit20
       end
       object Label25: TLabel
         Left = 725
         Top = 144
-        Width = 63
-        Height = 14
+        Width = 62
+        Height = 13
         Caption = 'Qtde Compra'
         FocusControl = DBEdit21
       end
@@ -350,23 +350,23 @@ inherited FormCadProduto: TFormCadProduto
         Left = 181
         Top = 192
         Width = 52
-        Height = 14
+        Height = 13
         Caption = 'Imobilizado'
         FocusControl = DBEdit22
       end
       object Label56: TLabel
         Left = 3
         Top = 98
-        Width = 43
-        Height = 14
+        Width = 45
+        Height = 13
         Caption = 'Tamanho'
         FocusControl = DBEdit64
       end
       object Label59: TLabel
         Left = 626
         Top = 5
-        Width = 25
-        Height = 14
+        Width = 26
+        Height = 13
         Caption = 'Edital'
         FocusControl = DBEdit66
         Visible = False
@@ -375,7 +375,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 22
         Width = 75
-        Height = 22
+        Height = 21
         TabStop = False
         CharCase = ecUpperCase
         DataField = 'idproduto'
@@ -388,7 +388,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 84
         Top = 22
         Width = 144
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'codbarras'
         DataSource = dsNavegacao
@@ -401,7 +401,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 234
         Top = 22
         Width = 383
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'descricao'
         DataSource = dsNavegacao
@@ -414,7 +414,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 725
         Top = 67
         Width = 73
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'unidade'
         DataSource = dsNavegacao
@@ -427,7 +427,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 67
         Width = 361
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'info_adicional'
         DataSource = dsNavegacao
@@ -440,7 +440,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 5
         Top = 257
         Width = 134
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'valor_custo'
         DataSource = dsNavegacao
@@ -455,7 +455,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 146
         Top = 257
         Width = 134
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'valor_varejo'
         DataSource = dsNavegacao
@@ -470,7 +470,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 537
         Top = 208
         Width = 98
-        Height = 22
+        Height = 21
         TabStop = False
         CharCase = ecUpperCase
         DataField = 'dt_cadastro'
@@ -482,7 +482,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 370
         Top = 67
         Width = 277
-        Height = 22
+        Height = 21
         DataField = 'idcategoria'
         DataSource = dsNavegacao
         KeyField = 'idcategoria'
@@ -599,10 +599,10 @@ inherited FormCadProduto: TFormCadProduto
         Left = 286
         Top = 257
         Width = 121
-        Height = 22
+        Height = 21
         TabStop = False
         EditLabel.Width = 59
-        EditLabel.Height = 14
+        EditLabel.Height = 13
         EditLabel.Caption = 'Custo M'#233'dio'
         Enabled = False
         ReadOnly = True
@@ -612,7 +612,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 725
         Top = 114
         Width = 73
-        Height = 22
+        Height = 21
         DataField = 'unidade_compra'
         DataSource = dsNavegacao
         TabOrder = 4
@@ -621,7 +621,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 180
         Top = 114
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'referencia'
         DataSource = dsNavegacao
         TabOrder = 11
@@ -630,7 +630,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 358
         Top = 114
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'cor'
         DataSource = dsNavegacao
         TabOrder = 12
@@ -639,7 +639,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 533
         Top = 114
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'marca'
         DataSource = dsNavegacao
         TabOrder = 13
@@ -648,7 +648,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 537
         Top = 160
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'tipo'
         DataSource = dsNavegacao
         TabOrder = 17
@@ -657,7 +657,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 160
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'acabamento'
         DataSource = dsNavegacao
         TabOrder = 14
@@ -666,7 +666,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 181
         Top = 160
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'grupo_materiais'
         DataSource = dsNavegacao
         TabOrder = 15
@@ -675,7 +675,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 359
         Top = 160
         Width = 161
-        Height = 22
+        Height = 21
         DataField = 'medida'
         DataSource = dsNavegacao
         TabOrder = 16
@@ -684,7 +684,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 359
         Top = 208
         Width = 161
-        Height = 22
+        Height = 21
         DataField = 'peso'
         DataSource = dsNavegacao
         TabOrder = 21
@@ -693,7 +693,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 208
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'plano_despesas'
         DataSource = dsNavegacao
         TabOrder = 18
@@ -702,7 +702,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 725
         Top = 160
         Width = 73
-        Height = 22
+        Height = 21
         DataField = 'qtde_compra'
         DataSource = dsNavegacao
         TabOrder = 9
@@ -711,7 +711,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 181
         Top = 208
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'imobilizado'
         DataSource = dsNavegacao
         TabOrder = 19
@@ -727,15 +727,15 @@ inherited FormCadProduto: TFormCadProduto
           Left = 15
           Top = 23
           Width = 82
-          Height = 14
+          Height = 13
           Caption = 'Qtde em Estoque'
           FocusControl = DBEdit10
         end
         object Label9: TLabel
           Left = 160
           Top = 23
-          Width = 74
-          Height = 14
+          Width = 77
+          Height = 13
           Caption = 'Estoque M'#237'nimo'
           FocusControl = DBEdit9
         end
@@ -743,7 +743,7 @@ inherited FormCadProduto: TFormCadProduto
           Left = 15
           Top = 39
           Width = 134
-          Height = 22
+          Height = 21
           CharCase = ecUpperCase
           DataField = 'est_atual'
           DataSource = dsNavegacao
@@ -756,7 +756,7 @@ inherited FormCadProduto: TFormCadProduto
           Left = 160
           Top = 39
           Width = 134
-          Height = 22
+          Height = 21
           CharCase = ecUpperCase
           DataField = 'est_minimo'
           DataSource = dsNavegacao
@@ -770,7 +770,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 3
         Top = 114
         Width = 164
-        Height = 22
+        Height = 21
         DataField = 'tamanho'
         DataSource = dsNavegacao
         TabOrder = 10
@@ -779,7 +779,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 626
         Top = 22
         Width = 172
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'edital'
         DataSource = dsNavegacao
@@ -793,51 +793,55 @@ inherited FormCadProduto: TFormCadProduto
     object TabSheet3: TTabSheet
       Caption = 'Pre'#231'o de Venda'
       ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label38: TLabel
         Left = 18
         Top = 90
-        Width = 75
-        Height = 14
+        Width = 70
+        Height = 13
         Caption = 'Juros Cart'#227'o %'
         FocusControl = DBEdit33
       end
       object Label39: TLabel
         Left = 18
         Top = 130
-        Width = 110
-        Height = 14
+        Width = 105
+        Height = 13
         Caption = 'Comiss'#227'o Vendedor %'
         FocusControl = DBEdit34
       end
       object Label40: TLabel
         Left = 18
         Top = 170
-        Width = 96
-        Height = 14
+        Width = 92
+        Height = 13
         Caption = 'Comiss'#227'o Interna %'
         FocusControl = DBEdit35
       end
       object Label41: TLabel
         Left = 18
         Top = 210
-        Width = 103
-        Height = 14
+        Width = 99
+        Height = 13
         Caption = 'Comiss'#227'o Especial %'
         FocusControl = DBEdit36
       end
       object Label42: TLabel
         Left = 18
         Top = 250
-        Width = 90
-        Height = 14
+        Width = 85
+        Height = 13
         Caption = 'Comiss'#227'o Outra %'
         FocusControl = DBEdit37
       end
       object Label43: TLabel
         Left = 285
         Top = 50
-        Width = 29
-        Height = 14
+        Width = 28
+        Height = 13
         Caption = 'ISS %'
         FocusControl = DBEdit38
       end
@@ -845,15 +849,15 @@ inherited FormCadProduto: TFormCadProduto
         Left = 285
         Top = 90
         Width = 37
-        Height = 14
+        Height = 13
         Caption = 'ICMS %'
         FocusControl = DBEdit39
       end
       object Label45: TLabel
         Left = 285
         Top = 314
-        Width = 23
-        Height = 14
+        Width = 24
+        Height = 13
         Caption = 'IPI %'
         FocusControl = DBEdit40
         Visible = False
@@ -861,56 +865,56 @@ inherited FormCadProduto: TFormCadProduto
       object Label46: TLabel
         Left = 285
         Top = 131
-        Width = 30
-        Height = 14
+        Width = 28
+        Height = 13
         Caption = 'ISV %'
         FocusControl = DBEdit41
       end
       object Label47: TLabel
         Left = 285
         Top = 171
-        Width = 50
-        Height = 14
+        Width = 48
+        Height = 13
         Caption = 'Imposto %'
         FocusControl = DBEdit42
       end
       object Label48: TLabel
         Left = 285
         Top = 211
-        Width = 50
-        Height = 14
+        Width = 48
+        Height = 13
         Caption = 'Imposto %'
         FocusControl = DBEdit43
       end
       object Label49: TLabel
         Left = 18
         Top = 276
-        Width = 25
-        Height = 14
+        Width = 24
+        Height = 13
         Caption = 'Frete'
         FocusControl = DBEdit44
       end
       object Label50: TLabel
         Left = 18
         Top = 330
-        Width = 90
-        Height = 14
+        Width = 88
+        Height = 13
         Caption = 'Despesas ADM  %'
         FocusControl = DBEdit45
       end
       object Label51: TLabel
         Left = 18
         Top = 50
-        Width = 97
-        Height = 14
+        Width = 94
+        Height = 13
         Caption = 'Margem de Lucro %'
         FocusControl = DBEdit46
       end
       object Label52: TLabel
         Left = 16
         Top = 5
-        Width = 41
-        Height = 14
+        Width = 40
+        Height = 13
         Caption = 'V. Custo'
         FocusControl = DBEdit61
       end
@@ -918,22 +922,22 @@ inherited FormCadProduto: TFormCadProduto
         Left = 164
         Top = 5
         Width = 77
-        Height = 14
+        Height = 13
         Caption = 'Pre'#231'o na Venda'
         FocusControl = DBEdit62
       end
       object Label54: TLabel
         Left = 20
         Top = 292
-        Width = 41
-        Height = 14
+        Width = 38
+        Height = 13
         Caption = 'Frete  %'
       end
       object Label55: TLabel
         Left = 388
         Top = 3
         Width = 78
-        Height = 14
+        Height = 13
         Caption = 'Pre'#231'o Calculado'
         FocusControl = DBEdit63
       end
@@ -1334,14 +1338,14 @@ inherited FormCadProduto: TFormCadProduto
         Left = 380
         Top = 9
         Width = 28
-        Height = 14
+        Height = 13
         Caption = 'Pre'#231'o'
       end
       object Label58: TLabel
         Left = 694
         Top = 9
         Width = 83
-        Height = 14
+        Height = 13
         Caption = 'Pre'#231'o do Produto'
         FocusControl = DBEdit65
       end
@@ -1402,9 +1406,9 @@ inherited FormCadProduto: TFormCadProduto
         Left = 41
         Top = 26
         Width = 327
-        Height = 22
+        Height = 21
         EditLabel.Width = 32
-        EditLabel.Height = 14
+        EditLabel.Height = 13
         EditLabel.Caption = 'Cliente'
         ReadOnly = True
         TabOrder = 1
@@ -1450,7 +1454,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 380
         Top = 26
         Width = 100
-        Height = 22
+        Height = 21
         Margins.Left = 1
         Margins.Top = 1
         TabOrder = 3
@@ -1538,7 +1542,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 694
         Top = 26
         Width = 107
-        Height = 22
+        Height = 21
         CharCase = ecUpperCase
         DataField = 'valor_varejo'
         DataSource = dsNavegacao
@@ -1553,9 +1557,9 @@ inherited FormCadProduto: TFormCadProduto
         Left = 490
         Top = 26
         Width = 90
-        Height = 22
-        EditLabel.Width = 25
-        EditLabel.Height = 14
+        Height = 21
+        EditLabel.Width = 26
+        EditLabel.Height = 13
         EditLabel.Caption = 'Edital'
         TabOrder = 4
         OnKeyPress = edEditalKeyPress
@@ -1566,11 +1570,15 @@ inherited FormCadProduto: TFormCadProduto
       ImageIndex = 2
       TabVisible = False
       OnShow = tbsFotoShow
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label13: TLabel
         Left = 225
         Top = 215
-        Width = 63
-        Height = 14
+        Width = 61
+        Height = 13
         Caption = '270 x 190 px'
       end
       object pnFoto: TPanel
@@ -1675,6 +1683,10 @@ inherited FormCadProduto: TFormCadProduto
       Caption = 'Fornecedores do Produto'
       ImageIndex = 1
       OnShow = tbsFornecedorShow
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -1687,14 +1699,14 @@ inherited FormCadProduto: TFormCadProduto
           Left = 374
           Top = 9
           Width = 68
-          Height = 14
+          Height = 13
           Caption = #218'ltima Compra'
         end
         object Label15: TLabel
           Left = 505
           Top = 8
-          Width = 74
-          Height = 14
+          Width = 73
+          Height = 13
           Caption = 'Pre'#231'o de Custo'
         end
         object LabeledEdit1: TLabeledEdit
@@ -1702,8 +1714,8 @@ inherited FormCadProduto: TFormCadProduto
           Top = 26
           Width = 327
           Height = 22
-          EditLabel.Width = 56
-          EditLabel.Height = 14
+          EditLabel.Width = 54
+          EditLabel.Height = 13
           EditLabel.Caption = 'Fornecedor'
           ReadOnly = True
           TabOrder = 2
@@ -1820,7 +1832,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 0
         Top = 55
         Width = 637
-        Height = 317
+        Height = 318
         Align = alLeft
         DataSource = dsFornec_produto
         DynProps = <>
@@ -1900,35 +1912,39 @@ inherited FormCadProduto: TFormCadProduto
     object tbsEstoque: TTabSheet
       Caption = 'Estoque'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label27: TLabel
         Left = 7
         Top = 50
-        Width = 70
-        Height = 14
+        Width = 71
+        Height = 13
         Caption = 'Qtde Empenho'
         FocusControl = DBEdit23
       end
       object Label28: TLabel
         Left = 165
         Top = 94
-        Width = 70
-        Height = 14
+        Width = 71
+        Height = 13
         Caption = #218'ltimo Balan'#231'o'
         FocusControl = DBEdit24
       end
       object Label29: TLabel
         Left = 165
         Top = 139
-        Width = 82
-        Height = 14
+        Width = 81
+        Height = 13
         Caption = 'Prazo Reposi'#231#227'o'
         FocusControl = DBEdit25
       end
       object Label31: TLabel
         Left = 326
         Top = 139
-        Width = 100
-        Height = 14
+        Width = 95
+        Height = 13
         Caption = 'Avisar reposi'#231#227'o em'
         FocusControl = DBEdit27
       end
@@ -1936,7 +1952,7 @@ inherited FormCadProduto: TFormCadProduto
         Left = 7
         Top = 94
         Width = 93
-        Height = 14
+        Height = 13
         Caption = 'Estoque - Empenho'
         FocusControl = DBEdit28
       end
@@ -1944,39 +1960,39 @@ inherited FormCadProduto: TFormCadProduto
         Left = 165
         Top = 7
         Width = 67
-        Height = 14
+        Height = 13
         Caption = #218'ltima compra'
         FocusControl = DBEdit29
       end
       object Label35: TLabel
         Left = 165
         Top = 50
-        Width = 57
-        Height = 14
+        Width = 59
+        Height = 13
         Caption = #218'ltima sa'#237'da'
         FocusControl = DBEdit23
       end
       object Label36: TLabel
         Left = 327
         Top = 7
-        Width = 91
-        Height = 14
+        Width = 90
+        Height = 13
         Caption = #218'ltima compra (R$)'
         FocusControl = DBEdit31
       end
       object Label37: TLabel
         Left = 327
         Top = 51
-        Width = 134
-        Height = 14
+        Width = 133
+        Height = 13
         Caption = 'R$ M'#233'dio '#250'ltimas 3 compras'
         FocusControl = DBEdit32
       end
       object Label30: TLabel
         Left = 327
         Top = 94
-        Width = 96
-        Height = 14
+        Width = 97
+        Height = 13
         Caption = 'Qtde '#218'ltimo Balan'#231'o'
         FocusControl = DBEdit26
       end

@@ -755,6 +755,14 @@ type
     cdsControlePgdata: TDateField;
     cdsControlePgvalor: TFloatField;
     cdsControlePgusuario: TWideStringField;
+    cdsControleidsetor: TIntegerField;
+    cdsControlelote: TWideStringField;
+    cdsControleempenho: TWideStringField;
+    cdsControledata_limite: TDateField;
+    cdsControleordem_producao: TWideStringField;
+    cdsControleidresponsavel: TIntegerField;
+    cdsFornecedorvale_data: TDateField;
+    cdsFornecedorvale_valor: TFloatField;
     procedure cdsUsuarioAfterInsert(DataSet: TDataSet);
     procedure cdsConfigsBeforeInsert(DataSet: TDataSet);
     procedure cdsClienteAfterInsert(DataSet: TDataSet);
