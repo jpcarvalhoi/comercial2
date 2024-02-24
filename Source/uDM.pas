@@ -763,6 +763,7 @@ type
     cdsControleidresponsavel: TIntegerField;
     cdsFornecedorvale_data: TDateField;
     cdsFornecedorvale_valor: TFloatField;
+    cdsControlepedido_lote: TWideStringField;
     procedure cdsUsuarioAfterInsert(DataSet: TDataSet);
     procedure cdsConfigsBeforeInsert(DataSet: TDataSet);
     procedure cdsClienteAfterInsert(DataSet: TDataSet);

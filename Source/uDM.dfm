@@ -13,7 +13,7 @@ object DM: TDM
     AfterConnect = ZConnectionAfterConnect
     HostName = '127.0.0.1'
     Port = 3306
-    Database = 'comercial3'
+    Database = 'comercial2_cliente'
     User = 'root'
     Password = '123456'
     Protocol = 'mysql'
@@ -4558,6 +4558,9 @@ object DM: TDM
     end
     object cdsControleidresponsavel: TIntegerField
       FieldName = 'idresponsavel'
+    end
+    object cdsControlepedido_lote: TWideStringField
+      FieldName = 'pedido_lote'
     end
   end
   object cdsLKProduto: TZQuery

@@ -9,7 +9,7 @@ uses
   ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL, GridsEh, DBAxisGridsEh,
   DBGridEh, RxCtrls, ZAbstractRODataset, ZAbstractDataset, ZDataset, Data.DB,
   Datasnap.DBClient, Datasnap.Provider, Vcl.CheckLst, RxPlacemnt, DBSumLst, StrUtils,
-  Vcl.Mask, RxToolEdit, IniFiles;
+  Vcl.Mask, RxToolEdit, IniFiles, RxLookup;
 
 type
   TfrmControle = class(TFormClone_TelaPadrao)
@@ -99,7 +99,6 @@ type
     Label8: TLabel;
     DateEdit2: TDateEdit;
     edPedido: TLabeledEdit;
-    Label9: TLabel;
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     ckArquivados: TCheckBox;
@@ -116,6 +115,13 @@ type
     CheckListBoxStatus: TCheckListBox;
     Label10: TLabel;
     ckTodosStatus: TCheckBox;
+    Label11: TLabel;
+    cbSetor: TRxDBLookupCombo;
+    SpeedButton13: TSpeedButton;
+    edEmpenho: TLabeledEdit;
+    edLote: TLabeledEdit;
+    edPedidoLote: TLabeledEdit;
+    ZQuery1pedido_lote: TWideStringField;
     procedure FormShow(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
@@ -150,6 +156,9 @@ type
       AFont: TFont; var Background: TColor; State: TGridDrawState);
     procedure BitBtn3Click(Sender: TObject);
     procedure ckTodosStatusClick(Sender: TObject);
+    procedure cbSetorKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure SpeedButton13Click(Sender: TObject);
   private
     FSql : string;
     procedure setList(o : TCheckListBox; campo : string);
@@ -206,6 +215,13 @@ procedure TfrmControle.SpeedButton12Click(Sender: TObject);
 begin
   inherited;
   ListBoxDestino.Items.Clear;
+end;
+
+procedure TfrmControle.SpeedButton13Click(Sender: TObject);
+begin
+  inherited;
+  Informa('Utilize o código do pedido separados por vírgulas Ex. 1,2,10.'+#13+
+  'Ao filtrar por pedido, todos os outros filtros são desconsiderados.');
 end;
 
 procedure TfrmControle.SpeedButton1Click(Sender: TObject);
@@ -556,6 +572,7 @@ begin
   ini.Free;
 
   OpenOrRefresh(DM.cdsStatus);
+  OpenOrRefresh(dm.cdsSetor);
   dm.cdsStatus.First;
   CheckListBoxStatus.Clear;
   while not DM.cdsStatus.Eof do
@@ -576,6 +593,14 @@ begin
 
   end;
   ckTodosStatusClick(nil);
+end;
+
+procedure TfrmControle.cbSetorKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  if (key = vk_delete) or (key = vk_back) then
+     TRxDBLookupCombo(Sender).KeyValue := null;
 end;
 
 procedure TfrmControle.Filtrar();
@@ -647,6 +672,15 @@ begin
     end;
   end;
 
+  if edEmpenho.Text <> '' then
+    filtro := filtro + ' and s.empenho = '+QuotedStr(edEmpenho.Text);
+
+  if edLote.Text <> '' then
+    filtro := filtro + ' and s.lote = '+QuotedStr(edLote.Text);
+
+  if edPedidoLote.Text <> '' then
+    filtro := filtro + ' and s.pedido_lote = '+QuotedStr(edPedidoLote.Text);
+
 
   if not ckTodosAcompanhamento.Checked then
   begin
@@ -679,7 +713,7 @@ begin
 
   if not ckTodosStatus.Checked then
   begin
-    if ListBoxDestino.Items.Count > 0 then
+    if CheckListBoxStatus.Items.Count > 0 then
     begin
       f := '';
       for i  := 0 to CheckListBoxStatus.Count - 1 do
@@ -694,6 +728,13 @@ begin
 
   end;
 
+  if cbSetor.Text <> '' then
+  begin
+    filtro := filtro + ' and s.idsetor = ' + IntToStr(cbSetor.KeyValue);
+
+  end;
+
+
   if not ckArquivados.Checked then
     filtro := filtro + ' and s.arquivado <> '+QuotedStr('T');
 
@@ -705,7 +746,7 @@ begin
       f := '';
       for i  := 0 to Length(s) - 1 do
         begin
-            f := f + ifthen(f <> '', ' or ') + ' (s.npedido = '+QuotedStr(s[i])+') ';
+            f := f + ifthen(f <> '', ' or ') + ' (s.npedido = '+QuotedStr(s[i])+' or s.npedido like '+QuotedStr(s[i]+'.%')+'  ) ';
         end;
       if f <> '' then
       begin

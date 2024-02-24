@@ -72,6 +72,10 @@ type
     DBEdit13: TDBEdit;
     DBLookupComboBox6: TDBLookupComboBox;
     Label24: TLabel;
+    DBEdit14: TDBEdit;
+    Label25: TLabel;
+    BitBtn4: TBitBtn;
+    qrReplicar: TZQuery;
     procedure FormShow(Sender: TObject);
     procedure btnClienteClick(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
@@ -85,9 +89,11 @@ type
     procedure actLocalizarExecute(Sender: TObject);
     procedure actCancelarExecute(Sender: TObject);
     procedure actExcluirExecute(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
 
   private
     procedure setPagamentos;
+    function getNPedido: string;
     { Private declarations }
   public
     { Public declarations }
@@ -191,6 +197,64 @@ begin
     begin
       DM.cdsControleiddestino.AsInteger := cod;
     end;
+  end;
+
+end;
+
+function TfrmCadControle.getNPedido : string;
+var
+  auxPed : String;
+  i : Integer;
+begin
+  Result := '';
+  i := 1;
+  repeat
+    auxPed := DM.cdsControlenpedido.AsString +'.' +IntToStr(i);
+    qrAux.Close;
+    qrAux.SQL.Text := 'select id from tbsistema where npedido = '+QuotedStr(auxPed);
+    qrAux.Open;
+    Inc(i);
+  until (qrAux.RecordCount = 0);
+  Result := auxPed;
+  qrAux.Close;
+end;
+
+procedure TfrmCadControle.BitBtn4Click(Sender: TObject);
+var
+  i : Integer;
+  aux : string;
+begin
+  inherited;
+  if DataSetInEdicao(DM.cdsControle) then
+    Informa('Primeiro salve o registro.')
+  else if (DM.cdsControleid.AsInteger <= 0) or (DM.cdsControlenpedido.AsString = '') then
+  begin
+     Informa('Informe o número do pedido.');
+  end
+  else if Pergunta('Deseja realmente replicar o pedido selecionado?') = id_yes then
+  begin
+    qrReplicar.Close;
+    qrReplicar.SQL.Text := 'select * from tbsistema where id = '+IntToStr( DM.cdsControleid.AsInteger);
+    qrReplicar.Open;
+
+    try
+      DM.cdsControle.DisableControls;
+      DM.cdsControle.Insert;
+
+        for i := 0 to qrReplicar.FieldCount - 1 do
+        begin
+          if (DM.cdsControle.FindField(qrReplicar.Fields[i].FieldName) <> nil) then
+            DM.cdsControle.FieldByName(qrReplicar.Fields[i].FieldName).AsVariant := qrReplicar.Fields[i].AsVariant;
+        end;
+      DM.cdsControleid.AsVariant := null;
+      aux := getNPedido;
+      DM.cdsControlenpedido.Value := aux;
+      DM.cdsControle.Post;
+    finally
+      DM.cdsControle.EnableControls;
+    end;
+    Informa('Replicação realizada com sucesso, pedido '+aux);
+
   end;
 
 end;

@@ -7,197 +7,204 @@ inherited frmCadControle: TfrmCadControle
   ExplicitWidth = 821
   ExplicitHeight = 578
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 14
   object Label1: TLabel [0]
     Left = 8
     Top = 72
-    Width = 11
-    Height = 13
+    Width = 9
+    Height = 14
     Caption = 'ID'
   end
   object Label2: TLabel [1]
     Left = 84
     Top = 71
-    Width = 23
-    Height = 13
+    Width = 22
+    Height = 14
     Caption = 'Data'
   end
   object Label3: TLabel [2]
     Left = 211
     Top = 72
-    Width = 41
-    Height = 13
-    Caption = 'Empresa'
+    Width = 93
+    Height = 14
+    Caption = 'Empresa solicitante'
   end
   object Label4: TLabel [3]
     Left = 500
     Top = 72
-    Width = 54
-    Height = 13
-    Caption = 'Fornecedor'
+    Width = 118
+    Height = 14
+    Caption = 'Fornecedor / Confec'#231#227'o'
   end
   object Label5: TLabel [4]
     Left = 8
     Top = 116
-    Width = 48
-    Height = 13
-    Caption = 'N'#186' Pedido'
+    Width = 63
+    Height = 14
+    Caption = 'Pedido Garra'
   end
   object Label6: TLabel [5]
     Left = 405
     Top = 116
-    Width = 65
-    Height = 13
+    Width = 64
+    Height = 14
     Caption = 'Qtde Enviada'
   end
   object Label7: TLabel [6]
     Left = 505
     Top = 116
     Width = 37
-    Height = 13
+    Height = 14
     Caption = 'Produto'
   end
   object Label8: TLabel [7]
     Left = 342
     Top = 158
-    Width = 53
-    Height = 13
+    Width = 52
+    Height = 14
     Caption = 'Pre'#231'o Unit.'
   end
   object Label9: TLabel [8]
     Left = 452
     Top = 160
-    Width = 65
-    Height = 13
+    Width = 64
+    Height = 14
     Caption = 'Prev. Entrega'
   end
   object Label10: TLabel [9]
     Left = 583
     Top = 160
-    Width = 63
-    Height = 13
+    Width = 62
+    Height = 14
     Caption = 'Data Entrega'
   end
   object Label11: TLabel [10]
     Left = 176
     Top = 160
-    Width = 79
-    Height = 13
+    Width = 80
+    Height = 14
     Caption = 'Status Produ'#231#227'o'
   end
   object Label12: TLabel [11]
     Left = 125
     Top = 116
     Width = 36
-    Height = 13
+    Height = 14
     Caption = 'Destino'
   end
   object Label13: TLabel [12]
     Left = 713
     Top = 160
     Width = 69
-    Height = 13
+    Height = 14
     Caption = 'Qtde Entregue'
   end
   object Label14: TLabel [13]
     Left = 8
     Top = 204
-    Width = 55
-    Height = 13
+    Width = 56
+    Height = 14
     Caption = 'Valor Pagar'
   end
   object Label15: TLabel [14]
     Left = 114
     Top = 204
-    Width = 25
-    Height = 13
+    Width = 24
+    Height = 14
     Caption = 'Pago'
   end
   object Label16: TLabel [15]
     Left = 319
     Top = 204
-    Width = 72
-    Height = 13
+    Width = 71
+    Height = 14
     Caption = 'Dia pagamento'
   end
   object Label17: TLabel [16]
     Left = 8
     Top = 289
-    Width = 19
-    Height = 13
+    Width = 20
+    Height = 14
     Caption = 'Obs'
   end
   object Label20: TLabel [17]
     Left = 218
     Top = 204
     Width = 54
-    Height = 13
+    Height = 14
     Caption = 'Falta Pagar'
   end
   object Label18: TLabel [18]
     Left = 8
     Top = 159
-    Width = 25
-    Height = 13
+    Width = 26
+    Height = 14
     Caption = 'Setor'
   end
   object Label19: TLabel [19]
     Left = 453
     Top = 204
     Width = 21
-    Height = 13
+    Height = 14
     Caption = 'Lote'
   end
   object Label21: TLabel [20]
     Left = 556
     Top = 204
-    Width = 45
-    Height = 13
+    Width = 44
+    Height = 14
     Caption = 'Empenho'
   end
   object Label22: TLabel [21]
     Left = 656
     Top = 204
-    Width = 49
-    Height = 13
+    Width = 48
+    Height = 14
     Caption = 'Data limite'
   end
   object Label23: TLabel [22]
     Left = 11
     Top = 247
-    Width = 94
-    Height = 13
+    Width = 96
+    Height = 14
     Caption = 'Ordem de produ'#231#227'o'
   end
   object Label24: TLabel [23]
     Left = 136
     Top = 245
-    Width = 96
-    Height = 13
+    Width = 100
+    Height = 14
     Caption = 'Usu'#225'rio respons'#225'vel'
+  end
+  object Label25: TLabel [24]
+    Left = 425
+    Top = 247
+    Width = 52
+    Height = 14
+    Caption = 'Pedido lote'
   end
   inherited pnlPrincipal: TPanel
     Width = 815
-    ExplicitWidth = 786
+    ExplicitWidth = 815
     inherited btnPrimeiro: TBitBtn
       Left = 347
       Visible = False
-      ExplicitLeft = 318
+      ExplicitLeft = 347
     end
     inherited btnAnterior: TBitBtn
       Left = 424
       Visible = False
-      ExplicitLeft = 395
+      ExplicitLeft = 424
     end
     inherited btnProximo: TBitBtn
       Left = 501
       Visible = False
-      ExplicitLeft = 472
+      ExplicitLeft = 501
     end
     inherited btnUltimo: TBitBtn
       Left = 578
       Visible = False
-      ExplicitLeft = 549
+      ExplicitLeft = 578
     end
     inherited btnSalvar: TBitBtn
       Left = 80
@@ -210,7 +217,7 @@ inherited frmCadControle: TfrmCadControle
     inherited btnLocalizar: TBitBtn
       Left = 655
       Visible = False
-      ExplicitLeft = 626
+      ExplicitLeft = 655
     end
     inherited btnExcluir: TBitBtn
       Left = 234
@@ -218,131 +225,240 @@ inherited frmCadControle: TfrmCadControle
     end
     inherited btnFechar: TBitBtn
       Left = 732
-      ExplicitLeft = 703
+      ExplicitLeft = 732
+    end
+    object BitBtn4: TBitBtn
+      Left = 310
+      Top = 3
+      Width = 75
+      Height = 55
+      Caption = 'Replicar'
+      Glyph.Data = {
+        360C0000424D360C000000000000360000002800000020000000200000000100
+        180000000000000C0000D60D0000D60D00000000000000000000FFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECF3FFBBD5FF8BB8
+        FF679EF64F8AE74684E54583E54F8AE76297EA85AEEFB6CEF6EAF1FCFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDDEAFF8BB7FF4C90FF3D88FF3A82
+        F43679E23679E33679E33679E33679E33679E33679E33679E34482E584ADEFDA
+        E7FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFF6F9FF97BFFF448BFF3D87FF3D88FF3A82F43679
+        E23679E33679E33679E33679E33579E33578E33679E33679E33679E33679E33C
+        7DE491B6F1F5F8FEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFE0ECFF659FFF3D87FF3D87FF3D88FF3A82F43679E23679
+        E33679E33679E33075E22B72E23075E23477E32D73E22C73E23578E33679E336
+        79E33679E35D93E9DDE9FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFD6E6FF5093FF3D87FF3D87FF3D88FF3A82F43679E23679E33679
+        E33679E32D73E2578EE7A5C2EFD2DEF3DAE4F4BDD2F177A4EA3377E33277E336
+        79E33679E33679E34987E7D4E3FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE1ECFF4F92FF3D87FF3D87FF3D88FF3A82F43679E23679E33679E33679
+        E33477E37DA7EABDD1F1A1BFEE90B3ECACC6EFF0F2F6FFFFF9B5CCF03378E32A
+        71E23679E33679E33679E34785E5DFE9FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        F7FAFF629EFF3D87FF3D87FF3D88FF3A81F43678E23679E33679E33679E33377
+        E34D87E66A9BE83578E32971E22A71E22971E24080E4BACFF1FFFFF9A8C3EF93
+        B5ED548DE63176E33679E33679E35B92E8F6F9FEFFFFFFFFFFFFFFFFFFFFFFFF
+        95BEFF3D87FF3E87FF3985FF2F7AF32B71E12B72E12B72E22B72E22B72E22B72
+        E22B72E2256EE12A71E22B72E22B72E23176E2407FE49ABAEEFFFDF8FFFFF9C5
+        D6F23377E33578E33679E33679E33679E390B5F0FFFFFFFFFFFFFFFFFFDFEBFF
+        428AFF3D87FF3884FF609BFCA7C3EEA3C0EEA3C0EEA3C0EEA3C0EEA3C0EEA3C0
+        EEA3C0EEA3C0EEA3C0EEA3C0EEA7C3EF518BE64D88E5A3C0EEDBE5F4F0F2F654
+        8CE62F74E23679E33679E33679E33679E33B7CE4DCE8FAFFFFFFFFFFFF88B5FF
+        3D87FF3D87FF3281FF7FAEFCFFFFF8FFFFF9FFFFFBFFFFFBFFFFFBFFFFFBFFFF
+        FBFFFFFBFFFFFBFFFFFBFFFFF9FFFFF9689AE91D69E1206BE23076E44684E628
+        70E32B73E33478E33679E33679E33679E33679E382ABEEFFFFFFEEF4FF488EFF
+        3D87FF3D87FF3381FF7BACFCFFFEF9ECEBEBCACACACCCCCCCCCCCCCCCCCCCCCC
+        CCCCCCCCCCCCCCCBCBCBEEEDEDFEFCFAA6C0E981A7E287AAE384A9E381A6E287
+        ABE387ABE34784E33377E33679E33679E33679E34281E5ECF2FCBAD4FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F1F0F0DEDEDEDFDFDFDFDFDFDFDFDFDFDF
+        DFDFDFDFDFDFDFDFDEDEF2F1F1FAF9F9F2EFEBEFEBE5F0ECE5F0ECE6F0ECE5EF
+        EBE3EFEAE35D91E32F75E33679E33679E33679E33679E3B6CEF588B6FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFEF9ECEBEBCCCBCBCDCDCDCDCDCDCDCDCDCDCD
+        CDCDCDCDCDCDCDCCCCCCEEEDEDFCFBFBD4D4D4C4C4C4C7C7C7C6C6C6C7C7C7E0
+        DFDEE6E5E45B90E32F75E33679E33679E33679E33679E384ADEE67A1FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F0EFEFD9D9D9DADADADADADADADADADADA
+        DADADADADADADADAD9D9F1F0F0FBFAFADCDCDCCFCFCFD1D1D1D1D1D1D1D1D1E1
+        E1E0E6E5E45B90E32F75E33679E33679E33679E33679E36196EA5596FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8EFEEEED7D6D6D8D8D8D8D8D8D8D8D8D8D8
+        D8D8D8D8D8D8D8D7D7D7F1F0F0FCFBFBD3D3D3C3C3C3C5C5C5C4C4C4C6C6C6DF
+        DFDEE6E5E45B90E32F75E33679E33679E33679E33679E34E89E74C90FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFEF9EDECECCDCDCDCFCFCFCFCFCFCFCFCFCFCF
+        CFCFCFCFCFCFCFCECDCDEEEDEDFCFBFBDBDBDBCFCFCFD0D0D0D0D0D0D1D1D1E1
+        E1E0E6E5E45B90E32F75E33679E33679E33679E33679E34583E54C90FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F1F0F0DEDEDEDFDFDFDFDFDFDFDFDFDFDF
+        DFDFDFDFDFDFDFDFDEDEF2F1F1FBFAFAD7D7D7C8C8C8CACACAC9C9C9CACACAE0
+        E0DFE6E5E45B90E32F75E33679E33679E33679E33679E34583E55596FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFEF9EDECECCCCCCCCECECECECECECECECECECE
+        CECECECECECECECDCDCDEEEDEDFCFBFBD6D6D6C6C6C6C8C8C8C8C8C8C9C9C9E0
+        E0DFE6E5E45B90E32F75E33679E33679E33679E33678E2528EEE67A1FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F0EFEFD8D7D7D9D9D9D9D9D9D9D9D9D9D9
+        D9D9D9D9D9D9D9D8D8D8F1F0F0FBFAFADCDCDCD0D0D0D2D2D2D1D1D1D2D2D2E1
+        E1E0E6E5E45B90E32F75E33679E33679E33678E1387DEB69A2FE88B6FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F0EFEFD9D8D8DAD9D9DAD9D9DAD9D9DAD9
+        D9DAD9D9DAD9D9D9D8D8F1F0F0FCFBFBD3D3D3C3C3C3C5C5C5C4C4C4C6C6C6DF
+        DFDEE6E5E45B90E32F75E33679E33678E1387DEB3D87FE8BB7FFB9D4FF3D87FF
+        3D87FF3D87FF3381FF7BACFCFFFEF9ECEBEBCAC9C9CCCBCBCCCBCBCCCBCBCCCB
+        CBCCCBCBCCCBCBCBCBCBF0EFEFFEFDFDDBDBDBCECECECFCFCFCFCFCFD0D0D0E1
+        E1E0E6E5E45B90E32F75E33678E1387DEB3D87FE3D87FFBCD6FFEEF4FF488EFF
+        3D87FF3D87FF3381FF7BACFCFFFDF8F5F4F4EDECECEDECECEDECECEDECECEDEC
+        ECEDECECEEEDEDEAE9E9EDECECF1F0F0D6D6D6CACACACBCBCBCBCBCBCCCCCCE0
+        E0DFE6E5E45B90E32F74E1387DEB3D87FE3D87FF4A8FFFEFF5FFFFFFFF87B5FF
+        3D87FF3D87FF3381FF7BACFCFFFCF7F8F7F7FAF9F9FAF9F9FAF9F9FAF9F9FAF9
+        F9FAF9F9FEFDFDDAD9D9979797A8A7A7C4C4C4C8C8C8C7C7C7C6C6C6C8C8C8E0
+        E0DFE7E6E55B8FE13179EB3D87FE3D87FF3D87FF8AB7FFFFFFFFFFFFFFDEEBFF
+        428AFF3D87FF3281FF7FAEFCFFFFF7FFFDF7FFFDF7FFFDF7FFFDF7FFFEF7FFFB
+        F7F9F8F8FEFDFDD2D2D2A9A9A9D9D9D9D9D9D9D8D8D8D8D8D8D8D8D8D7D7D7DF
+        DFDEE6E2DD5E93EA3683FE3D87FF3D87FF428AFFE0ECFFFFFFFFFFFFFFFFFFFF
+        94BDFF3D87FF3784FF629DFDB2CDFAADCAFAADCAFAADCAFAADCAFAA9C8FAC8D9
+        F5F3F1EEF2F1F1E0E0E0DEDEDEE6E6E6E5E5E5E5E5E5E5E5E5E8E8E8C9C9C9A5
+        A1998A9EC0438AFC3C87FF3D87FF3D87FF97BFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        F6F9FF629EFF3E87FF3A85FF3381FF3381FF3381FF3381FF3381FF287CFF7EAB
+        F2F4ECDEEAE6E0ECE8E2ECE9E3EBE7E1EBE8E2EBE8E2EBE8E2F0ECE6CCC6BC7A
+        8FAF3D86F93A86FF3D87FF3D87FF639FFFF7FAFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFE1ECFF4E92FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3683FF6CA2
+        F7B8CBEAB1C7EBB1C7EBB1C7EBB1C7EBB1C7EBB1C7EBB1C7EBB6CBEC93B0DF3E
+        85F93A86FF3D87FF3D87FF5093FFE2EDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFD5E5FF5093FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3A85
+        FF3683FF3683FF3683FF3683FF3683FF3683FF3683FF3683FF3683FF3784FF3C
+        87FF3D87FF3D87FF5193FFD7E7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFDFEBFF649FFF3D87FF3D87FF3D87FF3D87FF3D87FF3D87
+        FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D
+        87FF3D87FF65A0FFE1ECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFF5F9FF95BEFF448BFF3D87FF3D87FF3D87FF3D87
+        FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF44
+        8BFF97BFFFF7FAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDCE9FF89B6FF4B90FF3D87FF3D87
+        FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF3D87FF4C90FF8AB7FFDD
+        EAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECF3FFBAD4FF8AB7
+        FF68A2FF5697FF4D91FF4D91FF5697FF69A2FF8BB7FFBBD5FFECF3FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+      Layout = blGlyphTop
+      TabOrder = 10
+      OnClick = BitBtn4Click
     end
   end
   inherited stbFormulario: TStatusBar
     Top = 530
     Width = 815
     ExplicitTop = 530
-    ExplicitWidth = 786
+    ExplicitWidth = 815
   end
-  object DBEdit2: TDBEdit [26]
+  object DBEdit2: TDBEdit [27]
     Left = 8
     Top = 88
     Width = 70
-    Height = 21
+    Height = 22
     DataField = 'id'
     DataSource = dsNavegacao
     Enabled = False
-    TabOrder = 1
+    TabOrder = 3
   end
-  object DBDateEdit1: TDBDateEdit [27]
+  object DBDateEdit1: TDBDateEdit [28]
     Left = 84
-    Top = 87
+    Top = 88
     Width = 121
-    Height = 21
+    Height = 22
     DataField = 'data'
     DataSource = dsNavegacao
     NumGlyphs = 2
-    TabOrder = 3
+    TabOrder = 4
   end
-  object DBLookupComboBox1: TDBLookupComboBox [28]
+  object DBLookupComboBox1: TDBLookupComboBox [29]
     Left = 211
     Top = 88
     Width = 240
-    Height = 21
+    Height = 22
     DataField = 'idcliente'
     DataSource = dsNavegacao
     KeyField = 'codcliente'
     ListField = 'nome'
     ListSource = DM.dslkcliente
-    TabOrder = 4
+    TabOrder = 5
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object DBLookupComboBox2: TDBLookupComboBox [29]
+  object DBLookupComboBox2: TDBLookupComboBox [30]
     Left = 500
     Top = 88
     Width = 263
-    Height = 21
+    Height = 22
     DataField = 'idfornecedor'
     DataSource = dsNavegacao
     KeyField = 'idfornecedor'
     ListField = 'razao'
     ListSource = DM.dslkfornecedor
-    TabOrder = 5
+    TabOrder = 6
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object DBEdit1: TDBEdit [30]
+  object DBEdit1: TDBEdit [31]
     Left = 8
     Top = 132
     Width = 108
-    Height = 21
+    Height = 22
     DataField = 'npedido'
-    DataSource = dsNavegacao
-    TabOrder = 2
-  end
-  object DBEdit3: TDBEdit [31]
-    Left = 402
-    Top = 132
-    Width = 94
-    Height = 21
-    DataField = 'qtde_enviada'
-    DataSource = dsNavegacao
-    TabOrder = 8
-  end
-  object DBEdit4: TDBEdit [32]
-    Left = 505
-    Top = 132
-    Width = 263
-    Height = 21
-    DataField = 'Produto'
-    DataSource = dsNavegacao
-    TabOrder = 7
-  end
-  object DBEdit5: TDBEdit [33]
-    Left = 339
-    Top = 176
-    Width = 104
-    Height = 21
-    DataField = 'preco_unit'
     DataSource = dsNavegacao
     TabOrder = 9
   end
-  object DBDateEdit2: TDBDateEdit [34]
+  object DBEdit3: TDBEdit [32]
+    Left = 402
+    Top = 132
+    Width = 94
+    Height = 22
+    DataField = 'qtde_enviada'
+    DataSource = dsNavegacao
+    TabOrder = 11
+  end
+  object DBEdit4: TDBEdit [33]
+    Left = 505
+    Top = 132
+    Width = 263
+    Height = 22
+    DataField = 'Produto'
+    DataSource = dsNavegacao
+    TabOrder = 12
+  end
+  object DBEdit5: TDBEdit [34]
+    Left = 339
+    Top = 177
+    Width = 104
+    Height = 22
+    DataField = 'preco_unit'
+    DataSource = dsNavegacao
+    TabOrder = 15
+  end
+  object DBDateEdit2: TDBDateEdit [35]
     Left = 452
-    Top = 176
+    Top = 177
     Width = 121
-    Height = 21
+    Height = 22
     DataField = 'prev_entrega'
     DataSource = dsNavegacao
     NumGlyphs = 2
-    TabOrder = 10
+    TabOrder = 16
   end
-  object DBDateEdit3: TDBDateEdit [35]
+  object DBDateEdit3: TDBDateEdit [36]
     Left = 583
-    Top = 176
+    Top = 177
     Width = 121
-    Height = 21
+    Height = 22
     DataField = 'data_entrega'
     DataSource = dsNavegacao
     NumGlyphs = 2
-    TabOrder = 11
+    TabOrder = 17
   end
-  object DBLookupComboBox3: TDBLookupComboBox [36]
+  object DBLookupComboBox3: TDBLookupComboBox [37]
     Left = 176
-    Top = 176
+    Top = 177
     Width = 156
-    Height = 21
+    Height = 22
     DataField = 'idstatus'
     DataSource = dsNavegacao
     KeyField = 'idstatus'
     ListField = 'descricao'
     ListSource = DM.dsLKStatus
-    TabOrder = 12
+    TabOrder = 14
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object btnCliente: TBitBtn [37]
+  object btnCliente: TBitBtn [38]
     Left = 774
     Top = 131
     Width = 30
@@ -391,11 +507,11 @@ inherited frmCadControle: TfrmCadControle
       FFFFFFFFFFFFFFFFFFFF}
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 6
+    TabOrder = 8
     TabStop = False
     OnClick = btnClienteClick
   end
-  object BitBtn1: TBitBtn [38]
+  object BitBtn1: TBitBtn [39]
     Left = 452
     Top = 86
     Width = 30
@@ -444,11 +560,11 @@ inherited frmCadControle: TfrmCadControle
       FFFFFFFFFFFFFFFFFFFF}
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 14
+    TabOrder = 1
     TabStop = False
     OnClick = BitBtn1Click
   end
-  object BitBtn2: TBitBtn [39]
+  object BitBtn2: TBitBtn [40]
     Left = 775
     Top = 86
     Width = 30
@@ -497,24 +613,24 @@ inherited frmCadControle: TfrmCadControle
       FFFFFFFFFFFFFFFFFFFF}
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 15
+    TabOrder = 2
     TabStop = False
     OnClick = BitBtn2Click
   end
-  object DBLookupComboBox4: TDBLookupComboBox [40]
+  object DBLookupComboBox4: TDBLookupComboBox [41]
     Left = 125
     Top = 132
     Width = 240
-    Height = 21
+    Height = 22
     DataField = 'iddestino'
     DataSource = dsNavegacao
     KeyField = 'codcliente'
     ListField = 'nome'
     ListSource = DM.dslkcliente
-    TabOrder = 16
+    TabOrder = 10
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object BitBtn3: TBitBtn [41]
+  object BitBtn3: TBitBtn [42]
     Left = 366
     Top = 130
     Width = 30
@@ -563,68 +679,68 @@ inherited frmCadControle: TfrmCadControle
       FFFFFFFFFFFFFFFFFFFF}
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 17
+    TabOrder = 7
     TabStop = False
     OnClick = BitBtn3Click
   end
-  object DBEdit6: TDBEdit [42]
+  object DBEdit6: TDBEdit [43]
     Left = 710
-    Top = 176
+    Top = 177
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'qtde_entregue'
     DataSource = dsNavegacao
     TabOrder = 18
   end
-  object DBEdit7: TDBEdit [43]
+  object DBEdit7: TDBEdit [44]
     Left = 8
     Top = 220
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'valor_total'
     DataSource = dsNavegacao
     Enabled = False
     TabOrder = 19
   end
-  object DBEdit8: TDBEdit [44]
+  object DBEdit8: TDBEdit [45]
     Left = 111
     Top = 220
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'valor_pago'
     DataSource = dsNavegacao
     TabOrder = 20
   end
-  object DBDateEdit4: TDBDateEdit [45]
+  object DBDateEdit4: TDBDateEdit [46]
     Left = 319
     Top = 220
     Width = 121
-    Height = 21
+    Height = 22
     DataField = 'dia_pagamento'
     DataSource = dsNavegacao
     NumGlyphs = 2
-    TabOrder = 21
+    TabOrder = 22
   end
-  object DBEdit9: TDBEdit [46]
+  object DBEdit9: TDBEdit [47]
     Left = 8
     Top = 305
     Width = 648
-    Height = 21
+    Height = 22
     DataField = 'obs'
     DataSource = dsNavegacao
-    TabOrder = 22
+    TabOrder = 29
   end
-  object DBEdit11: TDBEdit [47]
+  object DBEdit11: TDBEdit [48]
     Left = 215
     Top = 220
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'FaltaPagar'
     DataSource = dsNavegacao
     Enabled = False
-    TabOrder = 23
+    TabOrder = 21
   end
-  object DBCheckBox1: TDBCheckBox [48]
+  object DBCheckBox1: TDBCheckBox [49]
     Left = 664
     Top = 307
     Width = 97
@@ -632,11 +748,11 @@ inherited frmCadControle: TfrmCadControle
     Caption = 'Arquivar'
     DataField = 'arquivado'
     DataSource = dsNavegacao
-    TabOrder = 24
+    TabOrder = 30
     ValueChecked = 'T'
     ValueUnchecked = 'F'
   end
-  object Panel1: TPanel [49]
+  object Panel1: TPanel [50]
     Left = 0
     Top = 333
     Width = 815
@@ -644,9 +760,9 @@ inherited frmCadControle: TfrmCadControle
     BevelKind = bkTile
     BevelOuter = bvNone
     Caption = 'Pagamentos / Vales'
-    TabOrder = 25
+    TabOrder = 31
   end
-  object DBGridEh1: TDBGridEh [50]
+  object DBGridEh1: TDBGridEh [51]
     Left = 0
     Top = 392
     Width = 815
@@ -667,7 +783,7 @@ inherited frmCadControle: TfrmCadControle
     OptionsEh = [dghFixed3D, dghHighlightFocus, dghClearSelection, dghRowHighlight, dghDialogFind, dghColumnResize, dghColumnMove, dghExtendVertLines]
     ReadOnly = True
     SumList.Active = True
-    TabOrder = 26
+    TabOrder = 35
     Columns = <
       item
         DynProps = <>
@@ -706,94 +822,103 @@ inherited frmCadControle: TfrmCadControle
     object RowDetailData: TRowDetailPanelControlEh
     end
   end
-  object btnNovo2: TBitBtn [51]
+  object btnNovo2: TBitBtn [52]
     Left = 8
     Top = 356
     Width = 75
     Height = 25
     Caption = 'Novo'
-    TabOrder = 27
+    TabOrder = 32
     OnClick = btnNovo2Click
   end
-  object btnAlterar2: TBitBtn [52]
+  object btnAlterar2: TBitBtn [53]
     Left = 89
     Top = 356
     Width = 75
     Height = 25
     Caption = 'Alterar'
-    TabOrder = 28
+    TabOrder = 33
     OnClick = btnNovo2Click
   end
-  object btnExcluir2: TBitBtn [53]
+  object btnExcluir2: TBitBtn [54]
     Left = 170
     Top = 356
     Width = 75
     Height = 25
     Caption = 'Excluir'
-    TabOrder = 29
+    TabOrder = 34
   end
-  object DBLookupComboBox5: TDBLookupComboBox [54]
+  object DBLookupComboBox5: TDBLookupComboBox [55]
     Left = 8
     Top = 177
     Width = 162
-    Height = 21
+    Height = 22
     DataField = 'idsetor'
     DataSource = dsNavegacao
     KeyField = 'idsetor'
     ListField = 'descricao'
     ListSource = DM.dsSetor
-    TabOrder = 30
+    TabOrder = 13
     OnKeyDown = DBLookupComboBox1KeyDown
   end
-  object DBEdit10: TDBEdit [55]
+  object DBEdit10: TDBEdit [56]
     Left = 450
     Top = 220
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'lote'
     DataSource = dsNavegacao
-    TabOrder = 31
+    TabOrder = 23
   end
-  object DBEdit12: TDBEdit [56]
+  object DBEdit12: TDBEdit [57]
     Left = 553
     Top = 220
     Width = 94
-    Height = 21
+    Height = 22
     DataField = 'empenho'
     DataSource = dsNavegacao
-    TabOrder = 32
+    TabOrder = 24
   end
-  object DBDateEdit5: TDBDateEdit [57]
+  object DBDateEdit5: TDBDateEdit [58]
     Left = 656
     Top = 220
     Width = 121
-    Height = 21
+    Height = 22
     DataField = 'data_limite'
     DataSource = dsNavegacao
     NumGlyphs = 2
-    TabOrder = 33
+    TabOrder = 25
   end
-  object DBEdit13: TDBEdit [58]
+  object DBEdit13: TDBEdit [59]
     Left = 8
     Top = 263
     Width = 103
-    Height = 21
+    Height = 22
     DataField = 'ordem_producao'
     DataSource = dsNavegacao
-    TabOrder = 34
+    TabOrder = 26
   end
-  object DBLookupComboBox6: TDBLookupComboBox [59]
+  object DBLookupComboBox6: TDBLookupComboBox [60]
     Left = 136
     Top = 263
     Width = 268
-    Height = 21
+    Height = 22
     DataField = 'idresponsavel'
     DataSource = dsNavegacao
     KeyField = 'idtbusuario'
     ListField = 'nome'
     ListSource = DM.dsUsuario
-    TabOrder = 35
+    TabOrder = 27
     OnKeyDown = DBLookupComboBox1KeyDown
+  end
+  object DBEdit14: TDBEdit [61]
+    Left = 422
+    Top = 263
+    Width = 94
+    Height = 22
+    DataField = 'pedido_lote'
+    DataSource = dsNavegacao
+    TabOrder = 28
   end
   inherited dsNavegacao: TDataSource
     DataSet = DM.cdsControle
@@ -818,5 +943,11 @@ inherited frmCadControle: TfrmCadControle
     Params = <>
     Left = 512
     Top = 416
+  end
+  object qrReplicar: TZQuery
+    Connection = DM.ZConnection
+    Params = <>
+    Left = 520
+    Top = 360
   end
 end
